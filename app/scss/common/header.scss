@@ -1,0 +1,16 @@
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #323232;
+    padding: 40px;
+
+    &-logo {
+        font-size: 40px;
+        color: #fff
+    }
+
+    &-button {
+        margin-left: auto
+    }
+}

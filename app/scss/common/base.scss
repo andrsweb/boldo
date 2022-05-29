@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0
+}
+
+body {
+    min-width: 320px;
+    background-color: #e6e6e6;
+    font-size: 16px
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url(../img/dest/bg.png);
+    background-size: cover;
+    background-position: center
+}
+
+main {
+    padding: 40px
+}
