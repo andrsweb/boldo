@@ -1,0 +1,28 @@
+.button {
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    border: 2px solid #0A2640;
+    border-radius: 24px;
+    color: #0A2640;
+    padding: 8px 40px;
+    background-color: transparent;
+    cursor: pointer;
+
+    &:hover {
+        content: "";
+        transition:
+            color ease 0.35s,
+            transform ease 0.35s;
+        transform: scale(1.1);
+        color: $accent;
+    }
+
+    &.lg {
+        padding: 16px 56px;
+        font-size: 20px;
+        line-height: 28px;
+    }
+}
+    

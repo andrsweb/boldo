@@ -9,5 +9,5 @@ const onHeaderButtonClick = () => {
 
 	if( ! button ) return
 
-	button.addEventListener( 'click', () => alert( 'FUCK YOU' ) )
+	// button.addEventListener( 'click', () => alert( 'FUCK YOU' ) )
 }

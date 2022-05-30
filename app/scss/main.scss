@@ -1,7 +1,11 @@
 // UI components.
+@import 'components/variables';
 @import 'ui/buttons';
 
 // Common blocks & elements.
 @import 'common/base';
 @import 'common/header';
 @import 'common/footer';
+
+// Section styles
+@import 'sections/hero';
