@@ -21,6 +21,10 @@
 			height: 100%;
 			width: auto;
 		}
+		a:hover {
+			content: "";
+			opacity: 0.75;
+		}
 	}
 
 	&-nav {
@@ -38,8 +42,8 @@
 	display: flex;
 	margin-left: auto;
 	width: 420px;
-	justify-content: space-around;	
-
+	justify-content: space-around;
+		
 	&-item {
 		display: flex;
 		flex-wrap: wrap;
@@ -57,8 +61,6 @@
 			color: $accent;
 		}
 	}
-
-
 }
 
 .background-circle {

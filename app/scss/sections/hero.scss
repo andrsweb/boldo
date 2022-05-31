@@ -1,0 +1,57 @@
+.hero-section {
+	position: relative;
+	top: 115px;
+	width: 100%;
+	padding-top: 125px;
+
+	&-container {
+		width: 1200px;
+		margin: 0 auto;
+	}
+
+	&-inner {
+		width: 600px;
+		display: inline-block;
+	}
+
+	&-heading {
+		font-family: 'Manrope';
+		font-weight: 400;
+		font-size: 48px;
+		line-height: 72px;
+		color: $black;
+		padding-bottom: 16px;
+	}
+
+	&-text {
+		font-family: 'Open Sans';
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 28px;
+		color: $grey;
+		padding-bottom: 50px;
+	}
+}
+
+.hero-section-media {
+	position: relative;
+	top: -355px;
+	width: 494px;
+	left: 706px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 12.5px;
+
+	img {
+		padding: 12.5px;
+	}
+}
+
+.brands {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 75px;
+}

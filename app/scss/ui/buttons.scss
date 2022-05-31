@@ -3,9 +3,9 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 24px;
-    border: 2px solid #0A2640;
+    border: 2px solid $dark;
     border-radius: 24px;
-    color: #0A2640;
+    color: $dark;
     padding: 8px 40px;
     background-color: transparent;
     cursor: pointer;
@@ -20,9 +20,19 @@
     }
 
     &.lg {
+        margin: 0px 24px;
         padding: 16px 56px;
         font-size: 20px;
         line-height: 28px;
+
+        &.dark {
+            background-color: $dark;
+            color: $white;
+        }
+
+        &.dark:hover {
+            color: $accent;
+        }
     }
 }
     
