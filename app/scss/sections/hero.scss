@@ -15,7 +15,7 @@
 	}
 
 	&-heading {
-		font-family: 'Manrope';
+		font-family: $manrope;
 		font-weight: 400;
 		font-size: 48px;
 		line-height: 72px;
@@ -24,7 +24,7 @@
 	}
 
 	&-text {
-		font-family: 'Open Sans';
+		font-family: $openSans;
 		font-weight: 400;
 		font-size: 16px;
 		line-height: 28px;
@@ -45,8 +45,8 @@
 		border-radius: 50%;
 		background-color: #F1F1F1;
 		position: absolute;
-		top: -785px;
-		left: 760px;
+		top: -755px;
+		right: -635px;
 	}
 
 	&-media {
