@@ -21,7 +21,7 @@
             transform: scale(1.1);
     color: #65E4A3; }
   .button.lg {
-    margin: 0px 24px;
+    margin-right: 24px;
     padding: 16px 56px;
     font-size: 20px;
     line-height: 28px; }
@@ -63,7 +63,8 @@ a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  min-height: 100vh; }
+  min-height: 100vh;
+  overflow: hidden; }
 
 .container {
   width: 100%;
@@ -77,7 +78,8 @@ a:hover {
 .header {
   padding-top: 56px;
   position: fixed;
-  width: 100%; }
+  width: 100%;
+  z-index: 10; }
   .header-inner {
     width: 1200px;
     display: -webkit-box;
@@ -103,9 +105,7 @@ a:hover {
     max-width: 419px;
     margin-left: auto; }
   .header-button {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
+    padding-left: 20px; }
 
 .menu {
   display: -webkit-box;
@@ -113,14 +113,16 @@ a:hover {
   display: flex;
   margin-left: auto;
   width: 420px;
-  -ms-flex-pack: distribute;
-      justify-content: space-around; }
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
   .menu-item {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
+        flex-wrap: wrap;
+    padding: 0 20px; }
   .menu a {
     color: #0A2640;
     font-family: 'Open Sans';
@@ -133,34 +135,23 @@ a:hover {
     .menu a:hover {
       color: #65E4A3; }
 
-.background-circle {
-  display: inline-block;
-  width: 1293px;
-  height: 1293px;
-  border-radius: 50%;
-  background-color: #F1F1F1;
-  position: fixed;
-  top: -728px;
-  left: 727px;
-  background-attachment: fixed;
-  z-index: -1;
-  overflow: hidden; }
-
 .footer {
   margin-top: auto;
   padding: 40px; }
 
 .hero-section {
   position: relative;
-  top: 115px;
   width: 100%;
   padding-top: 125px; }
-  .hero-section-container {
-    width: 1200px;
-    margin: 0 auto; }
   .hero-section-inner {
-    width: 600px;
-    display: inline-block; }
+    padding-top: 56px;
+    width: 1200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .hero-section-box {
+    padding: 26.25px 0px;
+    width: 601px; }
   .hero-section-heading {
     font-family: 'Manrope';
     font-weight: 400;
@@ -175,39 +166,37 @@ a:hover {
     line-height: 28px;
     color: #777777;
     padding-bottom: 50px; }
-
-.hero-section-media {
-  position: relative;
-  top: -355px;
-  width: 494px;
-  left: 706px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 12.5px; }
-  .hero-section-media img {
-    padding: 12.5px; }
+  .hero-section-buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: left;
+        -ms-flex-align: left;
+            align-items: left; }
+  .hero-section::before {
+    content: "";
+    display: inline-block;
+    width: 1293px;
+    height: 1293px;
+    border-radius: 50%;
+    background-color: #F1F1F1;
+    position: absolute;
+    top: -785px;
+    left: 760px; }
+  .hero-section-media {
+    padding-left: 105px;
+    width: 494px; }
 
 .brands {
+  padding: 99.55px 0px 75.63px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-bottom: 75px; }
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .brands-logo {
+    width: 146.45px;
+    height: 41.8px;
+    margin: 0 25px; }
 
 /*# sourceMappingURL=main.min.css.map */

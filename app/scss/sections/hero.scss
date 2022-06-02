@@ -1,17 +1,17 @@
 .hero-section {
 	position: relative;
-	top: 115px;
 	width: 100%;
 	padding-top: 125px;
 
-	&-container {
+	&-inner {
+		padding-top: 56px;
 		width: 1200px;
-		margin: 0 auto;
+		display: flex;
 	}
 
-	&-inner {
-		width: 600px;
-		display: inline-block;
+	&-box {
+		padding: 26.25px 0px;
+		width: 601px;
 	}
 
 	&-heading {
@@ -31,27 +31,38 @@
 		color: $grey;
 		padding-bottom: 50px;
 	}
-}
 
-.hero-section-media {
-	position: relative;
-	top: -355px;
-	width: 494px;
-	left: 706px;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	margin: 12.5px;
+	&-buttons {
+		display: flex;
+		align-items: left;
+	}
 
-	img {
-		padding: 12.5px;
+	&::before {
+		content: "";
+		display: inline-block;
+		width: 1293px;
+		height: 1293px;
+		border-radius: 50%;
+		background-color: #F1F1F1;
+		position: absolute;
+		top: -785px;
+		left: 760px;
+	}
+
+	&-media {
+		padding-left: 105px;
+		width: 494px;
 	}
 }
 
 .brands {
+	padding: 99.55px 0px 75.63px 0px;
 	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	margin-bottom: 75px;
+	flex-wrap: wrap;
+
+	&-logo {
+		width: 146.45px;
+		height: 41.8px;
+		margin: 0 25px;
+	}
 }

@@ -6,6 +6,7 @@
 	padding-top: 56px ;
 	position: fixed;
 	width: 100%;
+	z-index: 10;
 
 	&-inner {
 		width: 1200px;
@@ -34,7 +35,7 @@
 	}
 
 	&-button {
-		display: flex;
+		padding-left: 20px;
 	}
 }
 
@@ -42,11 +43,13 @@
 	display: flex;
 	margin-left: auto;
 	width: 420px;
-	justify-content: space-around;
+	justify-content: flex-end;
 		
 	&-item {
 		display: flex;
 		flex-wrap: wrap;
+		padding: 0 20px;
+		
 	}
 			
 	a {
@@ -63,18 +66,7 @@
 	}
 }
 
-.background-circle {
-	display: inline-block;
-	width: 1293px;
-	height: 1293px;
-	border-radius: 50%;
-	background-color: #F1F1F1;
-	position: fixed;
-	top: -728px;
-	left: 727px;
-	background-attachment: fixed;
-	z-index: -1;
-}
+
 
 	
 
