@@ -19,12 +19,23 @@
         color: $accent;
     }
 
+    &.button  {
+        margin-right: 20px;
+    }
+
+    &.button:last-child  {
+        margin-right: 0px;
+    }
+
     &.lg {
-        margin-right: 24px;
         padding: 16px 56px;
         font-size: 20px;
         line-height: 28px;
+        border-radius: 56px;
 
+        &.button:last-child {
+            margin-right: 0;
+        }
 
         &.dark {
             background-color: $dark;

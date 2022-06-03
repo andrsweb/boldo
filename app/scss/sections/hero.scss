@@ -1,16 +1,15 @@
 .hero-section {
 	position: relative;
 	width: 100%;
-	padding-top: 125px;
+	padding-top: 154px;
 
 	&-inner {
-		padding-top: 56px;
 		width: 1200px;
 		display: flex;
 	}
 
 	&-box {
-		padding: 26.25px 0px;
+		padding-top: 64px;
 		width: 601px;
 	}
 
@@ -29,7 +28,7 @@
 		font-size: 16px;
 		line-height: 28px;
 		color: $grey;
-		padding-bottom: 50px;
+		margin-bottom: 55px;
 	}
 
 	&-buttons {
@@ -45,8 +44,8 @@
 		border-radius: 50%;
 		background-color: #F1F1F1;
 		position: absolute;
-		top: -755px;
-		right: -635px;
+		top: -789px;
+		right: -695px;
 	}
 
 	&-media {
@@ -56,13 +55,19 @@
 }
 
 .brands {
-	padding: 99.55px 0px 75.63px 0px;
+	padding: 96px 0 82px;
 	display: flex;
 	flex-wrap: wrap;
+	margin: 0 -28px;
 
 	&-logo {
-		width: 146.45px;
-		height: 41.8px;
-		margin: 0 25px;
+		width: calc(100% / 6);
+		text-align: center;
+		height: 42px;
+		padding: 0 28px;
+	}
+
+	&-logo img {
+		max-width: 100%;
 	}
 }
