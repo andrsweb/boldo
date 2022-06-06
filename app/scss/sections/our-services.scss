@@ -1,0 +1,91 @@
+.our-services {
+	background-color: $dark;
+
+	&-wrapper {
+		width: 1100px;
+		margin: 83px auto;
+	}
+
+	&-heading {
+		margin: 0 auto;
+		width: 842px;
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		text-align: center;
+
+		&-subtitle {
+			font-family: $openSans;
+			font-weight: 400;
+			font-size: 20px;
+			line-height: 32px;
+			color: #F1F1F1;
+			margin-bottom: 12px;
+		}
+	
+		&-title {
+			font-family: $manrope;
+			font-weight: 400;
+			font-size: 48px;
+			line-height: 72px;
+			color: #FFFFFF;
+			margin-bottom: 70px;
+		}
+	}
+	
+	&-box {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -50px;
+
+		&-inner {
+			padding: 0 50px;
+
+			&-text-wrapp {
+				margin: 20px 0 99px 0;
+			}
+
+			&-images {
+				width: 300px;
+
+				&.image {
+					height: 354px;
+					border-radius: 24px;
+				}
+			}
+
+			&-title {
+				padding-bottom: 27px;
+				font-family: $openSans;
+				font-weight: 400;
+				font-size: 24px;
+				line-height: 36px;
+				color: $white;
+			}
+
+			&-link {
+				font-family: $openSans;
+				font-weight: 700;
+				font-size: 20px;
+				line-height: 36px;
+				color: $white;
+				vertical-align: middle;
+				
+				& img {
+					vertical-align: middle;
+					margin-left: 8px;
+				}
+
+				& a:hover {
+					content: "";
+					color: $accent;
+					transition: color ease 0.35s;
+				}
+			}
+		}
+		
+		& a {
+			color: $white;
+		}
+	}
+}

@@ -214,4 +214,78 @@ ul {
   .brands-logo img {
     max-width: 100%; }
 
+.our-services {
+  background-color: #0A2640; }
+  .our-services-wrapper {
+    width: 1100px;
+    margin: 83px auto; }
+  .our-services-heading {
+    margin: 0 auto;
+    width: 842px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center; }
+    .our-services-heading-subtitle {
+      font-family: "Open Sans";
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 32px;
+      color: #F1F1F1;
+      margin-bottom: 12px; }
+    .our-services-heading-title {
+      font-family: "Manrope";
+      font-weight: 400;
+      font-size: 48px;
+      line-height: 72px;
+      color: #FFFFFF;
+      margin-bottom: 70px; }
+  .our-services-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0 -50px; }
+    .our-services-box-inner {
+      padding: 0 50px; }
+      .our-services-box-inner-text-wrapp {
+        margin: 20px 0 99px 0; }
+      .our-services-box-inner-images {
+        width: 300px; }
+        .our-services-box-inner-images.image {
+          height: 354px;
+          border-radius: 24px; }
+      .our-services-box-inner-title {
+        padding-bottom: 27px;
+        font-family: "Open Sans";
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 36px;
+        color: #ffffff; }
+      .our-services-box-inner-link {
+        font-family: "Open Sans";
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 36px;
+        color: #ffffff;
+        vertical-align: middle; }
+        .our-services-box-inner-link img {
+          vertical-align: middle;
+          margin-left: 8px; }
+        .our-services-box-inner-link a:hover {
+          content: "";
+          color: #65E4A3;
+          -webkit-transition: color ease 0.35s;
+          -o-transition: color ease 0.35s;
+          transition: color ease 0.35s; }
+    .our-services-box a {
+      color: #ffffff; }
+
 /*# sourceMappingURL=main.min.css.map */
