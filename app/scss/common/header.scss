@@ -10,8 +10,12 @@
 	background-color: $light-grey;
 	opacity: 0.8;
 
+	@media (max-width: $md) { 
+		display: none;
+	}
+
 	&-inner {
-		width: 1200px;
+		max-width: 1200px;
 		display: flex;
 		flex-wrap: wrap;
 		align-items: center;
@@ -44,7 +48,7 @@
 .menu {
 	display: flex;
 	margin-left: auto;
-	width: 420px;
+	max-width: 420px;
 	justify-content: flex-end;
 		
 	&-item {

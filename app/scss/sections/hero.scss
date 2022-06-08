@@ -3,14 +3,26 @@
 	width: 100%;
 	padding-top: 154px;
 
+	@media (max-width: $md) { 
+		padding-top: 10px;
+	}
+
 	&-inner {
-		width: 1200px;
 		display: flex;
+		flex-wrap: wrap;
 	}
 
 	&-box {
 		padding-top: 64px;
 		width: 601px;
+
+		@media (max-width: $lg) {
+			width: 100%; 
+		}
+
+		@media (max-width: $md) { 
+			padding-top: 50px;
+		}
 	}
 
 	&-heading {
@@ -20,26 +32,42 @@
 		line-height: 72px;
 		color: $black;
 		padding-bottom: 16px;
+
+		@media (max-width: $lg) { 
+			text-align: center;
+		}
+
+		@media (max-width: $xs) { 
+			font-size: $fs24px;
+			line-height: $lh36px
+		}
 	}
 
 	&-text {
 		font-family: $openSans;
 		font-weight: 400;
-		font-size: 16px;
+		font-size: $fs16px;
 		line-height: 28px;
 		color: $grey;
 		margin-bottom: 55px;
+
+		@media (max-width: $lg) { 
+			text-align: center;
+		}
 	}
 
 	&-buttons {
 		display: flex;
 		align-items: left;
+
+		@media (max-width: $lg) { 
+			justify-content: center;
+		}
 	}
 
 	&::before {
 		content: "";
 		display: inline-block;
-		width: 1293px;
 		height: 1293px;
 		border-radius: 50%;
 		background-color: #F1F1F1;
@@ -50,7 +78,25 @@
 
 	&-media {
 		padding-left: 105px;
-		width: 494px;
+		width: calc(100%-601);
+
+		@media (max-width: $xl) { 
+			padding-left: 0px;
+			margin-top: 40px;
+		}
+
+		@media (max-width: $lg) { 
+			margin: 100px auto; 
+		}
+
+		@media (max-width: $md) { 
+			margin: 50px auto;
+		}
+
+		& img {
+			width: 100%;
+			max-height: 423px;
+		}
 	}
 }
 
@@ -65,6 +111,10 @@
 		text-align: center;
 		height: 42px;
 		padding: 0 28px;
+
+		@media (max-width: $lg) { 
+			width: calc(100% / 3);
+		}
 	}
 
 	&-logo img {

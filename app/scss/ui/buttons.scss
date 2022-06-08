@@ -33,6 +33,13 @@
         line-height: 28px;
         border-radius: 56px;
 
+        @media (max-width: $xs) { 
+            padding: 16px 38px;
+            line-height: 16px;
+            font-size: $fs16px;
+            margin-bottom: 100px;
+        }
+
         &.button:last-child {
             margin-right: 0;
         }
