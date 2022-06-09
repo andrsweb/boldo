@@ -1,8 +1,8 @@
 .button {
-    font-family: 'Open Sans';
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
+    font-family: $openSans;
+    font-weight: $fw700;
+    font-size: $fs16px;
+    line-height: $lh24px;
     border: 2px solid $dark;
     border-radius: 24px;
     color: $dark;
@@ -33,11 +33,14 @@
         line-height: 28px;
         border-radius: 56px;
 
+        @media (max-width: $lg) { 
+            justify-content: center;
+        }
+    
         @media (max-width: $xs) { 
-            padding: 16px 38px;
-            line-height: 16px;
+            padding: 12px 22px;
+            line-height: $lh24px;
             font-size: $fs16px;
-            margin-bottom: 100px;
         }
 
         &.button:last-child {
@@ -47,6 +50,16 @@
         &.dark {
             background-color: $dark;
             color: $white;
+
+            @media (max-width: $lg) { 
+                justify-content: center;
+            }
+        
+            @media (max-width: $xs) { 
+                padding: 12px 22px;
+                line-height: $lh24px;
+                font-size: $fs16px;
+            }
         }
 
         &.dark:hover {
