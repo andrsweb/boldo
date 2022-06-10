@@ -63,6 +63,10 @@
 			flex-direction: column;
 			margin-bottom: 99px;
 		
+			@media (max-width: $lg) {
+				margin-bottom: 40px;
+			}
+
 			@media (max-width: $sm) {
 				align-items: center;
 			}
@@ -87,11 +91,6 @@
 			@media (max-width: $lg) {
 				font-size: $fs20px; 
 			}
-
-			@media (max-width: $sm) {
-				font-size: $fs16px; 
-				padding-left: 10px;
-			}
 		}
 
 		&-link {
@@ -100,13 +99,8 @@
 			font-size: $fs20px;
 			line-height: $lh36px;
 
-			@media (max-width: $md) {
+			@media (max-width: $lg) {
 				font-size: $fs16px; 
-			}
-
-			@media (max-width: $sm) {
-				font-size: $fs14px; 
-				padding-left: 10px;
 			}
 		
 			& a {

@@ -227,6 +227,11 @@ ul {
     -webkit-box-align: left;
         -ms-flex-align: left;
             align-items: left; }
+    @media (max-width: 480px) {
+      .hero-section-buttons {
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; } }
   .hero-section::before {
     content: "";
     display: inline-block;
@@ -261,6 +266,9 @@ ul {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 0 -28px; }
+  @media (max-width: 992px) {
+    .brands {
+      padding: 40px 0 30px; } }
   .brands-logo {
     width: calc(100% / 6);
     text-align: center;
@@ -331,6 +339,9 @@ ul {
         -ms-flex-direction: column;
             flex-direction: column;
     margin-bottom: 99px; }
+    @media (max-width: 992px) {
+      .card-inner {
+        margin-bottom: 40px; } }
     @media (max-width: 576px) {
       .card-inner {
         -webkit-box-align: center;
@@ -351,22 +362,14 @@ ul {
     @media (max-width: 992px) {
       .card-text {
         font-size: 20px; } }
-    @media (max-width: 576px) {
-      .card-text {
-        font-size: 16px;
-        padding-left: 10px; } }
   .card-link {
     font-family: "Open Sans";
     font-weight: 400;
     font-size: 20px;
     line-height: 36px; }
-    @media (max-width: 767px) {
+    @media (max-width: 992px) {
       .card-link {
         font-size: 16px; } }
-    @media (max-width: 576px) {
-      .card-link {
-        font-size: 14px;
-        padding-left: 10px; } }
     .card-link a {
       color: #ffffff;
       -webkit-transition: color ease 0.35s;
@@ -408,8 +411,7 @@ ul {
     .connect .columns {
       padding: 20px 0; } }
   .connect .columns .column-left {
-    margin-right: 75px;
-    max-width: 494px; }
+    margin-right: 75px; }
     @media (max-width: 767px) {
       .connect .columns .column-left {
         margin: 0 auto; } }
@@ -429,7 +431,7 @@ ul {
     .connect .columns .column-left .column-left-inner {
       max-width: 493px; }
       .connect .columns .column-left .column-left-inner .column-left-heading {
-        margin: 226px 0 64px 0;
+        margin: 226px 0 74px 0;
         max-width: 493px;
         font-family: "Manrope";
         font-weight: 400;
@@ -442,33 +444,36 @@ ul {
         @media (max-width: 480px) {
           .connect .columns .column-left .column-left-inner .column-left-heading {
             font-size: 24px; } }
-      .connect .columns .column-left .column-left-inner .column-left-list {
+      .connect .columns .column-left .column-left-inner .column-left-slogan {
         max-width: 493px; }
-        .connect .columns .column-left .column-left-inner .column-left-list .left-list {
-          width: 100%; }
-          .connect .columns .column-left .column-left-inner .column-left-list .left-list-item {
-            height: 68px;
+        .connect .columns .column-left .column-left-inner .column-left-slogan .slogan-inner {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          height: 68px;
+          margin-bottom: 24px;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center; }
+          .connect .columns .column-left .column-left-inner .column-left-slogan .slogan-inner-image {
+            max-width: 28px;
+            max-height: 28px;
+            margin: 0 12px; }
+          .connect .columns .column-left .column-left-inner .column-left-slogan .slogan-inner-text {
             font-family: "Open Sans";
             font-weight: 600;
             font-size: 16px;
             line-height: 28px;
-            color: #000000;
-            padding-bottom: 40px; }
-            @media (max-width: 480px) {
-              .connect .columns .column-left .column-left-inner .column-left-list .left-list-item {
-                font-size: 14px; } }
-          .connect .columns .column-left .column-left-inner .column-left-list .left-list-item:first-child {
-            background: #0A2640;
-            border-radius: 14px;
+            color: #000000; }
+        .connect .columns .column-left .column-left-inner .column-left-slogan .slogan-inner:nth-child(1) {
+          background: #0A2640;
+          border-radius: 6px; }
+          .connect .columns .column-left .column-left-inner .column-left-slogan .slogan-inner:nth-child(1) .slogan-inner-text {
             color: #ffffff; }
-          .connect .columns .column-left .column-left-inner .column-left-list .left-list-item img {
-            max-width: 22px;
-            max-height: 22px;
-            vertical-align: middle;
-            margin-right: 12px; }
+        .connect .columns .column-left .column-left-inner .column-left-slogan .slogan-inner:last-child {
+          margin-bottom: 0; }
   .connect .columns .column-right {
-    margin-left: 75px;
-    max-width: 494px; }
+    margin-left: 75px; }
     @media (max-width: 767px) {
       .connect .columns .column-right {
         margin: 0 auto; } }

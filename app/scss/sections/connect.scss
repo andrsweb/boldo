@@ -14,7 +14,6 @@
 
 		.column-left {
 			margin-right: 75px;
-			max-width: 494px;
 			
 			@media (max-width: $md) {
 				margin: 0 auto;
@@ -43,7 +42,7 @@
 				max-width: 493px;
 
 				.column-left-heading {
-					margin: 226px 0 64px 0;
+					margin: 226px 0 74px 0;
 					max-width: 493px;
 					font-family: $manrope;
 					font-weight: $fw400;
@@ -60,47 +59,48 @@
 					}
 				}
 
-				.column-left-list {
+				.column-left-slogan {
 					max-width: 493px;
+				
+					.slogan-inner {
+						display: flex;
+						height: 68px;
+						margin-bottom: 24px;
+						align-items: center;
 
-					.left-list{
-						width: 100%;
+						&-image {
+							max-width: 28px;
+							max-height: 28px;
+							margin: 0 12px;
+						}
 
-						&-item {
-							height: 68px;
+						&-text {
 							font-family: $openSans;
 							font-weight: $fw600;
 							font-size: $fs16px;
 							line-height: $lh28px;
 							color: $black;
-							padding-bottom: 40px;
-
-							@media (max-width: $xs) {
-								font-size: $fs14px;
-							}
-						}
-
-						&-item:first-child {
-						   background: $dark;
-						   border-radius: 14px;
-							color: $white;
-						}
-
-						&-item img {
-							max-width: 22px;
-							max-height: 22px;
-							vertical-align: middle;
-							margin-right: 12px;
 						}
 					}
-				}
 
+					.slogan-inner:nth-child(1) {
+						background: $dark;
+						border-radius: 6px;
+
+						.slogan-inner-text {
+							color: $white;
+						}
+					}
+
+					.slogan-inner:last-child {
+						margin-bottom: 0;
+					}
+				}
 			}
 		}
 
 		.column-right {
 			margin-left: 75px;
-			max-width: 494px;
 
 			@media (max-width: $md) {
 				margin: 0 auto;
@@ -189,7 +189,6 @@
 				& img {
 				   width: 100%;
 				   height: auto;
-				   
 			}
 		}
 	}

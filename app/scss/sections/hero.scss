@@ -60,6 +60,10 @@
 		display: flex;
 		align-items: left;
 
+		@media (max-width: $xs) { 
+			justify-content: center;
+		}
+
 		
 	}
 
@@ -103,6 +107,10 @@
 	display: flex;
 	flex-wrap: wrap;
 	margin: 0 -28px;
+
+	@media (max-width: $lg) { 
+		padding: 40px 0 30px;
+	}
 
 	&-logo {
 		width: calc(100% / 6);
