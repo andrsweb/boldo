@@ -38,10 +38,13 @@ $lh56px: 56px;
 $lh72px: 72px;
 
 // Media breakpoints
-
 $xs: 480px;
 $sm: 576px;
 $md: 767px;
 $lg: 992px;
 $xl: 1240px;
 $xxl: 1366px;
+
+// Others
+
+$tr: 0.35s; // transitions

@@ -1,10 +1,10 @@
 .hero-section {
 	position: relative;
 	width: 100%;
-	padding-top: 154px;
+	padding-top: 20px;
 
-	@media (max-width: $md) { 
-		padding-top: 10px;
+	@media (min-width: $lg) {
+		padding-top: 154px; 
 	}
 
 	&-inner {
@@ -13,84 +13,93 @@
 	}
 
 	&-box {
-		padding-top: 64px;
-		width: 601px;
+		max-width: 480px;
+		margin: 0 auto;
 
-		@media (max-width: $lg) {
-			width: 100%; 
+		@media (min-width: $sm) { 
+			max-width: 601px;
 		}
 
-		@media (max-width: $md) { 
-			padding-top: 50px;
+		@media (min-width: $md) { 
+			margin: 100px auto ;
+		}
+
+		@media (min-width: $xl) { 
+			margin: 65px 0 120px;
 		}
 	}
 
 	&-heading {
 		font-family: $manrope;
-		font-weight: 400;
-		font-size: 48px;
-		line-height: 72px;
+		font-weight: $fw400;
+		text-align: center;
+		font-size: $fs32px;
+		line-height: $lh36px;
 		color: $black;
 		padding-bottom: 16px;
 
-		@media (max-width: $lg) { 
-			text-align: center;
+		@media (min-width: $sm) { 
+			font-size: $fs48px;
+			line-height: $lh72px;
 		}
 
-		@media (max-width: $xs) { 
-			font-size: $fs24px;
-			line-height: $lh36px
+		@media (min-width: $xl) { 
+			text-align: left;
 		}
 	}
 
 	&-text {
 		font-family: $openSans;
-		font-weight: 400;
+		font-weight: $fw400;
+		text-align: center;
 		font-size: $fs16px;
 		line-height: 28px;
 		color: $grey;
 		margin-bottom: 55px;
 
-		@media (max-width: $lg) { 
-			text-align: center;
+		@media (min-width: $xl) { 
+			text-align: left;
 		}
 	}
 
 	&-buttons {
 		display: flex;
-		align-items: left;
+		justify-content: center;
 
-		@media (max-width: $xs) { 
-			justify-content: center;
+		@media (min-width: $xl) { 
+			justify-content: flex-start;
 		}
 	}
 
 	&::before {
 		content: "";
 		display: inline-block;
-		height: 1293px;
+		height: 100vw;
+		width: 100vw;
 		border-radius: 50%;
 		background-color: #F1F1F1;
 		position: absolute;
-		top: -789px;
-		right: -695px;
+		top: 0;
+		right: 0;
+		transform: translate(56%, -62%);
 	}
 
 	&-media {
-		padding-left: 105px;
-		width: calc(100%-601);
+		justify-content: center;
+		padding-top: 40px;
 
-		@media (max-width: $xl) { 
-			padding-left: 0px;
-			margin-top: 40px;
+		@media (min-width: $sm) { 
+			margin: 0 auto;
 		}
 
-		@media (max-width: $lg) { 
-			margin: 100px auto; 
+		@media (min-width: $lg) { 
+			width: calc(100% - 601px);
+			padding-left: 20px;
 		}
 
-		@media (max-width: $md) { 
-			margin: 50px auto;
+		@media (min-width: $xl) {
+			padding: 0; 
+			padding-left: 105px;
 		}
 
 		& img {
@@ -101,23 +110,28 @@
 }
 
 .brands {
-	padding: 96px 0 82px;
+	padding: 40px 0 20px;
 	display: flex;
 	flex-wrap: wrap;
 	margin: 0 -28px;
 
-	@media (max-width: $lg) { 
-		padding: 40px 0 30px;
+	@media (min-width: $lg) { 
+		padding: 60px 0 40px;
+	}
+
+	@media (min-width: $xl) {
+		padding: 0; 
+		margin-bottom: 90px;
 	}
 
 	&-logo {
-		width: calc(100% / 6);
+		width: calc(100% / 3);
 		text-align: center;
 		height: 42px;
 		padding: 0 28px;
 
-		@media (max-width: $lg) { 
-			width: calc(100% / 3);
+		@media (min-width: $lg) { 
+			width: calc(100% / 6);
 		}
 	}
 

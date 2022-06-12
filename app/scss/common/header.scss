@@ -3,15 +3,24 @@
 }
 
 .header {
+	visibility: hidden;
 	padding-top: 56px ;
 	position: fixed;
 	width: 100%;
 	z-index: 10;
-	background-color: $light-grey;
-	opacity: 0.8;
+	transition: 
+		background-color ease-out $tr, 
+		padding ease-out $tr, 
+		box-shadow ease-out $tr; 
 
-	@media (max-width: $md) { 
-		display: none;
+		@media (min-width: $sm) { 
+			visibility: visible;
+		}	
+	
+	&.scrolled {
+		background-color: $white;
+		box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.05 );
+		padding: 15px 0;
 	}
 
 	&-inner {
