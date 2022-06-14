@@ -2,60 +2,64 @@
    
 	.columns {
 		display: flex;
-		flex-wrap: nowrap;
+		flex-wrap: wrap;
 
-		@media (max-width: $md) {
-			flex-wrap: wrap;
-
-			@media (max-width: $sm) {
-				padding: 20px 0;
-			}
+		@media (min-width: $xl) {
+			flex-wrap: nowrap;
 		}
 
 		.column-left {
-			margin-right: 75px;
-			
-			@media (max-width: $md) {
-				margin: 0 auto;
+			margin: 0 auto;
+
+			@media (min-width: $xxl) {
+				margin-right: 75px;
 			}
 
-			@media (max-width: $xs) {
-				max-width: 440px;
-			}
-			
 			&-image {
 				max-width: 494px;
 				max-height: 610px;
-				margin-top: 120px;
+				margin-bottom: 60px;
 
-				@media (max-width: $md) {
-					margin-top: 50px;
+				@media (min-width: $xxl) {
+					margin-bottom: 226px;
 				}
 
 				& img {
-					width: 100%;
-					height: auto;
+					max-width: 100%;
+					max-height: 100%;
 				}
 			}
 
 			.column-left-inner {
-				max-width: 493px;
+				max-width: 500px;
+
+				margin: 50px 0 50px;
+
+				@media (min-width: $xl) {
+					margin: 125px 0 283px;
+				}
 
 				.column-left-heading {
-					margin: 226px 0 74px 0;
+					padding-bottom: 64px;
 					max-width: 493px;
 					font-family: $manrope;
 					font-weight: $fw400;
-					font-size: $fs36px;
+					font-size: $fs24px;
 					line-height: $lh56px;
 					color: $black;
+					text-align: center;
 
-					@media (max-width: $md) {
-						margin: 50px 0 50px 0;
+					@media (min-width: $md) {
+						font-size: $fs32px;
 					}
 
-					@media (max-width: $xs) {
-						font-size: $fs24px;
+					@media (min-width: $lg) {
+						font-size: $fs36px;
+					}
+
+					@media (min-width: $xxl) {
+						font-size: $fs36px;
+						text-align: left;
 					}
 				}
 
@@ -65,8 +69,12 @@
 					.slogan-inner {
 						display: flex;
 						height: 68px;
-						margin-bottom: 24px;
+						margin-bottom: 23px;
 						align-items: center;
+
+						@media (min-width: $xxl) {
+							align-items: center;
+						}
 
 						&-image {
 							max-width: 28px;
@@ -100,38 +108,43 @@
 		}
 
 		.column-right {
-			margin-left: 75px;
+			margin: 0 auto;
 
-			@media (max-width: $md) {
-				margin: 0 auto;
-			}
-
-			@media (max-width: $md) {
-				max-width: 440px;
+			@media (min-width: $xxl) {
+				margin-left: 75px;
 			}
 
 			.column-right-inner {
+				margin: 50px 0 50px;
 				max-width: 494px;
+				display: flex;
+				flex-direction: column;
 
-				@media (max-width: $md) {
-					text-align: center;
+				@media (min-width: $xl) {
+					margin: 175px 0 177px;
 				}
-				
+
 				.column-right-heading {
-					margin: 186px 0 40px 0;
+					padding-bottom: 40px;
 					width: 100%;
 					font-family: $manrope;
 					font-weight: $fw400;
-					font-size: $fs36px;
+					font-size: $fs24px;
 					line-height: $lh56px;
 					color: $black;
+					text-align: center;
 
-					@media (max-width: $md) {
-						margin: 50px 0 40px 0;
+					@media (min-width: $md) {
+						font-size: $fs32px;
 					}
 
-					@media (max-width: $xs) {
-						font-size: $fs24px;
+					@media (min-width: $lg) {
+						font-size: $fs36px;
+					}
+
+					@media (min-width: $xxl) {
+						text-align: left;
+						padding-top: 15px;
 					}
 				}
 
@@ -145,50 +158,60 @@
 						&-item {
 							font-family: $openSans;
 							font-weight: $fw400;
-							font-size: $fs20px;
+							font-size: $fs16px;
 							line-height: $lh32px;
 							color: $black;
-							padding-bottom: 24px;
+							padding-bottom: 30px;
 							background: url(../../img/dest/we-connect/li.png) no-repeat;
 							padding-left: 63px;
-							
-							@media (max-width: $xs) {
+
+							@media (min-width: $xxl) {
 								font-size: $fs20px;
 							}
 						}
-	
-						&-item:last-child {
-							padding-bottom: 5px;
-						}
 					}
 				}
+				
+				.button {
+					text-align: center;
+					display: flex;
+					padding: 4px 60px;
+					justify-content: center;
+					margin: 0 auto;
 
-				.button.lg.dark {
-					font-size: $fs16px;
-					margin-bottom: 185px;
+					@media (min-width: $xl) {
+						margin: unset;
+						padding: 16px 56px;
+						justify-content: flex-start;
+					}
 
-					@media (max-width: $md) {
-						margin-bottom: 50px;
+					&.lg.dark {
+						font-size: $fs16px;
+						margin-top: 40px;
+
+						@media (min-width: $xl) {
+							font-size: $fs20px;
+							margin-top: 27px;
+						}
 					}
 				}
 			}
 
 			&-image {
-				margin-bottom: 179px;
 				max-width: 444px;
 				max-height: 692px;
+				align-self: center;
+				margin-top: 60px;
 
-				@media (max-width: $md) {
-					margin-bottom: 50px;
+				@media (min-width: $xxl) {
+					margin-top: 128px;
+					align-self: stretch;
 				}
 
-				@media (max-width: $sm) {
-					margin: 0 auto;
-				}
-			}
 				& img {
 				   width: 100%;
 				   height: auto;
+				}
 			}
 		}
 	}

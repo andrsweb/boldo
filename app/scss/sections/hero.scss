@@ -21,7 +21,7 @@
 		}
 
 		@media (min-width: $md) { 
-			margin: 100px auto ;
+			margin: 50px auto ;
 		}
 
 		@media (min-width: $xl) { 
@@ -71,6 +71,31 @@
 		}
 	}
 
+	.button {
+
+		&.lg.dark {
+			padding: 4px 20px;
+			font-size: $fs14px;
+
+			@media (min-width: $md) {
+				font-size: $fs20px;
+			}
+			
+			@media (min-width: $xl) {
+				padding: 8px 55px;
+				margin-right: 19px;
+			}
+		}
+
+		&.lg {
+			font-size: $fs14px;
+
+			@media (min-width: $md) {
+				font-size: $fs20px;
+			}
+		}
+	}
+
 	&::before {
 		content: "";
 		display: inline-block;
@@ -82,6 +107,7 @@
 		top: 0;
 		right: 0;
 		transform: translate(56%, -62%);
+		z-index: -1;
 	}
 
 	&-media {

@@ -33,16 +33,6 @@
         line-height: 28px;
         border-radius: 56px;
 
-        @media (max-width: $lg) { 
-            justify-content: center;
-        }
-    
-        @media (max-width: $xs) { 
-            padding: 12px 22px;
-            line-height: $lh24px;
-            font-size: $fs16px;
-        }
-
         &.button:last-child {
             margin-right: 0;
         }
@@ -50,16 +40,6 @@
         &.dark {
             background-color: $dark;
             color: $white;
-
-            @media (max-width: $lg) { 
-                justify-content: center;
-            }
-        
-            @media (max-width: $xs) { 
-                padding: 12px 22px;
-                line-height: $lh24px;
-                font-size: $fs16px;
-            }
         }
 
         &.dark:hover {

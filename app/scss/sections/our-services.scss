@@ -4,29 +4,39 @@
 	&-subtitle {
 		font-family: $openSans;
 		font-weight: $fw400;
-		font-size: $fs20px;
+		font-size: $fs16px;
 		line-height: $lh32px;
 		color: $light-grey;
 		text-align: center;
-		margin: 82px 0 12px 0;
+		padding: 40px 0 12px 0;
 
-		@media (max-width: $md) { 
-			font-size: $fs16px;
+		@media (min-width: $md) {
+			font-size: $fs20px;
+			padding: 40px 0 12px 0;
+		}
+
+		@media (min-width: $lg) {
+			padding: 80px 0 12px 0;
+			text-align: center;
 		}
 	}
 
 	&-title {
 		font-family: $manrope;
 		font-weight: $fw400;
-		font-size: $fs48px;
+		font-size: $fs32px;
 		line-height: $lh72px;
 		text-align: center;
 		color: $white;
-		margin-bottom: 70px;
+		margin-bottom: 65px;
 
-		@media (max-width: $md) { 
-			font-size: $fs32px;
-			line-height: $lh36px;
+		@media (min-width: $md) {
+			font-size: $fs36px;
+		}
+
+		@media (min-width: $lg) {
+			font-size: $fs48px;
+			text-align: center;
 		}
 	}
 }
@@ -34,49 +44,44 @@
 .services-cards {
 	display: flex;
 	flex-wrap: wrap;
-	margin: 0 -50px;
-	
-	@media (max-width: $md) { 
-		margin: 0 -20px;
-	}
+	margin: 0 -20px;
 
-	@media (max-width: $sm) {
-		margin: 0 -10px; 
-
+	@media (min-width: $xl) {
+		margin: 0 -50px;
 	}
 }
 	.card {
-		width: calc(100% / 3);
-		padding: 0 50px;
+		width: calc(100% / 1);
+		padding: 0 20px;
 
-		@media (max-width: $md) {
-			padding: 0 20px; 
+		@media (min-width: $md) {
+			width: calc(100% / 2);
+			flex-grow: 1;
 		}
 
-		@media (max-width: $sm) {
-			padding: 0 10px;
-			width: calc(100% / 1);
+		@media (min-width: $xl) {
+			width: calc(100% / 3);
+			padding: 0 50px;
 		}
 		
 		&-inner {
 			display: flex;
+			align-items: center;
 			flex-direction: column;
-			margin-bottom: 99px;
-		
-			@media (max-width: $lg) {
-				margin-bottom: 40px;
-			}
+			margin-bottom: 60px;
 
-			@media (max-width: $sm) {
-				align-items: center;
+			@media (min-width: $xl) {
+				margin-bottom: 96px;
+				align-items: stretch;
 			}
 		}
 		
 		&-image {
 			max-width: 300px;
+			
 			& img {
-				max-width: 100%;
-				height: 100%;
+				max-width: 300px;
+				max-height: 354px;
 			}
 		}
 
@@ -87,10 +92,6 @@
 			line-height: $lh36px;
 			color: $white;
 			margin: 24px 0 28px 0;
-
-			@media (max-width: $lg) {
-				font-size: $fs20px; 
-			}
 		}
 
 		&-link {
@@ -99,10 +100,6 @@
 			font-size: $fs20px;
 			line-height: $lh36px;
 
-			@media (max-width: $lg) {
-				font-size: $fs16px; 
-			}
-		
 			& a {
 				color: $white;
 				transition: color ease 0.35s;
@@ -125,10 +122,6 @@
 				max-width: 100%;
 				vertical-align: middle;
 				margin-left: 12px;
-
-				@media (max-width: $md) {
-					margin-left: 8px; 
-				}
 			}
 		
 			&-link:after {

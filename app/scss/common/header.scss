@@ -13,7 +13,7 @@
 		padding ease-out $tr, 
 		box-shadow ease-out $tr; 
 
-		@media (min-width: $sm) { 
+		@media (min-width: $md) { 
 			visibility: visible;
 		}	
 	
