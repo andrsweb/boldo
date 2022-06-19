@@ -327,7 +327,7 @@ ul {
   @media (min-width: 1240px) {
     .brands {
       padding: 0;
-      margin-bottom: 90px; } }
+      margin-bottom: 85px; } }
   .brands-logo {
     width: calc(100% / 3);
     text-align: center;
@@ -364,7 +364,7 @@ ul {
     line-height: 72px;
     text-align: center;
     color: #ffffff;
-    margin-bottom: 65px; }
+    margin-bottom: 72px; }
     @media (min-width: 767px) {
       .services-title {
         font-size: 36px; } }
@@ -411,7 +411,7 @@ ul {
     margin-bottom: 60px; }
     @media (min-width: 1240px) {
       .card-inner {
-        margin-bottom: 96px;
+        margin-bottom: 109px;
         -webkit-box-align: stretch;
             -ms-flex-align: stretch;
                 align-items: stretch; } }
@@ -426,13 +426,13 @@ ul {
     font-size: 24px;
     line-height: 36px;
     color: #ffffff;
-    margin: 24px 0 28px 0; }
+    margin: 20px 0 27px 0; }
   .card-link {
-    font-family: "Open Sans";
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 36px; }
+    font-size: 20px; }
     .card-link a {
+      font-family: "Open Sans";
+      font-weight: 700;
+      line-height: 36px;
       color: #ffffff;
       -webkit-transition: color ease 0.35s;
       -o-transition: color ease 0.35s;
@@ -481,13 +481,13 @@ ul {
       .connect .columns .column-left-image img {
         max-width: 100%;
         max-height: 100%; }
-    .connect .columns .column-left .column-left-inner {
+    .connect .columns .column-left-inner {
       max-width: 500px;
       margin: 50px 0 50px; }
       @media (min-width: 1240px) {
-        .connect .columns .column-left .column-left-inner {
-          margin: 125px 0 283px; } }
-      .connect .columns .column-left .column-left-inner .column-left-heading {
+        .connect .columns .column-left-inner {
+          margin: 120px 0 283px; } }
+      .connect .columns .column-left-inner .column-left-heading {
         padding-bottom: 64px;
         max-width: 493px;
         font-family: "Manrope";
@@ -497,18 +497,18 @@ ul {
         color: #000000;
         text-align: center; }
         @media (min-width: 767px) {
-          .connect .columns .column-left .column-left-inner .column-left-heading {
+          .connect .columns .column-left-inner .column-left-heading {
             font-size: 32px; } }
         @media (min-width: 992px) {
-          .connect .columns .column-left .column-left-inner .column-left-heading {
+          .connect .columns .column-left-inner .column-left-heading {
             font-size: 36px; } }
         @media (min-width: 1366px) {
-          .connect .columns .column-left .column-left-inner .column-left-heading {
+          .connect .columns .column-left-inner .column-left-heading {
             font-size: 36px;
             text-align: left; } }
-      .connect .columns .column-left .column-left-inner .column-left-slogan {
+      .connect .columns .column-left-inner .column-left-slogan {
         max-width: 493px; }
-        .connect .columns .column-left .column-left-inner .column-left-slogan .slogan-inner {
+        .connect .columns .column-left-inner .column-left-slogan .slogan-inner {
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
@@ -518,26 +518,26 @@ ul {
               -ms-flex-align: center;
                   align-items: center; }
           @media (min-width: 1366px) {
-            .connect .columns .column-left .column-left-inner .column-left-slogan .slogan-inner {
+            .connect .columns .column-left-inner .column-left-slogan .slogan-inner {
               -webkit-box-align: center;
                   -ms-flex-align: center;
                       align-items: center; } }
-          .connect .columns .column-left .column-left-inner .column-left-slogan .slogan-inner-image {
+          .connect .columns .column-left-inner .column-left-slogan .slogan-inner-image {
             max-width: 28px;
             max-height: 28px;
             margin: 0 12px; }
-          .connect .columns .column-left .column-left-inner .column-left-slogan .slogan-inner-text {
+          .connect .columns .column-left-inner .column-left-slogan .slogan-inner-text {
             font-family: "Open Sans";
             font-weight: 600;
             font-size: 16px;
             line-height: 28px;
             color: #000000; }
-        .connect .columns .column-left .column-left-inner .column-left-slogan .slogan-inner:nth-child(1) {
+        .connect .columns .column-left-inner .column-left-slogan .slogan-inner:nth-child(1) {
           background: #0A2640;
           border-radius: 6px; }
-          .connect .columns .column-left .column-left-inner .column-left-slogan .slogan-inner:nth-child(1) .slogan-inner-text {
+          .connect .columns .column-left-inner .column-left-slogan .slogan-inner:nth-child(1) .slogan-inner-text {
             color: #ffffff; }
-        .connect .columns .column-left .column-left-inner .column-left-slogan .slogan-inner:last-child {
+        .connect .columns .column-left-inner .column-left-slogan .slogan-inner:last-child {
           margin-bottom: 0; }
   .connect .columns .column-right {
     margin: 0 auto; }

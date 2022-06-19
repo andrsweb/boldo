@@ -1,5 +1,4 @@
 .connect {
-   
 	.columns {
 		display: flex;
 		flex-wrap: wrap;
@@ -30,13 +29,12 @@
 				}
 			}
 
-			.column-left-inner {
+			&-inner {
 				max-width: 500px;
-
 				margin: 50px 0 50px;
 
 				@media (min-width: $xl) {
-					margin: 125px 0 283px;
+					margin: 120px 0 283px;
 				}
 
 				.column-left-heading {
