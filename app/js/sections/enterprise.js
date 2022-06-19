@@ -12,7 +12,7 @@ const sliderInit = () => {
     if (!cards) return
 
     const swiper = new Swiper('.swiper', {
-        slidesPerView: 1, 
+        slidesPerView: 1,
         navigation: {
             nextEl: '.enterprise-arrows .arrow-right',
             prevEl: '.enterprise-arrows .arrow-left'
@@ -28,7 +28,7 @@ const sliderInit = () => {
             },
             992: {
               slidesPerView: 3,
-              spaceBetween: 70
+              spaceBetween: 50
             }
         }
     })

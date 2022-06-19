@@ -676,7 +676,7 @@ ul {
       margin: 50px 0 50px; }
       @media (min-width: 1240px) {
         .connect .columns .column-left-inner {
-          margin: 120px 0 283px; } }
+          margin: 120px 0 282px; } }
       .connect .columns .column-left-inner .column-left-heading {
         padding-bottom: 64px;
         max-width: 493px;
@@ -746,7 +746,7 @@ ul {
               flex-direction: column; }
       @media (min-width: 1240px) {
         .connect .columns .column-right .column-right-inner {
-          margin: 175px 0 177px; } }
+          margin: 175px 0 170px; } }
       .connect .columns .column-right .column-right-inner .column-right-heading {
         padding-bottom: 40px;
         width: 100%;
@@ -843,7 +843,7 @@ ul {
             flex-wrap: wrap; } }
     @media (min-width: 992px) {
       .enterprise-header {
-        margin-bottom: 60px; } }
+        margin-bottom: 61px; } }
     .enterprise-header .enterprise-heading {
       width: 100%;
       font-family: "Open Sans";
@@ -856,12 +856,13 @@ ul {
       @media (min-width: 767px) {
         .enterprise-header .enterprise-heading {
           font-size: 48px;
-          margin: 50px 0 0;
+          margin: 98px 0 0;
           text-align: left;
-          width: calc(100% - 172px); } }
+          width: calc(100% - 172px);
+          padding-bottom: 10px; } }
       @media (min-width: 992px) {
         .enterprise-header .enterprise-heading {
-          padding-right: 25%; } }
+          padding-right: 20%; } }
     .enterprise-header .enterprise-arrows {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -910,23 +911,21 @@ ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding-bottom: 95px; }
+    padding-bottom: 97px; }
     .enterprise-cards .enterprise-card {
       background: #ffffff;
       width: calc(100% / 3);
       height: 100%;
-      border-radius: 12px; }
+      border-radius: 12px;
+      padding: 38px 40px 36px; }
       .enterprise-cards .enterprise-card-inner {
-        max-width: 270px;
-        margin: 0 auto;
-        padding: 40px 0 40px 0; }
+        max-width: 270px; }
         .enterprise-cards .enterprise-card-inner-text {
           font-family: "Open Sans";
           font-weight: 400;
           font-size: 24px;
           line-height: 36px;
-          padding-bottom: 40px;
-          text-align: center; }
+          padding-bottom: 40px; }
         .enterprise-cards .enterprise-card-inner .enterprise-card-footer {
           display: -webkit-box;
           display: -ms-flexbox;
@@ -955,8 +954,7 @@ ul {
               font-family: "Open Sans";
               font-weight: 400;
               font-size: 14px;
-              line-height: 32px;
-              color: #65E4A3;
+              line-height: 22px;
               text-align: left; }
 
 /*# sourceMappingURL=main.min.css.map */
