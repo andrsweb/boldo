@@ -12,7 +12,7 @@
 		}
 
 		@media (min-width: $lg) {
-			margin-bottom: 60px;
+			margin-bottom: 61px;
 		}
 
 		.enterprise-heading {
@@ -24,17 +24,17 @@
 			color: $white;
 			margin: 40px 0 40px;
 			text-align: center;
-			
 
 			@media (min-width: $md) {
 				font-size: $fs48px;
-				margin: 50px 0 0;
+				margin: 98px 0 0;
 				text-align: left;
 				width: calc(100% - 172px);
+				padding-bottom: 10px
 			}
 
 			@media (min-width: $lg) {
-				padding-right: 25%;
+				padding-right: 20%;
 			}
 
 		}
@@ -48,7 +48,7 @@
 			@media (min-width: $md) {
 				align-self: flex-end;
 			}
-			
+
 			.arrow-left {
 				margin-right: 28px;
 			}
@@ -74,31 +74,29 @@
 					max-height: 39px;
 				}
 			}
-		}	
-	}	
+		}
+	}
 
 	&-cards {
 		display: flex;
-		padding-bottom: 95px;
+		padding-bottom: 97px;
 
 		.enterprise-card {
 			background: $white;
 			width: calc(100% / 3);
 			height: 100%;
 			border-radius: 12px;
+			padding: 38px 40px 36px;
 
 			&-inner {
 				max-width: 270px;
-				margin: 0 auto;
-				padding: 40px 0 40px 0;
 
 				&-text {
 					font-family: $openSans;
 					font-weight: $fw400;
 					font-size: $fs24px;
 					line-height: $lh36px;
-					padding-bottom: 40px;
-					text-align: center;
+					padding-bottom: 40px
 				}
 
 				.enterprise-card-footer {
@@ -123,17 +121,16 @@
 							color: $dark;
 							text-align: left;
 						}
-				
+
 						&-job {
 							font-family: $openSans;
 							font-weight: $fw400;
 							font-size: $fs14px;
-							line-height: $lh32px;
-							color: $accent;
+							line-height: 22px;
 							text-align: left;
 						}
 					}
-				}	
+				}
 			}
 		}
 	}

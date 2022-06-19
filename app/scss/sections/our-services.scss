@@ -28,7 +28,7 @@
 		line-height: $lh72px;
 		text-align: center;
 		color: $white;
-		margin-bottom: 65px;
+		margin-bottom: 72px;
 
 		@media (min-width: $md) {
 			font-size: $fs36px;
@@ -50,86 +50,86 @@
 		margin: 0 -50px;
 	}
 }
-	.card {
-		width: calc(100% / 1);
-		padding: 0 20px;
 
-		@media (min-width: $md) {
-			width: calc(100% / 2);
-			flex-grow: 1;
-		}
+.card {
+	width: calc(100% / 1);
+	padding: 0 20px;
+
+	@media (min-width: $md) {
+		width: calc(100% / 2);
+		flex-grow: 1;
+	}
+
+	@media (min-width: $xl) {
+		width: calc(100% / 3);
+		padding: 0 50px;
+	}
+
+	&-inner {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		margin-bottom: 60px;
 
 		@media (min-width: $xl) {
-			width: calc(100% / 3);
-			padding: 0 50px;
-		}
-		
-		&-inner {
-			display: flex;
-			align-items: center;
-			flex-direction: column;
-			margin-bottom: 60px;
-
-			@media (min-width: $xl) {
-				margin-bottom: 96px;
-				align-items: stretch;
-			}
-		}
-		
-		&-image {
-			max-width: 300px;
-			
-			& img {
-				max-width: 300px;
-				max-height: 354px;
-			}
-		}
-
-		&-text {
-			font-family: $openSans;
-			font-weight: $fw400;
-			font-size: $fs24px;
-			line-height: $lh36px;
-			color: $white;
-			margin: 24px 0 28px 0;
-		}
-
-		&-link {
-			font-family: $openSans;
-			font-weight: $fw400;
-			font-size: $fs20px;
-			line-height: $lh36px;
-
-			& a {
-				color: $white;
-				transition: color ease 0.35s;
-				vertical-align: middle;
-			}
-
-			& a:hover {
-				content: "";
-				color: $accent;
-				cursor: pointer;
-			}
-
-			&.img {
-				max-width: 24px;
-				max-height: 24px;
-			
-			}
-
-			& img {
-				max-width: 100%;
-				vertical-align: middle;
-				margin-left: 12px;
-			}
-		
-			&-link:after {
-				content: "";
-				display: block;
-				border-bottom: solid 1px;
-				color: $white;
-				width: 65%;
-			}
+			margin-bottom: 109px;
+			align-items: stretch;
 		}
 	}
+
+	&-image {
+		max-width: 300px;
+
+		& img {
+			max-width: 300px;
+			max-height: 354px;
+		}
+	}
+
+	&-text {
+		font-family: $openSans;
+		font-weight: $fw400;
+		font-size: $fs24px;
+		line-height: $lh36px;
+		color: $white;
+		margin: 20px 0 27px 0;
+	}
+
+	&-link {
+		font-size: $fs20px;
+
+		& a {
+			font-family: $openSans;
+			font-weight: $fw700;
+			line-height: $lh36px;
+			color: $white;
+			transition: color ease 0.35s;
+			vertical-align: middle;
+		}
+
+		& a:hover {
+			content: "";
+			color: $accent;
+			cursor: pointer;
+		}
+
+		&.img {
+			max-width: 24px;
+			max-height: 24px;
+		}
+
+		& img {
+			max-width: 100%;
+			vertical-align: middle;
+			margin-left: 12px;
+		}
+
+		&-link:after {
+			content: "";
+			display: block;
+			border-bottom: solid 1px;
+			color: $white;
+			width: 65%;
+		}
+	}
+}

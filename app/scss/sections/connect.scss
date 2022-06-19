@@ -1,5 +1,4 @@
 .connect {
-   
 	.columns {
 		display: flex;
 		flex-wrap: wrap;
@@ -30,13 +29,12 @@
 				}
 			}
 
-			.column-left-inner {
+			&-inner {
 				max-width: 500px;
-
 				margin: 50px 0 50px;
 
 				@media (min-width: $xl) {
-					margin: 125px 0 283px;
+					margin: 120px 0 282px;
 				}
 
 				.column-left-heading {
@@ -65,7 +63,7 @@
 
 				.column-left-slogan {
 					max-width: 493px;
-				
+
 					.slogan-inner {
 						display: flex;
 						height: 68px;
@@ -121,7 +119,7 @@
 				flex-direction: column;
 
 				@media (min-width: $xl) {
-					margin: 175px 0 177px;
+					margin: 175px 0 170px;
 				}
 
 				.column-right-heading {
@@ -151,7 +149,7 @@
 				.column-right-list {
 					max-width: 493px;
 					margin-bottom: 56px;
-	
+
 					.right-list {
 						max-width: 100%;
 
@@ -209,8 +207,8 @@
 				}
 
 				& img {
-				   width: 100%;
-				   height: auto;
+					width: 100%;
+					height: auto;
 				}
 			}
 		}
