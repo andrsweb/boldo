@@ -30,14 +30,6 @@ window.addEventListener('scroll', () => {
     }
 }) 
 
-// export const sumFunc = (a, b) => {
-//     if (typeof(a) !== 'number' || typeof(b) !== 'number' ) {
-//         console.error('sosi loh')
-//         return
-//     }
-//     return a + b 
-// }
-
 
 
 

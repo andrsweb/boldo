@@ -1,0 +1,140 @@
+.enterprise {
+	background-color: $dark;
+
+	&-header {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 40px;
+
+		@media (min-width: $md) {
+			flex-direction: row;
+			flex-wrap: wrap;
+		}
+
+		@media (min-width: $lg) {
+			margin-bottom: 60px;
+		}
+
+		.enterprise-heading {
+			width: 100%;
+			font-family: $openSans;
+			font-weight: $fw400;
+			font-size: $fs32px;
+			line-height: $lh72px;
+			color: $white;
+			margin: 40px 0 40px;
+			text-align: center;
+			
+
+			@media (min-width: $md) {
+				font-size: $fs48px;
+				margin: 50px 0 0;
+				text-align: left;
+				width: calc(100% - 172px);
+			}
+
+			@media (min-width: $lg) {
+				padding-right: 25%;
+			}
+
+		}
+
+		.enterprise-arrows {
+			display: flex;
+			flex-wrap: wrap;
+			width: 172px;
+			align-self: center;
+
+			@media (min-width: $md) {
+				align-self: flex-end;
+			}
+			
+			.arrow-left {
+				margin-right: 28px;
+			}
+
+			.arrow-left,
+			.arrow-right {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				height: 72px;
+				width: 72px;
+				background-color: $white;
+				border-radius: 50%;
+				transition: ease 0.35s;
+
+				&:hover {
+					opacity: 0.8;
+				}
+
+				img {
+					max-width: 36px;
+					max-height: 39px;
+				}
+			}
+		}	
+	}	
+
+	&-cards {
+		display: flex;
+		padding-bottom: 95px;
+
+		.enterprise-card {
+			background: $white;
+			width: calc(100% / 3);
+			height: 100%;
+			border-radius: 12px;
+
+			&-inner {
+				max-width: 270px;
+				margin: 0 auto;
+				padding: 40px 0 40px 0;
+
+				&-text {
+					font-family: $openSans;
+					font-weight: $fw400;
+					font-size: $fs24px;
+					line-height: $lh36px;
+					padding-bottom: 40px;
+					text-align: center;
+				}
+
+				.enterprise-card-footer {
+					display: flex;
+
+					& img {
+						width: 58px;
+						height: 58px;
+					}
+
+					.enterprise-card-footer-wrapp {
+						display: flex;
+						flex-direction: column;
+						max-width: 196px;
+						padding-left: 16px;
+
+						&-author {
+							font-family: $openSans;
+							font-weight: $fw700;
+							font-size: $fs16px;
+							line-height: $lh32px;
+							color: $dark;
+							text-align: left;
+						}
+				
+						&-job {
+							font-family: $openSans;
+							font-weight: $fw400;
+							font-size: $fs14px;
+							line-height: $lh32px;
+							color: $accent;
+							text-align: left;
+						}
+					}
+				}	
+			}
+		}
+	}
+}
