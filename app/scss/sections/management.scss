@@ -1,0 +1,97 @@
+.management {
+	padding-bottom: 124px;
+	
+	&-button {
+		display: flex;
+		justify-content: center;
+		margin-top: 84px;
+	}
+	
+	&-header {
+
+		&-subtitle {
+			font-family: $openSans;
+			font-weight: $fw400;
+			font-size: $fs20px;
+			line-height: $lh32px;
+			color: $grey;
+			text-align: center;
+		}
+
+		&-title {
+			font-family: $manrope;
+			font-weight: $fw400;
+			font-size: $fs48px;
+			line-height: $lh72px;
+			color: $black;
+			text-align: center;
+			margin-bottom: 79px;
+		}
+	}
+
+	&-cards {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+	}
+
+	&-card {
+		width: calc(100% / 3);
+
+		&-inner {
+			width: 300px;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+
+			&-image {
+				width: 100%;
+
+				& img {
+					width: 100%;
+				}
+			}
+
+			&-date {
+				font-family: $openSans;
+				font-weight: $fw700;
+				font-size: $fs16px;
+				line-height: $lh28px;
+				color: $dark;
+				margin: 24px 0 12px;
+
+				& span {
+					color: $grey;
+					padding-left: 12px;
+				}
+			}
+
+			&-text {
+				font-family: $openSans;
+				font-weight: $fw400;
+				font-size: $fs20px;
+				line-height: $lh32px;
+				color: $black;
+				text-align: left;
+				margin-bottom: 20px;
+			}
+
+			&-footer {
+				display: flex;
+				flex-wrap: wrap;
+
+				&-ico {
+					padding-right: 12px;
+				}
+	
+				&-name {
+					font-family: $openSans;
+					font-weight: $fw400;
+					font-size: $fs16px;
+					line-height: $lh28px;
+					color: $black;
+				}
+			}
+		}
+	}
+}

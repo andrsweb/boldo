@@ -1,5 +1,7 @@
 import './common/common'
 import './common/test'
-import './sections/enterprise'
 
+// Sections
+import './sections/enterprise'
+import './sections/blog'
 

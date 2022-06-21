@@ -1,7 +1,7 @@
 .hero-section {
 	position: relative;
 	width: 100%;
-	padding-top: 20px;
+	padding: 20px 0 75px;
 
 	@media (min-width: $lg) {
 		padding-top: 154px; 
@@ -147,7 +147,6 @@
 
 	@media (min-width: $xl) {
 		padding: 0; 
-		margin-bottom: 85px;
 	}
 
 	&-logo {

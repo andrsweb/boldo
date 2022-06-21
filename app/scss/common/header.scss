@@ -3,7 +3,6 @@
 }
 
 .header {
-	visibility: hidden;
 	padding-top: 56px ;
 	position: fixed;
 	width: 100%;
@@ -13,10 +12,6 @@
 		padding ease-out $tr, 
 		box-shadow ease-out $tr; 
 
-		@media (min-width: $md) { 
-			visibility: visible;
-		}	
-	
 	&.scrolled {
 		background-color: $white;
 		box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.05 );

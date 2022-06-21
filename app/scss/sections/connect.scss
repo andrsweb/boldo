@@ -1,214 +1,167 @@
 .connect {
-	.columns {
+	padding-top: 50px;
+
+	@media (min-width: $xl) {
+		padding-top: 120px;
+	}
+	
+	&-inner {
 		display: flex;
+		flex-direction: row;
 		flex-wrap: wrap;
+		align-self: center;
 
 		@media (min-width: $xl) {
 			flex-wrap: nowrap;
 		}
 
-		.column-left {
-			margin: 0 auto;
 
-			@media (min-width: $xxl) {
-				margin-right: 75px;
+		&-img {
+			width: 100%;
+
+			@media (min-width: $md) {
+				width: 70%;
+				margin: 0 auto;
 			}
 
-			&-image {
-				max-width: 494px;
-				max-height: 610px;
-				margin-bottom: 60px;
-
-				@media (min-width: $xxl) {
-					margin-bottom: 226px;
-				}
-
-				& img {
-					max-width: 100%;
-					max-height: 100%;
-				}
+			@media (min-width: $lg) {
+				width: 60%;
 			}
 
-			&-inner {
-				max-width: 500px;
-				margin: 50px 0 50px;
+			@media (min-width: $xl) {
+				width: 100%;
+			}
+
+			& img {
+				width: 100%;
+			}
+		}
+
+		&-list {
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+
+			@media (min-width: $xl) {
+				padding-left: 150px;
+				margin-top: 66px;
+				margin-bottom: 120px;
+			}
+
+			
+
+			&-header {
+				font-family: $manrope;
+				font-weight: $fw400;
+				font-size: $fs24px;
+				line-height: $lh56px;
+				color: $black;
+				padding-bottom: 40px;
+				text-align: center;
+
+				@media (min-width: $lg) {
+					font-size: $fs36px;
+				}
 
 				@media (min-width: $xl) {
-					margin: 120px 0 282px;
+					text-align: left;
+				}
+			}
+
+			&-items {
+				display: flex;
+				flex-direction: column;
+				padding-bottom: 50px;
+				text-align: center;
+
+				@media (min-width: $xl) {
+					text-align: left;
 				}
 
-				.column-left-heading {
-					padding-bottom: 64px;
-					max-width: 493px;
-					font-family: $manrope;
+				&-item {
+					padding-bottom: 24px;
+					font-family: $openSans;
 					font-weight: $fw400;
-					font-size: $fs24px;
-					line-height: $lh56px;
+					font-size: $fs16px;
+					line-height: $lh36px;
 					color: $black;
-					text-align: center;
 
-					@media (min-width: $md) {
-						font-size: $fs32px;
-					}
-
-					@media (min-width: $lg) {
-						font-size: $fs36px;
-					}
-
-					@media (min-width: $xxl) {
-						font-size: $fs36px;
-						text-align: left;
+					&:last-child {
+						padding-bottom: 0px;
 					}
 				}
 
-				.column-left-slogan {
-					max-width: 493px;
+				&-button {
+					margin-top: 56px;
+				}
 
-					.slogan-inner {
-						display: flex;
-						height: 68px;
-						margin-bottom: 23px;
-						align-items: center;
-
-						@media (min-width: $xxl) {
-							align-items: center;
-						}
-
-						&-image {
-							max-width: 28px;
-							max-height: 28px;
-							margin: 0 12px;
-						}
-
-						&-text {
-							font-family: $openSans;
-							font-weight: $fw600;
-							font-size: $fs16px;
-							line-height: $lh28px;
-							color: $black;
-						}
-					}
-
-					.slogan-inner:nth-child(1) {
-						background: $dark;
-						border-radius: 6px;
-
-						.slogan-inner-text {
-							color: $white;
-						}
-					}
-
-					.slogan-inner:last-child {
-						margin-bottom: 0;
-					}
+				& li::before {
+					content: "";
+					background: url(../../img/dest/we-connect/li.png) no-repeat;
+					padding: 0 63px 15px 0;
 				}
 			}
 		}
 
-		.column-right {
-			margin: 0 auto;
+		//bottom
+		&.reverse {
+			flex-direction: row;
+
+			@media (min-width: $lg) {
+				flex-direction: row-reverse;
+			}
+		}
+		&-text {
+			display: flex;
+			flex-direction: column;
+			padding-bottom: 50px;
+
+			@media (min-width: $xl) {
+				padding-right: 10%;
+				margin-top: 106px;
+			}
 
 			@media (min-width: $xxl) {
-				margin-left: 75px;
+				padding-right: 10%;
 			}
 
-			.column-right-inner {
-				margin: 50px 0 50px;
-				max-width: 494px;
-				display: flex;
-				flex-direction: column;
+			&-heading {
+				font-family: $manrope;
+				font-weight: $fw400;
+				font-size: $fs24px;
+				line-height: $lh56px;
+				color: $black;
+				text-align: center;
+				padding-bottom: 64px;
+
+				@media (min-width: $lg) {
+					font-size: $fs36px;
+				}
 
 				@media (min-width: $xl) {
-					margin: 175px 0 170px;
-				}
-
-				.column-right-heading {
-					padding-bottom: 40px;
-					width: 100%;
-					font-family: $manrope;
-					font-weight: $fw400;
-					font-size: $fs24px;
-					line-height: $lh56px;
-					color: $black;
-					text-align: center;
-
-					@media (min-width: $md) {
-						font-size: $fs32px;
-					}
-
-					@media (min-width: $lg) {
-						font-size: $fs36px;
-					}
-
-					@media (min-width: $xxl) {
-						text-align: left;
-						padding-top: 15px;
-					}
-				}
-
-				.column-right-list {
-					max-width: 493px;
-					margin-bottom: 56px;
-
-					.right-list {
-						max-width: 100%;
-
-						&-item {
-							font-family: $openSans;
-							font-weight: $fw400;
-							font-size: $fs16px;
-							line-height: $lh32px;
-							color: $black;
-							padding-bottom: 30px;
-							background: url(../../img/dest/we-connect/li.png) no-repeat;
-							padding-left: 63px;
-
-							@media (min-width: $xxl) {
-								font-size: $fs20px;
-							}
-						}
-					}
-				}
-				
-				.button {
-					text-align: center;
-					display: flex;
-					padding: 4px 60px;
-					justify-content: center;
-					margin: 0 auto;
-
-					@media (min-width: $xl) {
-						margin: unset;
-						padding: 16px 56px;
-						justify-content: flex-start;
-					}
-
-					&.lg.dark {
-						font-size: $fs16px;
-						margin-top: 40px;
-
-						@media (min-width: $xl) {
-							font-size: $fs20px;
-							margin-top: 27px;
-						}
-					}
+					text-align: left;
 				}
 			}
 
-			&-image {
-				max-width: 444px;
-				max-height: 692px;
-				align-self: center;
-				margin-top: 60px;
+			&-item {
+				font-family: $openSans;
+				font-weight: $fw600;
+				font-size: $fs16px;
+				line-height: $lh28px;
+				color: $black;
+				padding-bottom: 24px;
+				text-align: center;
 
-				@media (min-width: $xxl) {
-					margin-top: 128px;
-					align-self: stretch;
+				@media (min-width: $xl) {
+					text-align: left;
 				}
 
+				&:last-child {
+					padding-bottom: 0;
+				}
+				
 				& img {
-					width: 100%;
-					height: auto;
+					padding-right: 12px;
 				}
 			}
 		}

@@ -1,0 +1,91 @@
+.blog {
+	padding-bottom: 124px;
+	&-img {
+		margin: 0 auto;
+		
+		& img {
+			width: 100%;
+		}
+	}
+
+	&-heading {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 56px;
+
+		@media (min-width: $xl) {
+			align-items: unset;
+			flex-direction: row;
+		}
+
+		&-header {
+			width: 50%;
+			font-family: $manrope;
+			font-weight: $fw400;
+			font-size: $fs24px;
+			line-height: $lh56px;
+			color: $black;
+			text-align: center;
+			padding-bottom: 50px;
+
+			@media (min-width: $xl) {
+				font-size: $fs36px;
+				text-align: left;
+				padding-right: 60px;
+			}
+		}
+
+		&-dropdown {
+			width: 50%;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+
+			@media (min-width: $xl) {
+				padding-left: 50px;
+			}
+
+			.dropdown-question {
+				display: flex;
+				flex-direction: column;
+			   
+				&-text {
+					font-family: $openSans;
+					font-weight: $fw400;
+					font-size: $fs20px;
+					line-height: $lh32px;
+					color: $black;
+					padding-bottom: 55px;
+				}
+
+				.dropdown-open {
+					display: none;
+					font-family: $manrope;
+					font-weight: $fw400;
+					font-size: $fs16px;
+					line-height: $lh32px;
+					color: $black;
+					padding-bottom: 20px;
+				}
+
+				&-ico, &-ico1 {
+					position: absolute;
+					right: 0;
+					width: 28px;
+					height: 28px;
+					transition: 0.3s ease;
+					padding-right: 20%;
+					@media (min-width: $xl) {
+						padding-right: 0;
+						right: 20px;
+					}
+
+					&:hover {
+						opacity: 0.8;
+					}
+				}
+			}
+		}
+	}
+}

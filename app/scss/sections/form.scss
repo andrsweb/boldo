@@ -1,0 +1,70 @@
+.company-form{
+padding-bottom: 72px;
+
+	&-header {
+		position: relative;
+	   background: $dark;
+	   border-radius: 12px;
+
+	   &::before {
+		content: "";
+		display: inline-block;
+		height: 100vw;
+		width: 100vw;
+		border-radius: 50%;
+		background-color: #1C3D5B;
+		position: absolute;
+		top: 0;
+		right: 0;
+		transform: translate(50%, -50%);
+		z-index: -2;
+		}
+
+		&-title {
+			font-family: $manrope;
+			font-weight: $fw400;
+			font-size: $fs48px;
+			line-height: $lh72px;
+			color: $white;
+			text-align: center;
+			padding-bottom: 48px;
+		}
+
+		.header-form {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding-bottom: 72px;
+
+			&-input {
+				padding-right: 24px;
+			}
+
+			&-button {
+				
+				.button.lg {
+					background: $accent;
+					transition: all ease 0.35s;
+					&:hover {
+						color: $dark;
+					}
+				}
+			}
+		}	
+		
+		.email {
+			width: 370px;
+			height: 56px;
+			border-radius: 24px;
+			font-family: $openSans;
+			font-weight: $fw400;
+			font-size: $fs20px;
+			line-height: $lh32px;
+			color: $black;
+			text-align: center;
+			border: 0;
+		}
+	}
+}
+
+

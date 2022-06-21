@@ -1,5 +1,6 @@
 .services {
 	background-color: $dark;
+	padding: 84px 0 96px;
 
 	&-subtitle {
 		font-family: $openSans;
@@ -8,15 +9,13 @@
 		line-height: $lh32px;
 		color: $light-grey;
 		text-align: center;
-		padding: 40px 0 12px 0;
+		padding-bottom: 12px;
 
 		@media (min-width: $md) {
 			font-size: $fs20px;
-			padding: 40px 0 12px 0;
 		}
 
 		@media (min-width: $lg) {
-			padding: 80px 0 12px 0;
 			text-align: center;
 		}
 	}
@@ -53,7 +52,7 @@
 
 .card {
 	width: calc(100% / 1);
-	padding: 0 20px;
+	padding: 0 20px 30px 0;
 
 	@media (min-width: $md) {
 		width: calc(100% / 2);
@@ -69,10 +68,8 @@
 		display: flex;
 		align-items: center;
 		flex-direction: column;
-		margin-bottom: 60px;
 
 		@media (min-width: $xl) {
-			margin-bottom: 109px;
 			align-items: stretch;
 		}
 	}
