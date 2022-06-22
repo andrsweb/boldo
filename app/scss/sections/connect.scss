@@ -1,169 +1,148 @@
 .connect {
-	padding-top: 50px;
+	padding-top: 120px;
 
-	@media (min-width: $xl) {
-		padding-top: 120px;
-	}
-	
 	&-inner {
-		display: flex;
+		display: flex; 
+		flex-wrap: wrap; 
 		flex-direction: row;
-		flex-wrap: wrap;
-		align-self: center;
 
 		@media (min-width: $xl) {
 			flex-wrap: nowrap;
 		}
 
+		&.reverse {
+			flex-direction: row-reverse;
+		}
+	}
+
+	&-image {
+		width: 100%;
+		
+		& img {
+			width: 100%; 
+			height: auto;
+
+			@media (min-width: $xl) {
+				width: 493px;
+			}
+		}
+	}
+
+	&-heading {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	 	margin: 0 auto; 
+
+		 @media (min-width: $xl) {
+			margin-left: 100px;
+			align-items: unset;
+		}
+
+		@media (min-width: $xxl) {
+			margin-left: 135px;
+		}
+	}
+
+	&-heading.reverse {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	 	margin: 0 auto; 
+
+		 @media (min-width: $xl) {
+			margin-right: 100px;
+			align-items: unset;
+		}
+
+		@media (min-width: $xxl) {
+			margin-right: 135px;
+		}
+	}	
+
+	&-header {
+		padding-top: 66px;
+		font-family: $manrope;
+		font-weight: $fw400;
+		font-size: $fs24px; 
+		line-height: $lh56px;
+		color:	$black;
+		margin-bottom: 40px;
+		text-align: center; 
+
+		@media (min-width: $lg) {
+			font-size: $fs36px;
+		}
+
+		@media (min-width: $xl) {
+			text-align: left;
+		}
+	}
+
+	&-header.reverse {
+		margin-bottom: 64px;
+	}
+
+	&-list {
+		margin-bottom: 30px;
+
+		&-item {
+			font-family: $openSans;
+			font-weight: $fw400;
+			font-size: $fs16px; 
+			line-height: $lh36px;
+			color: $black;
+			margin-bottom: 24px;
+			background: url(../../img/dest/we-connect/li.png) no-repeat;
+			padding-left: 60px;
+
+			@media (min-width: $lg) {
+				font-size: $fs20px;
+			}
+		}
+
+		&-button {
+			display: flex;
+			justify-content: center; 
+
+			@media (min-width: $xl) {
+				justify-content: flex-start;
+			}
+
+			.button.lg.dark {
+				width: 210px;
+				font-size: $fs16px;
+			}
+		}
+	}
+
+	&-items {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&-item {
+		display: flex;
+		margin-bottom: 33px;
+		align-items: center;
+
+		&:first-child {
+			background: $dark;
+		}
+
+		&-wrapp {}
 
 		&-img {
-			width: 100%;
-
-			@media (min-width: $md) {
-				width: 70%;
-				margin: 0 auto;
-			}
-
-			@media (min-width: $lg) {
-				width: 60%;
-			}
-
-			@media (min-width: $xl) {
-				width: 100%;
-			}
-
-			& img {
-				width: 100%;
-			}
+			padding-right: 12px;
 		}
 
-		&-list {
-			display: flex;
-			flex-direction: column;
-			width: 100%;
-
-			@media (min-width: $xl) {
-				padding-left: 150px;
-				margin-top: 66px;
-				margin-bottom: 120px;
-			}
-
-			
-
-			&-header {
-				font-family: $manrope;
-				font-weight: $fw400;
-				font-size: $fs24px;
-				line-height: $lh56px;
-				color: $black;
-				padding-bottom: 40px;
-				text-align: center;
-
-				@media (min-width: $lg) {
-					font-size: $fs36px;
-				}
-
-				@media (min-width: $xl) {
-					text-align: left;
-				}
-			}
-
-			&-items {
-				display: flex;
-				flex-direction: column;
-				padding-bottom: 50px;
-				text-align: center;
-
-				@media (min-width: $xl) {
-					text-align: left;
-				}
-
-				&-item {
-					padding-bottom: 24px;
-					font-family: $openSans;
-					font-weight: $fw400;
-					font-size: $fs16px;
-					line-height: $lh36px;
-					color: $black;
-
-					&:last-child {
-						padding-bottom: 0px;
-					}
-				}
-
-				&-button {
-					margin-top: 56px;
-				}
-
-				& li::before {
-					content: "";
-					background: url(../../img/dest/we-connect/li.png) no-repeat;
-					padding: 0 63px 15px 0;
-				}
-			}
-		}
-
-		//bottom
-		&.reverse {
-			flex-direction: row;
-
-			@media (min-width: $lg) {
-				flex-direction: row-reverse;
-			}
-		}
 		&-text {
-			display: flex;
-			flex-direction: column;
-			padding-bottom: 50px;
-
-			@media (min-width: $xl) {
-				padding-right: 10%;
-				margin-top: 106px;
-			}
-
-			@media (min-width: $xxl) {
-				padding-right: 10%;
-			}
-
-			&-heading {
-				font-family: $manrope;
-				font-weight: $fw400;
-				font-size: $fs24px;
-				line-height: $lh56px;
-				color: $black;
-				text-align: center;
-				padding-bottom: 64px;
-
-				@media (min-width: $lg) {
-					font-size: $fs36px;
-				}
-
-				@media (min-width: $xl) {
-					text-align: left;
-				}
-			}
-
-			&-item {
-				font-family: $openSans;
-				font-weight: $fw600;
-				font-size: $fs16px;
-				line-height: $lh28px;
-				color: $black;
-				padding-bottom: 24px;
-				text-align: center;
-
-				@media (min-width: $xl) {
-					text-align: left;
-				}
-
-				&:last-child {
-					padding-bottom: 0;
-				}
-				
-				& img {
-					padding-right: 12px;
-				}
-			}
+			padding: 16px 0 16px;
+			font-family: $openSans;
+			font-weight: $fw600;
+			font-size: $fs16px;
+			line-height: $lh28px;
+			color: $black;
 		}
 	}
 }

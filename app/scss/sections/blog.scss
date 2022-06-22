@@ -1,4 +1,5 @@
 .blog {
+	padding-top: 122px;
 	padding-bottom: 124px;
 	&-img {
 		margin: 0 auto;
@@ -39,7 +40,7 @@
 		&-dropdown {
 			width: 50%;
 			display: flex;
-			flex-direction: row;
+			flex-direction: column;
 			flex-wrap: nowrap;
 
 			@media (min-width: $xl) {

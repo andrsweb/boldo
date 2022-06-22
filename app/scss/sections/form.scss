@@ -1,43 +1,56 @@
 .company-form{
-padding-bottom: 72px;
+	margin-bottom: 44px;
 
 	&-header {
-		position: relative;
-	   background: $dark;
-	   border-radius: 12px;
+	position: relative;
+	padding: 72px 20%;
+	background: $dark;
+	border-radius: 12px;
+	overflow: hidden;
 
 	   &::before {
 		content: "";
 		display: inline-block;
-		height: 100vw;
-		width: 100vw;
+		height: 85vw;
+		width: 85vw;
 		border-radius: 50%;
 		background-color: #1C3D5B;
 		position: absolute;
 		top: 0;
 		right: 0;
-		transform: translate(50%, -50%);
-		z-index: -2;
+		transform: translate(43%, -82%);
 		}
 
 		&-title {
+			position: relative;
 			font-family: $manrope;
 			font-weight: $fw400;
-			font-size: $fs48px;
-			line-height: $lh72px;
+			font-size: $fs20px;
+			line-height: $lh32px;
 			color: $white;
 			text-align: center;
-			padding-bottom: 48px;
-		}
+			margin-bottom: 48px;
 
+			@media (min-width:$xl) {
+				font-size: $fs48px;
+				line-height: $lh72px;
+			}
+		}
+		
 		.header-form {
+			position: relative;
 			display: flex;
+			flex-wrap: wrap; //
 			justify-content: center;
 			align-items: center;
-			padding-bottom: 72px;
 
 			&-input {
-				padding-right: 24px;
+				margin-bottom: 40px;
+				
+				@media (min-width:$xl) {
+					padding-right: 24px;
+					margin-bottom: 0;
+				}
 			}
 
 			&-button {
@@ -45,6 +58,12 @@ padding-bottom: 72px;
 				.button.lg {
 					background: $accent;
 					transition: all ease 0.35s;
+					font-size: $fs14px;
+
+					@media (min-width: $xs) {
+						font-size: $fs20px;
+					}
+
 					&:hover {
 						color: $dark;
 					}
@@ -53,7 +72,7 @@ padding-bottom: 72px;
 		}	
 		
 		.email {
-			width: 370px;
+			width: 300px;
 			height: 56px;
 			border-radius: 24px;
 			font-family: $openSans;
@@ -63,8 +82,10 @@ padding-bottom: 72px;
 			color: $black;
 			text-align: center;
 			border: 0;
+
+			@media (min-width: $xs) {
+				width: 370px;
+			}
 		}
 	}
 }
-
-

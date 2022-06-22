@@ -1,4 +1,130 @@
 .footer {
-	margin-top: auto;
 	padding: 40px;
+
+	&-wrapp {
+		display: flex;
+		flex-wrap: wrap; 
+		padding: 60px 0 60px;
+
+		@media (min-width: $lg) {
+			flex-wrap: nowrap;
+		}
+	}
+
+	&-header {
+		margin-bottom: 50px; 
+
+		@media (min-width: $lg) {
+			margin-bottom: 0;
+		}
+	}
+
+	&-logo {
+		margin-bottom: 40px;
+	}
+
+	&-text, &-rights {
+		font-family: $openSans;
+		font-weight: $fw400;
+		font-size: $fs16px;
+		line-height: $lh28px;
+		color: $grey;
+		text-align: left; 
+	}
+
+	&-text {
+		margin-bottom: 64px;
+	}
+
+	&-links {
+		display: flex;
+		margin: 0 auto;
+
+		@media (min-width: $lg) {
+			margin: 0 50px;
+		}
+
+		@media (min-width: $xl) {
+			margin: 0 125px;
+		}
+
+		@media (min-width: $xxl) {
+			margin: 0 179px;
+		}
+
+		&-col {
+			margin-right: 20px;
+
+			&:last-child {
+				 margin-right: 0;
+			}
+
+			@media (min-width: $xs) {
+				margin-right: 50px;
+			}
+
+			@media (min-width: $lg) {
+				margin-right: 75px;
+			}
+
+			@media (min-width: $xl) {
+				margin-right: 125px;
+			}
+		}
+
+		&-heading {
+			font-family: $openSans;
+			font-weight: $fw700;
+			font-size: $fs16px; //20
+			line-height: $lh32px;
+			color: $black;
+			margin-bottom: 32px;
+
+			@media (min-width: $xs) {
+				font-size: $fs20px;
+			}
+		}
+
+		&-link {
+			position: relative;
+			margin-bottom: 40px;
+			
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+			& a {
+				font-family: $openSans;
+				font-weight: $fw400;
+				font-size: $fs16px; // 20
+				line-height: $lh32px;
+				color: $grey;
+				transition: all ease 0.35s;
+
+				@media (min-width: $xs) {
+					font-size: $fs20px;
+				}
+
+				&:hover {
+					opacity: 0.8;
+					color: $accent;
+				}
+			}
+		}
+	}
+
+	.footer-link-image {
+		position: absolute;
+		right: 0;
+		top: 0;
+		transform: translate(-15%, 80%);
+
+		@media(min-width: $xs) {
+			transform: translate(-30%, 80%);
+		}
+		
+		@media (min-width: $lg) {
+			transform: translate(85%, 0%);
+		}
+	}
 }

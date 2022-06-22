@@ -4,7 +4,11 @@
 	&-button {
 		display: flex;
 		justify-content: center;
-		margin-top: 84px;
+		margin-top: 30px;
+
+		@media (min-width: $xl) {
+			margin-top: 84px;
+		}
 	}
 	
 	&-header {
@@ -21,22 +25,39 @@
 		&-title {
 			font-family: $manrope;
 			font-weight: $fw400;
-			font-size: $fs48px;
+			font-size: $fs32px;
 			line-height: $lh72px;
 			color: $black;
 			text-align: center;
 			margin-bottom: 79px;
+
+			@media (min-width: $xl) {
+				font-size: $fs48px;
+			}
 		}
 	}
 
 	&-cards {
 		width: 100%;
 		display: flex;
+		flex-wrap: wrap;
 		flex-direction: row;
 	}
 
 	&-card {
-		width: calc(100% / 3);
+		display: flex; 
+		width: calc(100% / 1);
+		justify-content: center;
+		margin-bottom: 80px; 
+		
+		@media (min-width: $lg) {
+			width: calc(100% / 3);
+		}
+
+		@media (min-width: $xl) {
+			justify-content: unset;
+			margin-bottom: 0;
+		}
 
 		&-inner {
 			width: 300px;
