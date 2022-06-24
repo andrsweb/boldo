@@ -13,7 +13,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		margin-top: 56px;
+		margin-top: 50px;
 
 		@media (min-width: $xl) {
 			align-items: unset;
@@ -24,14 +24,18 @@
 			width: 50%;
 			font-family: $manrope;
 			font-weight: $fw400;
-			font-size: $fs24px;
-			line-height: $lh56px;
-			color: $black;
+			font-size: $fs20px;
+			line-height: $lh32px;
 			text-align: center;
 			padding-bottom: 50px;
 
+			@media (min-width: $md) {
+				font-size: $fs24px;
+			}
+
 			@media (min-width: $xl) {
 				font-size: $fs36px;
+				line-height: $lh56px;
 				text-align: left;
 				padding-right: 60px;
 			}
@@ -50,18 +54,32 @@
 			.dropdown-question {
 				display: flex;
 				flex-direction: column;
-			   
+
 				&-text {
+					position: relative;
 					font-family: $openSans;
 					font-weight: $fw400;
-					font-size: $fs20px;
+					font-size: $fs16px;
 					line-height: $lh32px;
 					color: $black;
 					padding-bottom: 55px;
+
+					&::after {
+						content: "";
+						width: 100%;
+						height: 1px;
+						background: #c4c4c4;
+						position: absolute;
+						top: 53px;
+						right: 0;
+					}
+					@media (min-width: $md) {
+						font-size: $fs20px;
+					}
 				}
 
 				.dropdown-open {
-					display: none;
+					display: block;
 					font-family: $manrope;
 					font-weight: $fw400;
 					font-size: $fs16px;
@@ -70,13 +88,24 @@
 					padding-bottom: 20px;
 				}
 
-				&-ico, &-ico1 {
+				.dropdown-open.show {
+					display: none;
+				}
+
+				@media (min-width: $md) {
+					font-size: $fs20px;
+				}
+
+				&-ico-top, &-ico-bot {
+					transform: rotate(180deg);
+					transition: all ease 0.35s;
 					position: absolute;
 					right: 0;
 					width: 28px;
 					height: 28px;
 					transition: 0.3s ease;
 					padding-right: 20%;
+
 					@media (min-width: $xl) {
 						padding-right: 0;
 						right: 20px;
@@ -85,6 +114,15 @@
 					&:hover {
 						opacity: 0.8;
 					}
+				}
+				&-ico-top.up, &-ico-bot.down {
+					transform: rotate(0deg);
+					transition: all ease 0.35s;
+				}
+	
+				&-ico-bot.down {
+					transform: rotate(0deg);
+					transition: all ease 0.35s;
 				}
 			}
 		}

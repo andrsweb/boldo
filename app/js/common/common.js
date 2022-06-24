@@ -12,7 +12,6 @@ const onHeaderButtonClick = () => {
 
     button.addEventListener('click', event => {
         event.preventDefault()
-        console.log('huy')
     }) 
 }
 
@@ -29,6 +28,23 @@ window.addEventListener('scroll', () => {
             header.classList.remove('scrolled')
         }
     }
+})
+
+// menu burger
+
+const menuButton = document.querySelector('.burger-btn')
+const menuBurger = document.querySelector('.burger-menu')
+
+menuButton.addEventListener('click', () => {
+	if (!menuBurger.classList.contains('active')) 
+		menuBurger.classList.add('active')
+	else 
+		menuBurger.classList.remove('active')
+	
+	if (!menuButton.classList.contains('active')) 
+		menuButton.classList.add('active')
+	else 
+		menuButton.classList.remove('active')
 })
 
 /**
@@ -77,4 +93,10 @@ export const renderSVGs = ( wrapper, imgSelector = '' ) => {
 	} )
 }
 
+const scrollHead = document.querySelector('.header')
 
+scrollHead.addEventListener('scroll', () => {
+	if (scrollHead > 0)
+	scrollHead.classList.add('color')
+}   
+)

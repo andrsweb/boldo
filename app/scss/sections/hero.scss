@@ -1,7 +1,7 @@
 .hero-section {
 	position: relative;
 	width: 100%;
-	padding: 20px 0 85px;
+	padding: 120px 0 85px;
 
 	@media (min-width: $lg) {
 		padding-top: 154px; 
@@ -150,10 +150,14 @@
 	}
 
 	&-logo {
-		width: calc(100% / 3);
+		width: calc(100% / 2);
 		text-align: center;
 		height: 42px;
 		padding: 0 28px;
+
+		@media (min-width: $sm) { 
+			width: calc(100% / 3);
+		}
 
 		@media (min-width: $lg) { 
 			width: calc(100% / 6);

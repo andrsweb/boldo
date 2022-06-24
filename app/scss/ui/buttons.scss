@@ -46,5 +46,24 @@
             color: $accent;
         }
     }
+
+}
+
+.button.burg {
+    font-family: $manrope;
+    line-height: $lh24px;
+    font-weight: $fw400;
+    font-size: $fs14px;
+    background-color: $accent;
+    border: 2px solid $dark;
+    border-radius: 12px;
+    padding: 4px 6px;
+    transition:  0.5s;
+    color: $dark;
+
+    &:hover {
+        transform: rotate(360deg);
+    }
+
 }
     

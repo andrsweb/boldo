@@ -4,71 +4,63 @@
 	&-inner {
 		display: flex; 
 		flex-wrap: wrap; 
-		flex-direction: row;
-
-		@media (min-width: $xl) {
-			flex-wrap: nowrap;
-		}
-
-		&.reverse {
-			flex-direction: row-reverse;
-		}
 	}
 
 	&-image {
-		width: 100%;
+		width: 100%; //45
+		height: auto;
+
+		@media (min-width: $md) {
+			width: 60%;
+			margin: 0 auto;
+		}
+
+		@media (min-width: $xl) {
+			width: 45%;
+			margin: 0;
+		}
 		
 		& img {
 			width: 100%; 
 			height: auto;
-
-			@media (min-width: $xl) {
-				width: 493px;
-			}
 		}
 	}
 
 	&-heading {
+		width: 100%; 
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-	 	margin: 0 auto; 
+		padding: 63px 0 66px 0; 
+
+		@media (min-width: $md) {
+			width: 60%;
+			margin: 0 auto;
+		}
 
 		 @media (min-width: $xl) {
-			margin-left: 100px;
-			align-items: unset;
+			align-items: flex-start;
+			width: 55%;
+			padding: 63px 0 66px 12%;
 		}
 
 		@media (min-width: $xxl) {
-			margin-left: 135px;
 		}
 	}
 
-	&-heading.reverse {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	 	margin: 0 auto; 
-
-		 @media (min-width: $xl) {
-			margin-right: 100px;
-			align-items: unset;
-		}
-
-		@media (min-width: $xxl) {
-			margin-right: 135px;
-		}
-	}	
-
 	&-header {
-		padding-top: 66px;
 		font-family: $manrope;
 		font-weight: $fw400;
-		font-size: $fs24px; 
-		line-height: $lh56px;
+		font-size: $fs16px; 
+		line-height: $lh32px; 
 		color:	$black;
 		margin-bottom: 40px;
 		text-align: center; 
+
+		@media (min-width: $md) {
+			font-size: $fs24px;
+			 line-height: $lh56px;
+		}
 
 		@media (min-width: $lg) {
 			font-size: $fs36px;
@@ -79,22 +71,22 @@
 		}
 	}
 
-	&-header.reverse {
-		margin-bottom: 64px;
-	}
-
 	&-list {
 		margin-bottom: 30px;
 
 		&-item {
 			font-family: $openSans;
 			font-weight: $fw400;
-			font-size: $fs16px; 
+			font-size: $fs14px;  
 			line-height: $lh36px;
 			color: $black;
 			margin-bottom: 24px;
 			background: url(../../img/dest/we-connect/li.png) no-repeat;
 			padding-left: 60px;
+
+			@media (min-width: $md) {
+				font-size: $fs16px;
+			}
 
 			@media (min-width: $lg) {
 				font-size: $fs20px;
@@ -115,34 +107,95 @@
 			}
 		}
 	}
+}
 
-	&-items {
-		display: flex;
-		flex-direction: column;
+.connect.reverse {
+	padding-top: 80px;
+	&.last {
+		padding-bottom: 45px; 
+
+		@media (min-width: $xl) {
+			padding-bottom: 145px;
+		}
 	}
 
-	&-item {
-		display: flex;
-		margin-bottom: 33px;
-		align-items: center;
+	& .connect{
+		
+		&-heading {
+			width: 100%; 
+			padding: 105px 0 0 0;
 
-		&:first-child {
-			background: $dark;
+			@media (min-width: $md) {
+				width: 60%;
+				margin: 0 auto;
+			}
+
+			@media (min-width: $xl) {
+				align-items: flex-start;
+				width: 60%;
+				padding: 105px 15% 66px 0;
+			}
 		}
 
-		&-wrapp {}
-
-		&-img {
-			padding-right: 12px;
+		&-header {
+			margin-bottom: 64px;
 		}
 
-		&-text {
-			padding: 16px 0 16px;
-			font-family: $openSans;
-			font-weight: $fw600;
-			font-size: $fs16px;
-			line-height: $lh28px;
-			color: $black;
+		&-image {
+			width: 100%; //40
+			height: auto;
+
+			@media (min-width: $md) {
+				width: 60%;
+				margin: 0 auto;
+			}
+
+			@media (min-width: $xl) {
+				width: 40%;
+				margin: 0;
+			}
+			
+			& img {
+				width: 100%; 
+				height: auto;
+			}
+		}
+
+		&-inner {
+			display: flex;
+			flex-direction: row-reverse;
+		}
+		
+		&-items {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+		}
+
+		&-item {
+			display: flex;
+			margin-bottom: 33px;
+			align-items: center;
+	
+			&-wrapp.active {
+				.connect-item:nth-child(1) {
+					background: $dark;
+					border-radius: 6px;
+				}
+			}
+
+			&-img {
+				padding: 0 20px;
+			}
+	
+			&-text {
+				padding: 16px 0 16px;
+				font-family: $openSans;
+				font-weight: $fw600;
+				font-size: $fs16px;
+				line-height: $lh28px;
+				color: $black;
+			}
 		}
 	}
 }

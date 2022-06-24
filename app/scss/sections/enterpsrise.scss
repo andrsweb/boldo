@@ -1,5 +1,6 @@
 .enterprise {
 	background-color: $dark;
+	padding: 100px 0 52px;
 
 	&-header {
 		display: flex;
@@ -19,21 +20,26 @@
 			width: 100%;
 			font-family: $openSans;
 			font-weight: $fw400;
-			font-size: $fs32px;
+			font-size: $fs24px;
 			line-height: $lh72px;
 			color: $white;
 			margin-bottom: 40px;
 			text-align: center;
 
 			@media (min-width: $md) {
-				font-size: $fs48px;
-				margin: 98px 0 0;
+				font-size: $fs24px;
 				text-align: left;
 				width: calc(100% - 172px);
 				padding-bottom: 10px
 			}
 
 			@media (min-width: $lg) {
+				font-size: $fs32px;
+				padding-right: 20%;
+			}
+
+			@media (min-width: $xl) {
+				font-size: $fs48px;
 				padding-right: 20%;
 			}
 
@@ -79,14 +85,19 @@
 
 	&-cards {
 		display: flex;
-		padding-bottom: 97px;
 
 		.enterprise-card {
 			background: $white;
 			width: calc(100% / 3);
 			height: 100%;
 			border-radius: 12px;
-			padding: 38px 40px 36px;
+			padding: 38px 40px 38px;
+			display: flex;
+			justify-content: center;
+
+			@media (min-width: $xl) {
+				justify-content: flex-start;
+			}
 
 			&-inner {
 				max-width: 270px;
@@ -134,4 +145,5 @@
 			}
 		}
 	}
+	.swiper-wrapper {}
 }

@@ -1,5 +1,5 @@
 .management {
-	padding-bottom: 124px;
+	padding-bottom: 85px;
 	
 	&-button {
 		display: flex;
@@ -12,7 +12,6 @@
 	}
 	
 	&-header {
-
 		&-subtitle {
 			font-family: $openSans;
 			font-weight: $fw400;
@@ -20,6 +19,7 @@
 			line-height: $lh32px;
 			color: $grey;
 			text-align: center;
+			margin-bottom: 12px;
 		}
 
 		&-title {
@@ -38,38 +38,52 @@
 	}
 
 	&-cards {
-		width: 100%;
+		max-width: 940px;
 		display: flex;
 		flex-wrap: wrap;
 		flex-direction: row;
+		margin: 0 -10px;
+
+		&.margin {
+			margin: 0 auto;
+		}
 	}
 
 	&-card {
 		display: flex; 
 		width: calc(100% / 1);
-		justify-content: center;
-		margin-bottom: 80px; 
-		
+		padding: 0 10px;
+		margin-bottom: 80px;
+
 		@media (min-width: $lg) {
 			width: calc(100% / 3);
-		}
-
-		@media (min-width: $xl) {
-			justify-content: unset;
 			margin-bottom: 0;
 		}
 
 		&-inner {
-			width: 300px;
 			display: flex;
 			flex-direction: column;
 			align-items: flex-start;
-
-			&-image {
+			
+			&-img {
 				width: 100%;
+				height: auto;
+
+				@media (min-width: $sm) {
+					width: 80%;
+				}
+
+				@media (min-width: $md) {
+					width: 60%;
+				}
+
+				@media (min-width: $lg) {
+					width: 100%;
+				}
 
 				& img {
 					width: 100%;
+					height: auto;
 				}
 			}
 

@@ -12,6 +12,10 @@
 		padding ease-out $tr, 
 		box-shadow ease-out $tr; 
 
+	&.color {
+		background: $accent;
+	}
+
 	&.scrolled {
 		background-color: $white;
 		box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.05 );
@@ -19,14 +23,14 @@
 	}
 
 	&-inner {
-		max-width: 1200px;
 		display: flex;
 		flex-wrap: wrap;
+		justify-content: space-between;
 		align-items: center;
 	}
 
 	&-logo {
-		height: 42px;
+		display: flex;
 
 		img {
 			height: 100%;
@@ -39,13 +43,19 @@
 	}
 
 	&-nav {
-		display: flex;
-		max-width: 419px;
-		margin-left: auto;
+		display: none;
+
+		@media (min-width: $md) {
+			display: flex;
+		}
+
+		&-wrapp {
+			display: flex;
+		}
 	}
 
 	&-button {
-		padding-left: 20px;
+		padding-left: 24px;
 	}
 }
 
@@ -75,3 +85,111 @@
 		}
 	}
 }
+
+	.burger-menu {
+		padding: 40px;
+		background: #dae6f1;
+		border-radius: 12px;
+		display: block;
+		position: fixed;
+		top: 125px;
+		right: 30px;
+		
+		@media (min-width: $md) {
+			display: none;
+		}
+		
+		.burger-item {
+			margin-bottom: 20px;
+
+			&-link {
+				font-family: $openSans;
+				font-size: $fs16px;
+				color: $dark;
+				transition: color ease-in 0.35s;
+
+				&:hover {
+					color: $accent;
+				}
+			}
+		}
+	}
+
+	.burger-menu.active {
+		display: none;
+	}
+
+	.burger-btn {
+		width: 30px;
+		height: 30px;
+		position: relative;
+		transform: rotate(45deg)
+		translate(15%, 55%);
+		transition: transform ease 0.5s;
+		
+		@media (min-width: $md) {
+			display: none;
+		}
+		
+		span {
+			background: $dark;
+			width: 100%;
+			height: 4px;
+			position: absolute;
+			top: 0;
+			transform: rotate(90deg);
+
+			&::before, &::after {
+				content: "";
+				width: 100%;
+				background: $dark;
+				height: 4px;
+				position: absolute;
+				top: 10px;
+			}
+
+			&::after {
+				top: 0;
+				transform: rotate(90deg);
+			}
+
+			&::before {
+				position: static;
+			}
+		} 
+	}
+
+	.burger-btn.active {
+		width: 30px;
+		height: 30px;
+		position: relative;
+		transform: rotate(0)
+		translate(0, 0);
+		
+		@media (min-width: $md) {
+			display: none;
+		}
+		
+		span {
+			background: $dark;
+			width: 100%;
+			height: 4px;
+			position: absolute;
+			top: 0;
+			transform: rotate(0);
+
+			&::before, &::after {
+				content: "";
+				width: 100%;
+				background: $dark;
+				height: 4px;
+				position: absolute;
+				top: 10px;
+			}
+
+			&::after {
+				top: 20px;
+				transform: rotate(0);
+			}
+		} 
+	}

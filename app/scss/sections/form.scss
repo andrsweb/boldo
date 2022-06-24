@@ -1,5 +1,4 @@
 .company-form{
-	margin-bottom: 44px;
 
 	&-header {
 	position: relative;
@@ -45,7 +44,7 @@
 			align-items: center;
 
 			&-input {
-				margin-bottom: 40px;
+				margin-bottom: 50px;
 				
 				@media (min-width:$xl) {
 					padding-right: 24px;
