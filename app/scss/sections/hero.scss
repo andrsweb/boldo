@@ -1,7 +1,7 @@
 .hero-section {
 	position: relative;
 	width: 100%;
-	padding: 120px 0 85px;
+	padding: 120px 0 83px;
 
 	@media (min-width: $lg) {
 		padding-top: 154px; 
@@ -36,7 +36,7 @@
 		font-size: $fs32px;
 		line-height: $lh36px;
 		color: $black;
-		padding-bottom: 16px;
+		margin-bottom: 16px;
 
 		@media (min-width: $sm) { 
 			font-size: $fs48px;
@@ -76,6 +76,11 @@
 		&.lg.dark {
 			padding: 4px 20px;
 			font-size: $fs14px;
+			transition: $tr;
+
+			&:hover {
+				opacity: 0.8;
+			}
 
 			@media (min-width: $md) {
 				font-size: $fs20px;
@@ -89,6 +94,11 @@
 
 		&.lg {
 			font-size: $fs14px;
+			transition: $tr;
+
+			&:hover {
+				border-color: $accent;
+			}
 
 			@media (min-width: $md) {
 				font-size: $fs20px;

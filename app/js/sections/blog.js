@@ -1,29 +1,22 @@
-const onArrowClickTop = document.querySelector('.dropdown-question-ico-top')
-const dropDownTop = document.querySelector('.dropdown-open.top')
+document.addEventListener( 'DOMContentLoaded', () => {  // Always be at start of the new page 
+	'use strict'  // Hard mode))) Check for errors 
 
-onArrowClickTop.addEventListener('click', () => {
-	if ( ! dropDownTop.classList.contains('show'))
-		dropDownTop.classList.add('show')
-	else 	
-		dropDownTop.classList.remove('show')
+	questionsToggle()  // Name of the function under this DOM
+} )
 
-	if ( ! onArrowClickTop.classList.contains('up'))
-		onArrClickTop.classList.add('up')
-	else
-		onArrClickTop.classList.remove('up')
-})
+const questionsToggle = () => {
 
-const onArrowClickBot = document.querySelector('.dropdown-question-ico-bot')
-const dropDownBot = document.querySelector('.dropdown-open.bot')
+	const questions = document.querySelectorAll('.dropdown-question') // QuerySelectorAll - for all twins 
 
-onArrowClickBot.addEventListener('click', () => {
-	if ( ! dropDownBot.classList.contains('show'))
-		dropDownBot.classList.add('show')
-	else 	
-		dropDownBot.classList.remove('show')
+	if ( ! questions.length) return // lenght - returns number of elements  
 
-	if ( ! onArrowClickBot.classList.contains('down'))
-			onArrowClickBot.classList.add('down')
-	else
-		onArrowClickBot.classList.remove('down')
-})
+	questions.forEach( question => { // forEach - cycle for each element in ('.dropdown-question')
+		question.addEventListener('click', () => {
+			if ( ! question.classList.contains('hide'))
+				question.classList.add('hide')
+			else
+				question.classList.remove('hide')
+		})
+	})
+	
+}

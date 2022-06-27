@@ -1,6 +1,6 @@
 .enterprise {
 	background-color: $dark;
-	padding: 100px 0 52px;
+	padding: 100px 0 95px;
 
 	&-header {
 		display: flex;
@@ -13,7 +13,7 @@
 		}
 
 		@media (min-width: $lg) {
-			margin-bottom: 61px;
+			margin-bottom: 18px;
 		}
 
 		.enterprise-heading {
@@ -50,9 +50,14 @@
 			flex-wrap: wrap;
 			width: 172px;
 			align-self: center;
+			
 
 			@media (min-width: $md) {
 				align-self: flex-end;
+			}
+
+			@media (min-width: $xl) {
+				margin-bottom: 45px;
 			}
 
 			.arrow-left {

@@ -56,6 +56,11 @@
 
 	&-button {
 		padding-left: 24px;
+		transition: $tr;
+		
+		& a:hover {
+			border-color: $accent;
+		}
 	}
 }
 

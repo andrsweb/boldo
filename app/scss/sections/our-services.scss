@@ -1,6 +1,6 @@
 .services {
 	background-color: $dark;
-	padding: 85px 0 102px;
+	padding: 85px 0 109px;
 
 	&-subtitle {
 		font-family: $openSans;
@@ -89,19 +89,28 @@
 		font-size: $fs24px;
 		line-height: $lh36px;
 		color: $white;
-		margin: 20px 0 27px 0;
+		margin: 20px 0 25px 0;
 	}
 
 	&-link {
 		font-size: $fs20px;
 
 		& a {
+			display: flex;
+			align-items: center;
 			font-family: $openSans;
 			font-weight: $fw700;
 			line-height: $lh36px;
 			color: $white;
 			transition: color ease 0.35s;
-			vertical-align: middle;
+
+			& svg {
+				margin-left: 15px;
+
+				& path:hover {
+					stroke: $accent;
+				}
+			}
 		}
 
 		& a:hover {
@@ -117,8 +126,7 @@
 
 		& img {
 			max-width: 100%;
-			vertical-align: middle;
-			margin-left: 12px;
+			margin-left: 15px;
 		}
 
 		&-link:after {

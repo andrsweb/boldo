@@ -92,11 +92,3 @@ export const renderSVGs = ( wrapper, imgSelector = '' ) => {
 			} )
 	} )
 }
-
-const scrollHead = document.querySelector('.header')
-
-scrollHead.addEventListener('scroll', () => {
-	if (scrollHead > 0)
-	scrollHead.classList.add('color')
-}   
-)

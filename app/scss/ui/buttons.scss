@@ -9,13 +9,12 @@
     padding: 8px 40px;
     background-color: transparent;
     cursor: pointer;
+    transition:
+    all ease 0.35s,
+    transform ease 0.35s;
 
     &:hover {
         content: "";
-        transition:
-            color ease 0.35s,
-            transform ease 0.35s;
-        opacity: 0.7;
         color: $accent;
     }
 
@@ -32,7 +31,7 @@
         font-size: 20px;
         line-height: 28px;
         border-radius: 56px;
-
+        transition: $tr;
         &.button:last-child {
             margin-right: 0;
         }
@@ -40,11 +39,10 @@
         &.dark {
             background-color: $dark;
             color: $white;
+            transition: $tr;
         }
 
-        &.dark:hover {
-            color: $accent;
-        }
+      
     }
 
 }
