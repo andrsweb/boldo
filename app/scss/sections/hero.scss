@@ -74,7 +74,7 @@
 	.button {
 
 		&.lg.dark {
-			padding: 4px 20px;
+			padding: 4px 12px;
 			font-size: $fs14px;
 			transition: $tr;
 
@@ -84,6 +84,7 @@
 
 			@media (min-width: $md) {
 				font-size: $fs20px;
+				padding: 4px 20px;
 			}
 			
 			@media (min-width: $xl) {

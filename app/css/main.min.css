@@ -226,7 +226,8 @@
       color: #ffffff;
       -webkit-transition: 0.35s;
       -o-transition: 0.35s;
-      transition: 0.35s; }
+      transition: 0.35s;
+      text-align: center; }
 
 .button.burg {
   font-family: "Manrope";
@@ -536,7 +537,7 @@ ul {
       .footer-header {
         margin-bottom: 0; } }
   .footer-logo {
-    margin-bottom: 40px;
+    margin-bottom: 35px;
     -webkit-transition: 0.35s;
     -o-transition: 0.35s;
     transition: 0.35s; }
@@ -550,7 +551,7 @@ ul {
     color: #777777;
     text-align: left; }
   .footer-text {
-    margin-bottom: 64px; }
+    margin-bottom: 65px; }
   .footer-links {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -584,13 +585,13 @@ ul {
       font-size: 16px;
       line-height: 32px;
       color: #000000;
-      margin-bottom: 32px; }
+      margin-bottom: 40px; }
       @media (min-width: 480px) {
         .footer-links-heading {
           font-size: 20px; } }
     .footer-links-link {
       position: relative;
-      margin-bottom: 40px; }
+      margin-bottom: 32px; }
       .footer-links-link:last-child {
         margin-bottom: 0; }
       .footer-links-link a {
@@ -696,7 +697,7 @@ ul {
             -ms-flex-pack: start;
                 justify-content: flex-start; } }
   .hero-section .button.lg.dark {
-    padding: 4px 20px;
+    padding: 4px 12px;
     font-size: 14px;
     -webkit-transition: 0.35s;
     -o-transition: 0.35s;
@@ -705,7 +706,8 @@ ul {
       opacity: 0.8; }
     @media (min-width: 767px) {
       .hero-section .button.lg.dark {
-        font-size: 20px; } }
+        font-size: 20px;
+        padding: 4px 20px; } }
     @media (min-width: 1240px) {
       .hero-section .button.lg.dark {
         padding: 8px 55px;
@@ -1069,7 +1071,6 @@ ul {
         -ms-flex-align: center;
             align-items: center;
     padding: 20px 20px;
-    background: #0A2640;
     border-radius: 8px;
     -webkit-transition: all ease 0.35s;
     -o-transition: all ease 0.35s;
@@ -1081,7 +1082,7 @@ ul {
       width: 28px;
       height: 28px; }
       .connect.reverse .connect-item-img svg path {
-        stroke: #ffffff; }
+        stroke: #0A2640; }
       .connect.reverse .connect-item-img img {
         width: 100%;
         height: 100%; }
@@ -1090,19 +1091,20 @@ ul {
       font-weight: 600;
       font-size: 16px;
       line-height: 28px;
-      color: #ffffff; }
-  .connect.reverse .connect-item-wrapp {
+      color: #000000; }
+  .connect.reverse .connect-item-wrapp .connect-item.active {
     cursor: pointer; }
-    .connect.reverse .connect-item-wrapp .connect-item.active {
-      background: none; }
-      .connect.reverse .connect-item-wrapp .connect-item.active .connect-item-text {
-        color: #000000; }
-      .connect.reverse .connect-item-wrapp .connect-item.active .connect-item-img svg path {
-        stroke: #0A2640; }
+    .connect.reverse .connect-item-wrapp .connect-item.active .connect-item-text {
+      color: #000000; }
+    .connect.reverse .connect-item-wrapp .connect-item.active .connect-item-img svg path {
+      stroke: #0A2640; }
 
 .enterprise {
   background-color: #0A2640;
-  padding: 100px 0 95px; }
+  padding: 35px 0 35px; }
+  @media (min-width: 767px) {
+    .enterprise {
+      padding: 100px 0 95px; } }
   .enterprise-header {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1256,7 +1258,7 @@ ul {
 
 .blog {
   padding-top: 122px;
-  padding-bottom: 80px; }
+  padding-bottom: 100px; }
   .blog-img {
     margin: 0 auto; }
     .blog-img img {
@@ -1342,8 +1344,14 @@ ul {
             height: 1px;
             background: #c4c4c4;
             position: absolute;
-            top: 53px;
+            top: 100px;
             right: 0; }
+            @media (min-width: 480px) {
+              .blog-heading-dropdown .dropdown-question-text::after {
+                top: 80px; } }
+            @media (min-width: 992px) {
+              .blog-heading-dropdown .dropdown-question-text::after {
+                top: 50px; } }
           @media (min-width: 767px) {
             .blog-heading-dropdown .dropdown-question-text {
               font-size: 20px; } }
@@ -1359,29 +1367,27 @@ ul {
           .blog-heading-dropdown .dropdown-question {
             font-size: 20px; } }
         .blog-heading-dropdown .dropdown-question-ico {
-          -webkit-transform: rotate(180deg);
-              -ms-transform: rotate(180deg);
-                  transform: rotate(180deg);
-          -webkit-transition: all ease 0.35s;
-          -o-transition: all ease 0.35s;
-          transition: all ease 0.35s;
           position: absolute;
-          right: 0;
+          right: 40px;
           width: 28px;
           height: 28px;
           -webkit-transition: 0.3s ease;
           -o-transition: 0.3s ease;
           transition: 0.3s ease;
-          padding-right: 20%; }
+          -webkit-transform: rotate(180deg);
+              -ms-transform: rotate(180deg);
+                  transform: rotate(180deg); }
           @media (min-width: 1240px) {
             .blog-heading-dropdown .dropdown-question-ico {
-              padding-right: 0;
               right: 20px; } }
           .blog-heading-dropdown .dropdown-question-ico:hover {
             opacity: 0.8; }
 
 .management {
-  padding-bottom: 85px; }
+  padding-bottom: 60px; }
+  @media (min-width: 767px) {
+    .management {
+      padding-bottom: 120px; } }
   .management-button {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1389,7 +1395,6 @@ ul {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-top: 30px;
     -webkit-transition: 0.35s;
     -o-transition: 0.35s;
     transition: 0.35s; }
@@ -1528,7 +1533,7 @@ ul {
     line-height: 32px;
     color: #ffffff;
     text-align: center;
-    margin-bottom: 48px; }
+    margin-bottom: 40px; }
     @media (min-width: 1240px) {
       .company-form-header-title {
         font-size: 48px;
@@ -1550,7 +1555,7 @@ ul {
       margin-bottom: 50px; }
       @media (min-width: 1240px) {
         .company-form-header .header-form-input {
-          padding-right: 24px;
+          margin-right: 24px;
           margin-bottom: 0; } }
     .company-form-header .header-form-button .button.lg {
       background: #65E4A3;
@@ -1571,7 +1576,7 @@ ul {
   .company-form-header .email {
     width: 300px;
     height: 56px;
-    border-radius: 24px;
+    border-radius: 240px;
     font-family: "Open Sans";
     font-weight: 400;
     font-size: 20px;

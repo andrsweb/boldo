@@ -1,6 +1,7 @@
 .blog {
 	padding-top: 122px;
-	padding-bottom: 80px;
+	padding-bottom: 100px;
+
 	&-img {
 		margin: 0 auto;
 		
@@ -77,13 +78,22 @@
 
 					&::after {
 						content: "";
-						width: 100%;
+ 						width: 100%;
 						height: 1px;
 						background: #c4c4c4;
 						position: absolute;
-						top: 53px;
+						top: 100px;
 						right: 0;
+
+						@media (min-width: $xs) {
+							top: 80px;
+						}
+
+						@media (min-width: $lg) {
+							top: 50px;
+						}
 					}
+
 					@media (min-width: $md) {
 						font-size: $fs20px;
 					}
@@ -104,17 +114,14 @@
 				}
 
 				&-ico {
-					transform: rotate(180deg);
-					transition: all ease 0.35s;
 					position: absolute;
-					right: 0;
+					right: 40px;
 					width: 28px;
 					height: 28px;
 					transition: 0.3s ease;
-					padding-right: 20%;
+					transform: rotate(180deg);
 
 					@media (min-width: $xl) {
-						padding-right: 0;
 						right: 20px;
 					}
 

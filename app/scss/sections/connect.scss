@@ -182,7 +182,6 @@
 			margin-bottom: 22px;
 			align-items: center;
 			padding: 20px 20px;
-			background: $dark;
 			border-radius: 8px;
 			transition: all ease $tr;
 			
@@ -196,7 +195,7 @@
 				height: 28px;
 
 				& svg path {
-					stroke:	$white;
+					stroke:	$dark;
 				}
 
 				& img {
@@ -210,24 +209,24 @@
 				font-weight: $fw600;
 				font-size: $fs16px;
 				line-height: $lh28px;
-				color: $white;
+				color: $black;
 			}
 		}
 	}
 
 	.connect-item-wrapp {
-		cursor: pointer;
+		
 
 		.connect-item.active {
-			background: none;
+			cursor: pointer;
 
 			.connect-item-text {
 				color: $black;
 			}
 
 			.connect-item-img {
-				
-				& svg path {
+
+				svg path {
 					stroke: $dark;
 				}
 			}

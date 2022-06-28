@@ -20,7 +20,7 @@
 	}
 
 	&-logo {
-		margin-bottom: 40px;
+		margin-bottom: 35px;
 		transition: $tr;
 
 		&:hover {
@@ -38,7 +38,7 @@
 	}
 
 	&-text {
-		margin-bottom: 64px;
+		margin-bottom: 65px;
 	}
 
 	&-links {
@@ -83,7 +83,7 @@
 			font-size: $fs16px; //20
 			line-height: $lh32px;
 			color: $black;
-			margin-bottom: 32px;
+			margin-bottom: 40px;
 
 			@media (min-width: $xs) {
 				font-size: $fs20px;
@@ -92,7 +92,7 @@
 
 		&-link {
 			position: relative;
-			margin-bottom: 40px;
+			margin-bottom: 32px;
 			
 			&:last-child {
 				margin-bottom: 0;

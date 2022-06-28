@@ -1,6 +1,10 @@
 .enterprise {
 	background-color: $dark;
-	padding: 100px 0 95px;
+	padding: 35px 0 35px;
+
+	@media (min-width: $md) {
+		padding: 100px 0 95px;
+	}
 
 	&-header {
 		display: flex;
