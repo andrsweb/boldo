@@ -182,20 +182,10 @@
 			margin-bottom: 22px;
 			align-items: center;
 			padding: 20px 20px;
+			background: $dark;
+			border-radius: 8px;
+			transition: all ease $tr;
 			
-			&-wrapp.active {
-				.connect-item:nth-child(1) {
-					background: $dark;
-					border-radius: 6px;
-				}
-
-				.connect-item-text {
-					color: $white;
-					width: calc(100% - 28px);
-					padding-left: 3%;
-				}
-			}
-
 			.connect-item-text {
 				width: calc(100% - 28px);
 				padding-left: 3%;
@@ -204,6 +194,10 @@
 			&-img {
 				width: 28px;
 				height: 28px;
+
+				& svg path {
+					stroke:	$white;
+				}
 
 				& img {
 					width: 100%;
@@ -216,7 +210,26 @@
 				font-weight: $fw600;
 				font-size: $fs16px;
 				line-height: $lh28px;
+				color: $white;
+			}
+		}
+	}
+
+	.connect-item-wrapp {
+		cursor: pointer;
+
+		.connect-item.active {
+			background: none;
+
+			.connect-item-text {
 				color: $black;
+			}
+
+			.connect-item-img {
+				
+				& svg path {
+					stroke: $dark;
+				}
 			}
 		}
 	}

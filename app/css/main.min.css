@@ -1068,20 +1068,20 @@ ul {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 20px 20px; }
-    .connect.reverse .connect-item-wrapp.active .connect-item:nth-child(1) {
-      background: #0A2640;
-      border-radius: 6px; }
-    .connect.reverse .connect-item-wrapp.active .connect-item-text {
-      color: #ffffff;
-      width: calc(100% - 28px);
-      padding-left: 3%; }
+    padding: 20px 20px;
+    background: #0A2640;
+    border-radius: 8px;
+    -webkit-transition: all ease 0.35s;
+    -o-transition: all ease 0.35s;
+    transition: all ease 0.35s; }
     .connect.reverse .connect-item .connect-item-text {
       width: calc(100% - 28px);
       padding-left: 3%; }
     .connect.reverse .connect-item-img {
       width: 28px;
       height: 28px; }
+      .connect.reverse .connect-item-img svg path {
+        stroke: #ffffff; }
       .connect.reverse .connect-item-img img {
         width: 100%;
         height: 100%; }
@@ -1090,7 +1090,15 @@ ul {
       font-weight: 600;
       font-size: 16px;
       line-height: 28px;
-      color: #000000; }
+      color: #ffffff; }
+  .connect.reverse .connect-item-wrapp {
+    cursor: pointer; }
+    .connect.reverse .connect-item-wrapp .connect-item.active {
+      background: none; }
+      .connect.reverse .connect-item-wrapp .connect-item.active .connect-item-text {
+        color: #000000; }
+      .connect.reverse .connect-item-wrapp .connect-item.active .connect-item-img svg path {
+        stroke: #0A2640; }
 
 .enterprise {
   background-color: #0A2640;
