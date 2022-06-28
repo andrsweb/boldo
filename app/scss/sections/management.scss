@@ -5,6 +5,11 @@
 		display: flex;
 		justify-content: center;
 		margin-top: 30px;
+		transition: $tr;
+
+		.button.lg:hover {
+			border-color: $accent;
+		}
 
 		@media (min-width: $xl) {
 			margin-top: 84px;

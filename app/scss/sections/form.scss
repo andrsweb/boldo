@@ -58,6 +58,11 @@
 					background: $accent;
 					transition: all ease 0.35s;
 					font-size: $fs14px;
+					transition: $tr;
+
+					&:hover {
+						opacity: 0.7;
+					}
 
 					@media (min-width: $xs) {
 						font-size: $fs20px;

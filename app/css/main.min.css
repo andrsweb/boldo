@@ -536,7 +536,12 @@ ul {
       .footer-header {
         margin-bottom: 0; } }
   .footer-logo {
-    margin-bottom: 40px; }
+    margin-bottom: 40px;
+    -webkit-transition: 0.35s;
+    -o-transition: 0.35s;
+    transition: 0.35s; }
+    .footer-logo:hover {
+      opacity: 0.7; }
   .footer-text, .footer-rights {
     font-family: "Open Sans";
     font-weight: 400;
@@ -609,7 +614,13 @@ ul {
     top: 0;
     -webkit-transform: translate(-15%, 80%);
         -ms-transform: translate(-15%, 80%);
-            transform: translate(-15%, 80%); }
+            transform: translate(-15%, 80%);
+    -webkit-transition: 0.35s;
+    -o-transition: 0.35s;
+    transition: 0.35s;
+    cursor: pointer; }
+    .footer .footer-link-image:hover {
+      opacity: 0.7; }
     @media (min-width: 480px) {
       .footer .footer-link-image {
         -webkit-transform: translate(-30%, 80%);
@@ -988,7 +999,12 @@ ul {
                   justify-content: flex-start; } }
       .connect-list-button .button.lg.dark {
         width: 210px;
-        font-size: 16px; }
+        font-size: 16px;
+        -webkit-transition: 0.35s;
+        -o-transition: 0.35s;
+        transition: 0.35s; }
+        .connect-list-button .button.lg.dark:hover {
+          opacity: 0.7; }
 
 .connect.reverse {
   padding-top: 80px; }
@@ -1130,7 +1146,8 @@ ul {
           flex-wrap: wrap;
       width: 172px;
       -ms-flex-item-align: center;
-          align-self: center; }
+          align-self: center;
+      cursor: pointer; }
       @media (min-width: 767px) {
         .enterprise-header .enterprise-arrows {
           -ms-flex-item-align: end;
@@ -1295,7 +1312,8 @@ ul {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
-                flex-direction: column; }
+                flex-direction: column;
+        cursor: pointer; }
         .blog-heading-dropdown .dropdown-question.hide .dropdown-question-ico {
           -webkit-transform: rotate(0);
               -ms-transform: rotate(0);
@@ -1363,7 +1381,12 @@ ul {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-top: 30px; }
+    margin-top: 30px;
+    -webkit-transition: 0.35s;
+    -o-transition: 0.35s;
+    transition: 0.35s; }
+    .management-button .button.lg:hover {
+      border-color: #65E4A3; }
     @media (min-width: 1240px) {
       .management-button {
         margin-top: 84px; } }
@@ -1526,7 +1549,12 @@ ul {
       -webkit-transition: all ease 0.35s;
       -o-transition: all ease 0.35s;
       transition: all ease 0.35s;
-      font-size: 14px; }
+      font-size: 14px;
+      -webkit-transition: 0.35s;
+      -o-transition: 0.35s;
+      transition: 0.35s; }
+      .company-form-header .header-form-button .button.lg:hover {
+        opacity: 0.7; }
       @media (min-width: 480px) {
         .company-form-header .header-form-button .button.lg {
           font-size: 20px; } }

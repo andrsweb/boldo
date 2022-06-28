@@ -54,6 +54,7 @@
 			.dropdown-question {
 				display: flex;
 				flex-direction: column;
+				cursor: pointer;
 
 				&.hide {
 					.dropdown-question-ico {

@@ -104,6 +104,11 @@
 			.button.lg.dark {
 				width: 210px;
 				font-size: $fs16px;
+				transition: $tr;
+
+				&:hover {
+					opacity: 0.7;
+				}
 			}
 		}
 	}
