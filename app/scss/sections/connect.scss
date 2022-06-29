@@ -214,22 +214,20 @@
 		}
 	}
 
-	.connect-item-wrapp {
+	.connect-item-wrapp-active {
+		cursor: pointer; 
 		
+		.connect-item {
+			background: none;
 
-		.connect-item.active {
-			cursor: pointer;
-
-			.connect-item-text {
+			&-text {
 				color: $black;
 			}
 
-			.connect-item-img {
-
-				svg path {
-					stroke: $dark;
-				}
+			&-img svg path {
+				stroke: $dark;
 			}
 		}
+
 	}
 }
