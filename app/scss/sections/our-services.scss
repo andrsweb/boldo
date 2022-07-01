@@ -1,6 +1,14 @@
 .services {
 	background-color: $dark;
-	padding: 85px 0 109px;
+	padding: 30px 0 30px;
+
+	@media (min-width: $lg) {
+		padding: 50px 0 80px;
+	}
+
+	@media (min-width: $xxl) {
+		padding: 85px 0 109px;
+	}
 
 	&-subtitle {
 		font-family: $openSans;
@@ -9,7 +17,7 @@
 		line-height: $lh32px;
 		color: $light-grey;
 		text-align: center;
-		padding-bottom: 12px;
+		margin-bottom: 10px;
 
 		@media (min-width: $md) {
 			font-size: $fs20px;
@@ -24,10 +32,10 @@
 		font-family: $manrope;
 		font-weight: $fw400;
 		font-size: $fs24px;
-		line-height: $lh72px;
+		line-height: $lh32px;  // 72
 		text-align: center;
 		color: $white;
-		margin-bottom: 72px;
+		margin-bottom: 32px; // 72
 
 		@media (min-width: $md) {
 			font-size: $fs36px;
@@ -36,6 +44,8 @@
 		@media (min-width: $lg) {
 			font-size: $fs48px;
 			text-align: center;
+			margin-bottom: 70px;
+			line-height: $lh72px;
 		}
 	}
 }
@@ -52,16 +62,23 @@
 
 .card {
 	width: calc(100% / 1);
-	padding: 0 20px 30px 0;
+	padding: 20px; // 0 20p 30 0
 
 	@media (min-width: $md) {
 		width: calc(100% / 2);
-		flex-grow: 1;
 	}
 
-	@media (min-width: $xl) {
+	@media (min-width: $lg) {
 		width: calc(100% / 3);
 		padding: 0 50px;
+	}
+
+	&:last-child {
+		margin: 0 auto;  ////
+
+		@media (min-width: $lg) {
+			margin: 0;
+		}
 	}
 
 	&-inner {
@@ -75,11 +92,23 @@
 	}
 
 	&-image {
-		max-width: 300px;
+		width: 80%; // 100
+
+		@media (min-width: $sm) {
+			width: 70%;
+		}
+
+		@media (min-width: $md) {
+			width: 90%;
+		}
+
+		@media (min-width: $lg) {
+			width: 100%;
+		}
 
 		& img {
-			max-width: 300px;
-			max-height: 354px;
+			width: 100%;
+			height: auto;
 		}
 	}
 
@@ -89,7 +118,12 @@
 		font-size: $fs24px;
 		line-height: $lh36px;
 		color: $white;
-		margin: 20px 0 25px 0;
+		margin: 20px 0 28px 0;
+		text-align: center;
+
+		@media (min-width: $xl) {
+			text-align: left;
+		}
 	}
 
 	&-link {

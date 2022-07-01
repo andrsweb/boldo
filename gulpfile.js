@@ -6,6 +6,7 @@ const {
 	parallel,
 	watch
 } = require( 'gulp' )
+
 const htmlmin = require('gulp-htmlmin')
 const browserSync	= require( 'browser-sync' ).create()
 const concat		= require( 'gulp-concat' )
@@ -22,8 +23,6 @@ const rollup		= require( 'gulp-better-rollup' )
 const babel			= require( 'rollup-plugin-babel' )
 const resolve		= require( 'rollup-plugin-node-resolve' )
 const commonjs		= require( 'rollup-plugin-commonjs' )
-
-
 
 // BrowserSync initialization.
 function browsersync(){
@@ -119,7 +118,9 @@ function cleanDist(){
 function startwatch(){
 	watch( 'app/scss/**/*', styles )
 	watch( ['app/**/*.js', '!app/**/*.min.js'], scripts );
-	watch( '**/*.html' ).on( 'change', browserSync.reload )
+	watch( '**/*.html' ).on( 'change', function() {
+		browserSync.reload()
+	}  )
 	watch( 'app/img/src/**/*', images )
 }
 
@@ -144,6 +145,7 @@ exports.styles			= styles
 exports.buildStyles		= buildStyles
 exports.images			= images
 exports.cleanDist		= cleanDist
+
 
 // Use 'gulp' command to run them all parallel.
 exports.default = parallel( scripts, styles, images, browsersync, startwatch )

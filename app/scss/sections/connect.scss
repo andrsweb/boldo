@@ -214,20 +214,19 @@
 		}
 	}
 
-	.connect-item-wrapp-active {
+	.connect-item-wrapp.active {
 		cursor: pointer; 
 		
 		.connect-item {
-			background: none;
+			background: $dark;
 
 			&-text {
-				color: $black;
+				color: $white;
 			}
 
 			&-img svg path {
-				stroke: $dark;
+				stroke: $white;
 			}
 		}
-
 	}
 }

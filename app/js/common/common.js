@@ -2,7 +2,8 @@ document.addEventListener( 'DOMContentLoaded', () => {
 	'use strict'
 
 	onHeaderButtonClick()
-    renderSVGs( document )
+    renderSVGs( document.querySelector('.connect.reverse') )
+	renderSVGs( document.querySelector('.services') )
 } )
 
 const onHeaderButtonClick = () => {

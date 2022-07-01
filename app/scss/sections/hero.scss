@@ -1,10 +1,10 @@
 .hero-section {
 	position: relative;
 	width: 100%;
-	padding: 120px 0 83px;
+	padding: 140px 0 20px; 
 
 	@media (min-width: $lg) {
-		padding-top: 154px; 
+		padding: 154px 0 75px; 
 	}
 
 	&-inner {
@@ -96,6 +96,7 @@
 		&.lg {
 			font-size: $fs14px;
 			transition: $tr;
+			padding: 4px 30px;
 
 			&:hover {
 				border-color: $accent;
@@ -103,6 +104,7 @@
 
 			@media (min-width: $md) {
 				font-size: $fs20px;
+				padding: 16px 56px;
 			}
 		}
 	}
@@ -147,6 +149,7 @@
 }
 
 .brands {
+	width: 100%;
 	padding: 40px 0 20px;
 	display: flex;
 	flex-wrap: wrap;
@@ -160,12 +163,15 @@
 		padding: 0; 
 	}
 
+	&.margin {
+		margin: 0 auto;
+	}
+
 	&-logo {
 		width: calc(100% / 2);
 		text-align: center;
-		height: 42px;
 		padding: 0 28px;
-
+		margin-bottom: 10px;
 		@media (min-width: $sm) { 
 			width: calc(100% / 3);
 		}
@@ -176,6 +182,6 @@
 	}
 
 	&-logo img {
-		max-width: 100%;
+		width: 100%;
 	}
 }
