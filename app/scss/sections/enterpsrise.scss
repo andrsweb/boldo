@@ -3,7 +3,7 @@
 	padding: 35px 0 35px;
 
 	@media (min-width: $md) {
-		padding: 100px 0 95px;
+		padding: 100px 0 92px;
 	}
 
 	&-header {
@@ -25,7 +25,7 @@
 			font-family: $openSans;
 			font-weight: $fw400;
 			font-size: $fs24px;
-			line-height: $lh72px;
+			line-height: $lh32px; 
 			color: $white;
 			margin-bottom: 40px;
 			text-align: center;
@@ -44,9 +44,9 @@
 
 			@media (min-width: $xl) {
 				font-size: $fs48px;
+				line-height: $lh72px;
 				padding-right: 20%;
 			}
-
 		}
 
 		.enterprise-arrows {
@@ -56,7 +56,6 @@
 			align-self: center;
 			cursor: pointer;
 			
-
 			@media (min-width: $md) {
 				align-self: flex-end;
 			}
@@ -98,26 +97,76 @@
 
 		.enterprise-card {
 			background: $white;
-			width: calc(100% / 3);
+			width: calc(100% / 3 );
 			height: 100%;
 			border-radius: 12px;
-			padding: 38px 40px 38px;
+			padding: 28px 10px 28px; // 38 40 38
 			display: flex;
 			justify-content: center;
+
+			@media (min-width: $xs) {
+				padding: 10px 0;
+			}
+			
+			@media (min-width: $sm) {
+				padding: 20px 0;
+			}
+
+			@media (min-width: $md) {
+				padding: 38px 40px 38px;
+			}
 
 			@media (min-width: $xl) {
 				justify-content: flex-start;
 			}
 
 			&-inner {
-				max-width: 270px;
+				display: flex; // 
+				flex-direction: column; //
+				align-items: center; //
+				max-width: 270px; 
+
+				@media (min-width: $xs) {
+					max-width: 350px;
+				}
+
+				@media (min-width: $sm) {
+					max-width: 500px;
+				}
+
+				@media (min-width: $md) {
+					max-width: 270px;
+				}
+
+				@media (min-width: $lg) {
+					align-items: flex-start;
+				}
 
 				&-text {
 					font-family: $openSans;
 					font-weight: $fw400;
-					font-size: $fs24px;
+					font-size: $fs16px; 
 					line-height: $lh36px;
-					padding-bottom: 40px
+					margin-bottom: 20px; 
+					text-align: center; 
+
+					@media (min-width: $xs) {
+						font-size: $fs20px;
+					}
+
+					@media (min-width: $md) {
+						margin-bottom: 40px;
+					}
+
+					@media (min-width: $lg) {
+						line-height: $lh24px;
+					}
+
+					@media (min-width: $xl) {
+						line-height: $lh36px;
+						font-size: $fs24px;
+						text-align: left;
+					}
 				}
 
 				.enterprise-card-footer {
@@ -137,23 +186,48 @@
 						&-author {
 							font-family: $openSans;
 							font-weight: $fw700;
-							font-size: $fs16px;
+							font-size: $fs14px; // 16
 							line-height: $lh32px;
 							color: $dark;
 							text-align: left;
+
+							@media (min-width: $xl) {
+								font-size: $fs16px;
+							}
 						}
 
 						&-job {
 							font-family: $openSans;
 							font-weight: $fw400;
-							font-size: $fs14px;
+							font-size: $fs12px; 
 							line-height: 22px;
 							text-align: left;
+
+							@media (min-width: $xl) {
+								font-size: $fs14px;
+							}
 						}
 					}
 				}
 			}
 		}
 	}
-	.swiper-wrapper {}
+
+	.enterprise-card.swiper-slide.swiper-slide-active, 
+	.enterprise-card.swiper-slide.swiper-slide-next, 
+	.enterprise-card.swiper-slide {
+		padding: 10px;
+
+		@media (min-width: $md) {
+			padding: 20px;
+		}
+
+		@media (min-width: $xl) {
+			padding: 30px;
+		}
+
+		@media (min-width: $xxl) {
+			padding: 40px;
+		}
+	}
 }

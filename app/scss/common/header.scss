@@ -36,6 +36,7 @@
 			height: 42px;
 			width: auto;
 		}
+
 		a:hover {
 			content: "";
 			opacity: 0.75;
@@ -55,11 +56,15 @@
 	}
 
 	&-button {
-		padding-left: 24px;
+		margin-left: 18px;
 		transition: $tr;
 		
 		& a:hover {
 			border-color: $accent;
+		}
+
+		&:last-child {
+			margin-right: 6px;
 		}
 	}
 }
@@ -73,7 +78,7 @@
 	&-item {
 		display: flex;
 		flex-wrap: wrap;
-		padding: 0 20px;
+		margin: 0 20px;
 		
 	}
 			
@@ -128,9 +133,8 @@
 		width: 30px;
 		height: 30px;
 		position: relative;
-		transform: rotate(45deg)
-		translate(15%, 55%);
-		transition: transform ease 0.5s;
+		transform: rotate(45deg);
+		cursor: pointer;
 		
 		@media (min-width: $md) {
 			display: none;
@@ -150,7 +154,7 @@
 				background: $dark;
 				height: 4px;
 				position: absolute;
-				top: 10px;
+				top: 0px;
 			}
 
 			&::after {

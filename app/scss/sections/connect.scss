@@ -1,5 +1,13 @@
 .connect {
-	padding-top: 120px;
+	padding-top: 40px;
+
+	@media (min-width: $md) {
+		padding-top: 80px;
+	}
+
+	@media (min-width: $lg) {
+		padding-top: 120px;
+	}
 
 	&-inner {
 		display: flex; 
@@ -7,12 +15,20 @@
 	}
 
 	&-image {
-		width: 100%; //45
+		width: 100%; 
 		height: auto;
+
+		@media (min-width: $sm) {
+			width: 70%;
+			margin: 0 auto;
+		}
 
 		@media (min-width: $md) {
 			width: 60%;
-			margin: 0 auto;
+		}
+
+		@media (min-width: $lg) {
+			width: 50%;
 		}
 
 		@media (min-width: $xl) {
@@ -31,7 +47,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		padding: 63px 0 66px 0; 
+		padding: 33px 0 33px 0; 
 
 		@media (min-width: $md) {
 			width: 60%;
@@ -44,8 +60,6 @@
 			padding: 63px 0 66px 12%;
 		}
 
-		@media (min-width: $xxl) {
-		}
 	}
 
 	&-header {
@@ -57,9 +71,13 @@
 		margin-bottom: 40px;
 		text-align: center; 
 
+		@media (min-width: $sm) {
+			font-size: $fs20px;
+			 line-height: $lh56px;
+		}
+
 		@media (min-width: $md) {
 			font-size: $fs24px;
-			 line-height: $lh56px;
 		}
 
 		@media (min-width: $lg) {
@@ -72,17 +90,25 @@
 	}
 
 	&-list {
-		margin-bottom: 30px;
+		margin-bottom: 15px; // 30
+
+		@media (min-width: $xl) {
+			margin-bottom: 30px;
+		}
 
 		&-item {
 			font-family: $openSans;
 			font-weight: $fw400;
-			font-size: $fs14px;  
-			line-height: $lh36px;
+			font-size: $fs12px;   
+			line-height: $lh36px;  	
 			color: $black;
 			margin-bottom: 24px;
 			background: url(../../img/dest/we-connect/li.png) no-repeat;
 			padding-left: 60px;
+
+			@media (min-width: $sm) {
+				font-size: $fs14px;
+			}
 
 			@media (min-width: $md) {
 				font-size: $fs16px;
@@ -102,9 +128,16 @@
 			}
 
 			.button.lg.dark {
-				width: 210px;
-				font-size: $fs16px;
+				width: 150px; 
+				padding: 8px;
+				font-size: $fs14px; 
 				transition: $tr;
+
+				@media (min-width: $lg) {
+					width: 210px;
+					font-size: $fs16px;
+					padding: 16px 56px;
+				}
 
 				&:hover {
 					opacity: 0.7;
@@ -115,9 +148,18 @@
 }
 
 .connect.reverse {
-	padding-top: 80px;
+	padding-top: 20px; 
+
+	@media (min-width: $xl) {
+		padding-top: 80px;
+	}
+
 	&.last {
-		padding-bottom: 45px; 
+		padding-bottom: 20px; 
+
+		@media (min-width: $lg) {
+			padding-bottom: 45px;
+		}
 
 		@media (min-width: $xl) {
 			padding-bottom: 145px;
@@ -128,7 +170,7 @@
 		
 		&-heading {
 			width: 100%; 
-			padding: 105px 0 0 0;
+			padding: 33px 0 0 0; 
 
 			@media (min-width: $md) {
 				width: 60%;
@@ -143,16 +185,28 @@
 		}
 
 		&-header {
-			margin-bottom: 64px;
+			margin-bottom: 44px; 
+
+			@media (min-width: $xl) {
+				margin-bottom: 60px;
+			}
 		}
 
 		&-image {
-			width: 100%; //40
+			width: 100%; 
 			height: auto;
+
+			@media (min-width: $sm) {
+				width: 70%;
+				margin: 0 auto;
+			}
 
 			@media (min-width: $md) {
 				width: 60%;
-				margin: 0 auto;
+			}
+
+			@media (min-width: $lg) {
+				width: 50%;
 			}
 
 			@media (min-width: $xl) {
@@ -179,11 +233,15 @@
 
 		&-item {
 			display: flex;
-			margin-bottom: 22px;
+			margin-bottom: 24px;
 			align-items: center;
-			padding: 20px 20px;
+			padding: 10px 10px; 
 			border-radius: 8px;
 			transition: all ease $tr;
+
+		@media (min-width: $sm) {
+			 padding: 20px 20px;
+		}
 			
 			.connect-item-text {
 				width: calc(100% - 28px);
@@ -207,9 +265,17 @@
 			&-text {
 				font-family: $openSans;
 				font-weight: $fw600;
-				font-size: $fs16px;
+				font-size: $fs12px; 
 				line-height: $lh28px;
 				color: $black;
+
+				@media (min-width: $sm) {
+					font-size: $fs14px;
+				}
+
+				@media (min-width: $lg) {
+					font-size: $fs16px;
+				}
 			}
 		}
 	}

@@ -2,10 +2,14 @@
 
 	&-header {
 	position: relative;
-	padding: 72px 20%;
+ 	padding: 40px 0; 
 	background: $dark;
 	border-radius: 12px;
 	overflow: hidden;
+
+	@media (min-width: $xxl) {
+		padding: 68px 20%;
+	}
 
 	   &::before {
 		content: "";
@@ -28,7 +32,7 @@
 			line-height: $lh32px;
 			color: $white;
 			text-align: center;
-			margin-bottom: 40px;
+			margin-bottom: 47px;
 
 			@media (min-width:$xl) {
 				font-size: $fs48px;
@@ -39,15 +43,17 @@
 		.header-form {
 			position: relative;
 			display: flex;
-			flex-wrap: wrap; //
+			flex-wrap: wrap; 
 			justify-content: center;
-			align-items: center;
 
 			&-input {
 				margin-bottom: 50px;
 				
-				@media (min-width:$xl) {
+				@media (min-width:$md) {
 					margin-right: 24px;
+				}
+
+				@media (min-width:$xl) {
 					margin-bottom: 0;
 				}
 			}
@@ -59,12 +65,27 @@
 					transition: all ease 0.35s;
 					font-size: $fs14px;
 					transition: $tr;
+					padding: 8px 30px;
+					border-radius: 56px;
+
+					@media (min-width: $xs) {
+						padding: 10px 35px;
+					}
+
+					@media (min-width: $md) {
+						padding: 16px 40px;
+						font-size: $fs16px;
+					}
+
+					@media (min-width: $xxl) {
+						padding: 16px 58px;
+					}
 
 					&:hover {
 						opacity: 0.7;
 					}
 
-					@media (min-width: $xs) {
+					@media (min-width: $lg) {
 						font-size: $fs20px;
 					}
 
@@ -76,19 +97,24 @@
 		}	
 		
 		.email {
-			width: 300px;
+			padding-left: 10%;
+			width: 250px;
 			height: 56px;
 			border-radius: 240px;
 			font-family: $openSans;
 			font-weight: $fw400;
-			font-size: $fs20px;
+			font-size: $fs16px;
 			line-height: $lh32px;
 			color: $black;
-			text-align: center;
+			text-align: left;
 			border: 0;
 
 			@media (min-width: $xs) {
 				width: 370px;
+			}
+
+			@media (min-width: $lg) {
+				font-size: $fs20px;
 			}
 		}
 	}

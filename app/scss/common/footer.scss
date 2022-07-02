@@ -1,5 +1,9 @@
 .footer {
-	padding-top: 125px;
+	padding-top: 40px; 
+
+	@media (min-width: $xl) {
+		padding-top: 125px;
+	}
 
 	&-wrapp {
 		display: flex;
@@ -38,7 +42,11 @@
 	}
 
 	&-text {
-		margin-bottom: 65px;
+		margin-bottom: 30px;
+
+		@media (min-width: $lg) {
+			margin-bottom: 65px;
+		}
 	}
 
 	&-links {
@@ -80,19 +88,27 @@
 		&-heading {
 			font-family: $openSans;
 			font-weight: $fw700;
-			font-size: $fs16px; //20
+			font-size: $fs16px; 
 			line-height: $lh32px;
 			color: $black;
-			margin-bottom: 40px;
+			margin-bottom: 20px;
 
 			@media (min-width: $xs) {
 				font-size: $fs20px;
+			}
+
+			@media (min-width: $lg) {
+				margin-bottom: 40px;
 			}
 		}
 
 		&-link {
 			position: relative;
-			margin-bottom: 32px;
+			margin-bottom: 10px; 
+
+			@media (min-width: $lg) {
+				margin-bottom: 32px;
+			}
 			
 			&:last-child {
 				margin-bottom: 0;
@@ -101,12 +117,12 @@
 			& a {
 				font-family: $openSans;
 				font-weight: $fw400;
-				font-size: $fs16px; // 20
+				font-size: $fs16px; 
 				line-height: $lh32px;
 				color: $grey;
 				transition: all ease 0.35s;
 
-				@media (min-width: $xs) {
+				@media (min-width: $sm) {
 					font-size: $fs20px;
 				}
 
@@ -119,23 +135,53 @@
 	}
 
 	.footer-link-image {
+		width: 100%;
 		position: absolute;
 		right: 0;
 		top: 0;
-		transform: translate(-15%, 80%);
+		transform: translate(78%, 50%);
 		transition: $tr;
 		cursor: pointer;
 
-		&:hover {
-			opacity: 0.7;
+		& img {
+			width: 40%;
+			height: auto;
+
+			@media (min-width: $xs) {
+				width: 50%;
+			}
+
+			@media (min-width: $lg) {
+				width: 60%;
+			}
+
+			@media (min-width: $xl) {
+				width: 75%;
+			}
 		}
 
 		@media(min-width: $xs) {
-			transform: translate(-30%, 80%);
+			transform: translate(81%, 36%);
+		}
+
+		@media(min-width: $sm) {
+			transform: translate(83%, 30%);
 		}
 		
 		@media (min-width: $lg) {
-			transform: translate(85%, 0%);
+			transform: translate(85%, 13%);
+		}
+
+		@media (min-width: $xl) {
+			transform: translate(85%, 16%);
+		}
+
+		@media (min-width: $xxl) {
+			transform: translate(85%, 10%);
+		}
+
+		&:hover {
+			opacity: 0.7;
 		}
 	}
 }
