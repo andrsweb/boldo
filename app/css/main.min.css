@@ -561,7 +561,11 @@ ul {
     margin-bottom: 35px;
     -webkit-transition: 0.35s;
     -o-transition: 0.35s;
-    transition: 0.35s; }
+    transition: 0.35s;
+    text-align: center; }
+    @media (min-width: 992px) {
+      .footer-logo {
+        text-align: left; } }
     .footer-logo:hover {
       opacity: 0.7; }
   .footer-text, .footer-rights {
@@ -583,12 +587,23 @@ ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     margin: 0 auto; }
+    @media (min-width: 992px) {
+      .footer-links {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row; } }
     .footer-links-col {
-      margin-right: 10%; }
+      margin-right: 10%;
+      margin-bottom: 20px; }
       @media (min-width: 576px) {
         .footer-links-col {
           margin-right: 25%; } }
@@ -603,7 +618,7 @@ ul {
       font-size: 16px;
       line-height: 32px;
       color: #000000;
-      margin-bottom: 20px; }
+      margin-bottom: 10px; }
       @media (min-width: 480px) {
         .footer-links-heading {
           font-size: 20px; } }
@@ -611,11 +626,13 @@ ul {
         .footer-links-heading {
           margin-bottom: 40px; } }
     .footer-links-link {
+      text-align: center;
       position: relative;
       margin-bottom: 10px; }
       @media (min-width: 992px) {
         .footer-links-link {
-          margin-bottom: 32px; } }
+          margin-bottom: 32px;
+          text-align: left; } }
       .footer-links-link:last-child {
         margin-bottom: 0; }
       .footer-links-link a {
@@ -634,44 +651,41 @@ ul {
           opacity: 0.8;
           color: #65E4A3; }
   .footer .footer-link-image {
-    width: 100%;
+    width: 72px;
+    height: 30px;
     position: absolute;
     right: 0;
     top: 0;
-    -webkit-transform: translate(78%, 50%);
-        -ms-transform: translate(78%, 50%);
-            transform: translate(78%, 50%);
+    -webkit-transform: translate(100%, 2%);
+        -ms-transform: translate(100%, 2%);
+            transform: translate(100%, 2%);
     -webkit-transition: 0.35s;
     -o-transition: 0.35s;
     transition: 0.35s;
     cursor: pointer; }
     .footer .footer-link-image img {
-      width: 45%;
+      width: 100%;
       height: auto; }
-      @media (min-width: 480px) {
-        .footer .footer-link-image img {
-          width: 55%; } }
-      @media (min-width: 992px) {
-        .footer .footer-link-image img {
-          width: 65%; } }
-      @media (min-width: 1240px) {
-        .footer .footer-link-image img {
-          width: 75%; } }
     @media (min-width: 480px) {
       .footer .footer-link-image {
-        -webkit-transform: translate(65%, 22%);
-            -ms-transform: translate(65%, 22%);
-                transform: translate(65%, 22%); } }
+        -webkit-transform: translate(83%, 4%);
+            -ms-transform: translate(83%, 4%);
+                transform: translate(83%, 4%); } }
     @media (min-width: 576px) {
       .footer .footer-link-image {
-        -webkit-transform: translate(83%, 20%);
-            -ms-transform: translate(83%, 20%);
-                transform: translate(83%, 20%); } }
+        -webkit-transform: translate(110%, 8%);
+            -ms-transform: translate(110%, 8%);
+                transform: translate(110%, 8%); } }
+    @media (min-width: 767px) {
+      .footer .footer-link-image {
+        -webkit-transform: translate(130%, 8%);
+            -ms-transform: translate(130%, 8%);
+                transform: translate(130%, 8%); } }
     @media (min-width: 992px) {
       .footer .footer-link-image {
-        -webkit-transform: translate(85%, 13%);
-            -ms-transform: translate(85%, 13%);
-                transform: translate(85%, 13%); } }
+        -webkit-transform: translate(85%, 2%);
+            -ms-transform: translate(85%, 2%);
+                transform: translate(85%, 2%); } }
     @media (min-width: 1240px) {
       .footer .footer-link-image {
         -webkit-transform: translate(85%, 7%);

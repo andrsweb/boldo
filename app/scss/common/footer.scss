@@ -44,6 +44,11 @@
 	&-logo {
 		margin-bottom: 35px;
 		transition: $tr;
+		text-align: center;
+
+		@media (min-width: $lg) {
+			text-align: left;
+		}
 
 		&:hover {
 			opacity: 0.7;
@@ -73,11 +78,17 @@
 
 	&-links {
 		display: flex;
-		justify-content: center;
+		flex-direction: column; 
+		justify-content: center; 
 		margin: 0 auto;
 
+		@media (min-width: $lg) {
+			flex-direction: row;
+		}
+
 		&-col {
-			margin-right: 10%; //40%
+			margin-right: 10%;
+			margin-bottom: 20px;
 
 			@media (min-width: $sm) {
 				margin-right: 25%;
@@ -98,23 +109,25 @@
 			font-size: $fs16px; 
 			line-height: $lh32px;
 			color: $black;
-			margin-bottom: 20px;
+			margin-bottom: 10px; 
 
 			@media (min-width: $xs) {
 				font-size: $fs20px;
 			}
 
 			@media (min-width: $lg) {
-				margin-bottom: 40px;
+				margin-bottom: 40px;				
 			}
 		}
 
 		&-link {
+			text-align: center; 
 			position: relative;
 			margin-bottom: 10px; 
 
 			@media (min-width: $lg) {
 				margin-bottom: 32px;
+				text-align: left;
 			}
 			
 			&:last-child {
@@ -142,41 +155,34 @@
 	}
 
 	.footer-link-image {
-		width: 100%;
+		width: 72px;
+		height: 30px;
 		position: absolute;
 		right: 0;
 		top: 0;
-		transform: translate(78%, 50%);
+		transform: translate(100%, 2%);
 		transition: $tr;
 		cursor: pointer;
 
 		& img {
-			width: 45%;
+			width: 100%;
 			height: auto;
-
-			@media (min-width: $xs) {
-				width: 55%;
-			}
-
-			@media (min-width: $lg) {
-				width: 65%;
-			}
-
-			@media (min-width: $xl) {
-				width: 75%;
-			}
 		}
 
 		@media(min-width: $xs) {
-			transform: translate(65%, 22%);
+			transform: translate(83%, 4%);
 		}
 
 		@media(min-width: $sm) {
-			transform: translate(83%, 20%);
+			transform: translate(110%, 8%);
+		}
+
+		@media(min-width: $md) {
+			transform: translate(130%, 8%);
 		}
 		
 		@media (min-width: $lg) {
-			transform: translate(85%, 13%);
+			transform: translate(85%, 2%);
 		}
 
 		@media (min-width: $xl) {
