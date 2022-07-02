@@ -8,6 +8,7 @@
 	&-wrapp {
 		display: flex;
 		flex-wrap: wrap; 
+		justify-content: space-between;
 		padding: 60px 0 60px;
 
 		@media (min-width: $lg) {
@@ -16,11 +17,28 @@
 	}
 
 	&-header {
+		width: 100%; //27%
+		display: flex;
+		flex-direction: column;
 		margin-bottom: 50px; 
 
-		@media (min-width: $lg) {
+		@media (min-width: $lg)
+		 {
+			width: 40%;
 			margin-bottom: 0;
 		}
+
+		@media (min-width: $lg)
+		 {
+			width: 35%;
+			margin-bottom: 0;
+		}
+
+		@media (min-width: $xxl)
+		{
+		   width: 27%;
+		   margin-bottom: 0;
+	   }
 	}
 
 	&-logo {
@@ -38,7 +56,11 @@
 		font-size: $fs16px;
 		line-height: $lh28px;
 		color: $grey;
-		text-align: left; 
+		text-align: center;
+
+		@media (min-width: $lg) {
+			text-align: left;
+		}
 	}
 
 	&-text {
@@ -51,37 +73,22 @@
 
 	&-links {
 		display: flex;
+		justify-content: center;
 		margin: 0 auto;
 
-		@media (min-width: $lg) {
-			margin: 0 50px;
-		}
-
-		@media (min-width: $xl) {
-			margin: 0 125px;
-		}
-
-		@media (min-width: $xxl) {
-			margin: 0 179px;
-		}
-
 		&-col {
-			margin-right: 20px;
+			margin-right: 10%; //40%
+
+			@media (min-width: $sm) {
+				margin-right: 25%;
+			}
+
+			@media (min-width: $md) {
+				margin-right: 40%;
+			}
 
 			&:last-child {
 				 margin-right: 0;
-			}
-
-			@media (min-width: $xs) {
-				margin-right: 50px;
-			}
-
-			@media (min-width: $lg) {
-				margin-right: 75px;
-			}
-
-			@media (min-width: $xl) {
-				margin-right: 125px;
 			}
 		}
 
@@ -144,15 +151,15 @@
 		cursor: pointer;
 
 		& img {
-			width: 40%;
+			width: 45%;
 			height: auto;
 
 			@media (min-width: $xs) {
-				width: 50%;
+				width: 55%;
 			}
 
 			@media (min-width: $lg) {
-				width: 60%;
+				width: 65%;
 			}
 
 			@media (min-width: $xl) {
@@ -161,11 +168,11 @@
 		}
 
 		@media(min-width: $xs) {
-			transform: translate(81%, 36%);
+			transform: translate(65%, 22%);
 		}
 
 		@media(min-width: $sm) {
-			transform: translate(83%, 30%);
+			transform: translate(83%, 20%);
 		}
 		
 		@media (min-width: $lg) {
@@ -173,11 +180,11 @@
 		}
 
 		@media (min-width: $xl) {
-			transform: translate(85%, 16%);
+			transform: translate(85%, 7%);
 		}
 
 		@media (min-width: $xxl) {
-			transform: translate(85%, 10%);
+			transform: translate(85%, 5%);
 		}
 
 		&:hover {
