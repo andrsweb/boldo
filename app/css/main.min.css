@@ -1194,6 +1194,14 @@ ul {
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column; }
+      .connect.reverse .connect-items .connect-item-wrapp {
+        cursor: pointer; }
+        .connect.reverse .connect-items .connect-item-wrapp.active .connect-item {
+          background: #0A2640; }
+          .connect.reverse .connect-items .connect-item-wrapp.active .connect-item-text {
+            color: #ffffff; }
+          .connect.reverse .connect-items .connect-item-wrapp.active .connect-item-img svg path {
+            stroke: #ffffff; }
       .connect.reverse .connect-items .connect-item {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -1232,14 +1240,6 @@ ul {
           .connect.reverse .connect-items .connect-item-img img {
             width: 100%;
             height: auto; }
-        .connect.reverse .connect-items .connect-item .connect-item-wrapp {
-          cursor: pointer; }
-          .connect.reverse .connect-items .connect-item .connect-item-wrapp.active .connect-item {
-            background: #0A2640; }
-            .connect.reverse .connect-items .connect-item .connect-item-wrapp.active .connect-item-text {
-              color: #ffffff; }
-            .connect.reverse .connect-items .connect-item .connect-item-wrapp.active .connect-item-img svg path {
-              stroke: #ffffff; }
 
 .enterprise {
   background-color: #0A2640;
