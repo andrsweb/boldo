@@ -263,6 +263,10 @@ body {
   background-color: #ffffff;
   font-size: 16px; }
 
+h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0; }
+
 li {
   list-style: none; }
 
@@ -822,7 +826,7 @@ ul {
         padding-left: 105px; } }
     .hero-section-media img {
       width: 100%;
-      max-height: 423px; }
+      height: auto; }
 
 .brands {
   width: 100%;
@@ -853,7 +857,8 @@ ul {
       .brands-logo {
         width: calc(100% / 6); } }
   .brands-logo img {
-    width: 100%; }
+    width: 100%;
+    height: auto; }
 
 .services {
   background-color: #0A2640;
@@ -863,8 +868,8 @@ ul {
       padding: 50px 0 80px; } }
   @media (min-width: 1366px) {
     .services {
-      padding: 85px 0 109px; } }
-  .services-subtitle {
+      padding: 85px 0 99px; } }
+  .services-heading-subtitle {
     font-family: "Open Sans";
     font-weight: 400;
     font-size: 16px;
@@ -873,12 +878,12 @@ ul {
     text-align: center;
     margin-bottom: 10px; }
     @media (min-width: 767px) {
-      .services-subtitle {
+      .services-heading-subtitle {
         font-size: 20px; } }
     @media (min-width: 992px) {
-      .services-subtitle {
+      .services-heading-subtitle {
         text-align: center; } }
-  .services-title {
+  .services-heading-title {
     font-family: "Manrope";
     font-weight: 400;
     font-size: 24px;
@@ -887,13 +892,13 @@ ul {
     color: #ffffff;
     margin-bottom: 32px; }
     @media (min-width: 767px) {
-      .services-title {
+      .services-heading-title {
         font-size: 36px; } }
     @media (min-width: 992px) {
-      .services-title {
+      .services-heading-title {
         font-size: 48px;
         text-align: center;
-        margin-bottom: 70px;
+        margin-bottom: 69px;
         line-height: 72px; } }
 
 .services-cards {
@@ -988,17 +993,19 @@ ul {
       color: #65E4A3;
       cursor: pointer; }
     .card-link.img {
-      max-width: 24px;
-      max-height: 24px; }
+      width: 100%;
+      height: auto; }
     .card-link img {
       max-width: 100%;
+      height: auto;
       margin-left: 15px; }
-    .card-link-link:after {
+    .card-link:after {
       content: "";
       display: block;
       border-bottom: solid 1px;
       color: #ffffff;
-      width: 65%; }
+      width: 55%;
+      margin-top: 10px; }
 
 .connect {
   padding-top: 40px; }
@@ -1218,13 +1225,13 @@ ul {
       width: calc(100% - 28px);
       padding-left: 3%; }
     .connect.reverse .connect-item-img {
-      width: 28px;
-      height: 28px; }
+      width: 24px;
+      height: 24px; }
       .connect.reverse .connect-item-img svg path {
         stroke: #0A2640; }
       .connect.reverse .connect-item-img img {
         width: 100%;
-        height: 100%; }
+        height: auto; }
     .connect.reverse .connect-item-text {
       font-family: "Open Sans";
       font-weight: 600;
@@ -1315,6 +1322,8 @@ ul {
           margin-bottom: 45px; } }
       .enterprise-header .enterprise-arrows .arrow-left {
         margin-right: 28px; }
+      .enterprise-header .enterprise-arrows .arrow-right img {
+        margin-bottom: 5px; }
       .enterprise-header .enterprise-arrows .arrow-left,
       .enterprise-header .enterprise-arrows .arrow-right {
         display: -webkit-box;

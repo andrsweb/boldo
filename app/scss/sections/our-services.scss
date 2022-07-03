@@ -7,45 +7,48 @@
 	}
 
 	@media (min-width: $xxl) {
-		padding: 85px 0 109px;
+		padding: 85px 0 99px;
 	}
 
-	&-subtitle {
-		font-family: $openSans;
-		font-weight: $fw400;
-		font-size: $fs16px;
-		line-height: $lh32px;
-		color: $light-grey;
-		text-align: center;
-		margin-bottom: 10px;
+	&-heading {
 
-		@media (min-width: $md) {
-			font-size: $fs20px;
-		}
-
-		@media (min-width: $lg) {
+		&-subtitle {
+			font-family: $openSans;
+			font-weight: $fw400;
+			font-size: $fs16px;
+			line-height: $lh32px;
+			color: $light-grey;
 			text-align: center;
+			margin-bottom: 10px;
+	
+			@media (min-width: $md) {
+				font-size: $fs20px;
+			}
+	
+			@media (min-width: $lg) {
+				text-align: center;
+			}
 		}
-	}
-
-	&-title {
-		font-family: $manrope;
-		font-weight: $fw400;
-		font-size: $fs24px;
-		line-height: $lh32px;  // 72
-		text-align: center;
-		color: $white;
-		margin-bottom: 32px; // 72
-
-		@media (min-width: $md) {
-			font-size: $fs36px;
-		}
-
-		@media (min-width: $lg) {
-			font-size: $fs48px;
+	
+		&-title {
+			font-family: $manrope;
+			font-weight: $fw400;
+			font-size: $fs24px;
+			line-height: $lh32px;  
 			text-align: center;
-			margin-bottom: 70px;
-			line-height: $lh72px;
+			color: $white;
+			margin-bottom: 32px; 
+	
+			@media (min-width: $md) {
+				font-size: $fs36px;
+			}
+	
+			@media (min-width: $lg) {
+				font-size: $fs48px;
+				text-align: center;
+				margin-bottom: 69px;
+				line-height: $lh72px;
+			}
 		}
 	}
 }
@@ -146,7 +149,6 @@
 				}
 			}
 		}
-
 		& a:hover {
 			content: "";
 			color: $accent;
@@ -154,21 +156,23 @@
 		}
 
 		&.img {
-			max-width: 24px;
-			max-height: 24px;
+			width: 100%;
+			height: auto;
 		}
 
 		& img {
 			max-width: 100%;
+			height: auto;
 			margin-left: 15px;
 		}
 
-		&-link:after {
+		&:after {
 			content: "";
 			display: block;
 			border-bottom: solid 1px;
 			color: $white;
-			width: 65%;
+			width: 55%;
+			margin-top: 10px;
 		}
 	}
 }
