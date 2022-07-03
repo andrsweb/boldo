@@ -144,30 +144,28 @@
 			}
 		}
 	}
-}
 
-.connect.reverse {
-	padding-top: 20px; 
 
-	@media (min-width: $xl) {
-		padding-top: 80px;
-	}
-
-	&.last {
-		padding-bottom: 20px; 
-
-		@media (min-width: $lg) {
-			padding-bottom: 45px;
-		}
+	&.reverse {
+		padding-top: 20px; 
 
 		@media (min-width: $xl) {
-			padding-bottom: 145px;
+			padding-top: 80px;
 		}
-	}
 
-	& .connect{
-		
-		&-heading {
+		&.last {
+			padding-bottom: 20px; 
+
+			@media (min-width: $lg) {
+				padding-bottom: 45px;
+			}
+
+			@media (min-width: $xl) {
+				padding-bottom: 145px;
+			}
+		}
+
+		.connect-heading {
 			width: 100%; 
 			padding: 33px 0 0 0; 
 
@@ -183,7 +181,7 @@
 			}
 		}
 
-		&-header {
+		.connect-header {
 			margin-bottom: 44px; 
 
 			@media (min-width: $xl) {
@@ -191,7 +189,7 @@
 			}
 		}
 
-		&-image {
+		.connect-image {
 			width: 100%; 
 			height: auto;
 
@@ -219,78 +217,78 @@
 			}
 		}
 
-		&-inner {
+		.connect-inner {
 			display: flex;
 			flex-direction: row-reverse;
 		}
-		
-		&-items {
+			
+		.connect-items {
 			width: 100%;
 			display: flex;
 			flex-direction: column;
-		}
 
-		&-item {
-			display: flex;
-			margin-bottom: 24px;
-			align-items: center;
-			padding: 10px 10px; 
-			border-radius: 8px;
-			transition: all ease $tr;
-
-		@media (min-width: $sm) {
-			 padding: 20px 20px;
-		}
-			
-			.connect-item-text {
-				width: calc(100% - 28px);
-				padding-left: 3%;
-			}
-
-			&-img {
-				width: 24px;
-				height: 24px;
-
-				& svg path {
-					stroke:	$dark;
-				}
-
-				& img {
-					width: 100%;
-					height: auto;
-				}
-			}
-	
-			&-text {
-				font-family: $openSans;
-				font-weight: $fw600;
-				font-size: $fs12px; 
-				line-height: $lh28px;
-				color: $black;
+			.connect-item {
+				display: flex;
+				margin-bottom: 24px;
+				align-items: center;
+				padding: 10px 10px; 
+				border-radius: 8px;
+				transition: all ease $tr;
 
 				@media (min-width: $sm) {
-					font-size: $fs14px;
+					padding: 20px 20px;
 				}
 
-				@media (min-width: $lg) {
-					font-size: $fs16px;
-				}
-			}
-		}
-	}
+				&-text {
+					width: calc(100% - 28px);
+					padding-left: 3%;
+					font-family: $openSans;
+					font-weight: $fw600;
+					font-size: $fs12px; 
+					line-height: $lh28px;
+					color: $black;
 
-	.connect-item-wrapp.active {
-		cursor: pointer; 
+					@media (min-width: $sm) {
+						font-size: $fs14px;
+					}
+
+					@media (min-width: $lg) {
+						font-size: $fs16px;
+					}
+				}
 		
-		.connect-item {
-			background: $dark;
+				&-img {
+					width: 24px;
+					height: 24px;
 
-			&-text {
-				color: $white;
-			}
+					& svg path {
+						stroke:	$dark;
+					}
 
-			&-img svg path {
-				stroke: $white;
+					& img {
+						width: 100%;
+						height: auto;
+					}
+				}
+
+				.connect-item-wrapp {
+					cursor: pointer; 
+
+					&.active {
+
+						.connect-item {
+							background: $dark;
+				
+							&-text {
+								color: $white;
+							}
+				
+							&-img svg path {
+								stroke: $white;
+							}
+						}
+					}
+				}
 			}
 		}
 	}

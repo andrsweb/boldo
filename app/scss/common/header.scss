@@ -96,46 +96,77 @@
 	}
 }
 
-	.burger-menu {
-		padding: 40px;
-		background: #dae6f1;
-		border-radius: 12px;
-		display: block;
-		position: fixed;
-		top: 125px;
-		right: 30px;
-		
-		@media (min-width: $md) {
+.burger-menu {
+	padding: 40px;
+	background: #dae6f1;
+	border-radius: 12px;
+	display: block;
+	position: fixed;
+	top: 125px;
+	right: 30px;
+
+		&.active {
 			display: none;
 		}
-		
-		.burger-item {
-			margin-bottom: 20px;
+	
+	@media (min-width: $md) {
+		display: none;
+	}
+	
+	.burger-item {
+		margin-bottom: 20px;
 
-			&-link {
-				font-family: $openSans;
-				font-size: $fs16px;
-				color: $dark;
-				transition: color ease-in 0.35s;
+		&-link {
+			font-family: $openSans;
+			font-size: $fs16px;
+			color: $dark;
+			transition: color ease-in 0.35s;
 
-				&:hover {
-					color: $accent;
-				}
+			&:hover {
+				color: $accent;
 			}
 		}
 	}
+}
 
-	.burger-menu.active {
+.burger-btn {
+	width: 30px;
+	height: 30px;
+	position: relative;
+	cursor: pointer;
+	transition: $tr;
+
+	&:hover {
+		opacity: 0.7;	
+	}
+
+	@media (min-width: $md) {
 		display: none;
 	}
 
-	.burger-btn {
+	span {
+
+		&::before, &::after {
+			content: "";
+			width: 100%;
+			background: $dark;
+			height: 4px;
+			position: absolute;
+			top: 10px;
+			transform: rotate(45deg);
+		}
+
+		&::before {
+			position: absolute;
+			transform: rotate(-45deg);
+		}
+	} 
+
+	&.active {
 		width: 30px;
 		height: 30px;
 		position: relative;
-		transform: rotate(45deg);
-		cursor: pointer;
-		
+
 		@media (min-width: $md) {
 			display: none;
 		}
@@ -146,46 +177,6 @@
 			height: 4px;
 			position: absolute;
 			top: 0;
-			transform: rotate(90deg);
-
-			&::before, &::after {
-				content: "";
-				width: 100%;
-				background: $dark;
-				height: 4px;
-				position: absolute;
-				top: 0px;
-			}
-
-			&::after {
-				top: 0;
-				transform: rotate(90deg);
-			}
-
-			&::before {
-				position: static;
-			}
-		} 
-	}
-
-	.burger-btn.active {
-		width: 30px;
-		height: 30px;
-		position: relative;
-		transform: rotate(0)
-		translate(0, 0);
-		
-		@media (min-width: $md) {
-			display: none;
-		}
-		
-		span {
-			background: $dark;
-			width: 100%;
-			height: 4px;
-			position: absolute;
-			top: 0;
-			transform: rotate(0);
 
 			&::before, &::after {
 				content: "";
@@ -196,9 +187,15 @@
 				top: 10px;
 			}
 
+			&::before {
+				transform: rotate(0);
+			}
+
 			&::after {
 				top: 20px;
 				transform: rotate(0);
 			}
 		} 
 	}
+}
+
