@@ -5,15 +5,14 @@ document.addEventListener( 'DOMContentLoaded', () => {
 } )
 
 const changeImg = () => {
-	const changeImages = document.querySelectorAll('.connect-item-wrapp')
+	const buttons = document.querySelectorAll('.connect-item-wrapp')
 	const destImg = document.querySelector('.connect-to-change')
 	const wrapp = document.querySelector('.connect-items')
 	
-	if ( ! changeImages.length || ! destImg ) return
+	if ( ! buttons.length || ! destImg ) return
 
-	changeImages.forEach( (img, index, arr) => {
+	buttons.forEach( img => {
 		img.addEventListener('click', () => { 
-			console.log(arr[index + 1])
 			const imgSrc = img.dataset.img
 
 			if ( ! imgSrc || img.classList.contains( 'active' ) ) return
