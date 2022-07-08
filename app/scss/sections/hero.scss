@@ -80,6 +80,7 @@
 
 			&:hover {
 				opacity: 0.8;
+				border-color: $dark;
 			}
 
 			@media (min-width: $md) {

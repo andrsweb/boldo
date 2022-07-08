@@ -65,7 +65,7 @@
 
 .card {
 	width: calc(100% / 1);
-	padding: 20px; // 0 20p 30 0
+	padding: 20px; 
 
 	@media (min-width: $md) {
 		width: calc(100% / 2);
@@ -77,7 +77,7 @@
 	}
 
 	&:last-child {
-		margin: 0 auto;  ////
+		margin: 0 auto;  
 
 		@media (min-width: $lg) {
 			margin: 0;
@@ -95,7 +95,7 @@
 	}
 
 	&-image {
-		width: 80%; // 100
+		width: 80%; 
 
 		@media (min-width: $sm) {
 			width: 70%;
@@ -171,8 +171,12 @@
 			display: block;
 			border-bottom: solid 1px;
 			color: $white;
-			width: 55%;
+			width: 100%;
 			margin-top: 10px;
+
+			@media (min-width: $xl) {
+				width: 55%;
+			}
 		}
 	}
 }

@@ -1,0 +1,101 @@
+.numbers {
+    background: $dark;
+    padding: 40px 0 40px; 
+
+    @media (min-width: $md) {
+        padding: 60px 0 60px;
+    }
+
+    @media (min-width: $xxl) {
+        padding: 94px 0 96px;
+    }
+
+    .numbers-box {
+        margin-bottom: 82px;
+
+        .numbers-subtitle {
+            font-family: $openSans;
+            font-weight: $fw400;
+            font-size: $fs16px; 
+            line-height: $lh32px;
+            color: $light-grey;
+            text-align: center;
+            margin-bottom: 12px;
+
+            @media (min-width: $md) {
+                font-size: $fs20px;
+            }
+        }
+
+        .numbers-title {
+            font-family: $manrope;
+            font-weight: $fw400;
+            font-size: $fs32px; 
+            line-height: $lh48px; 
+            color: $white;
+            text-align: center;
+
+            @media (min-width: $md) {
+                font-size: $fs48px;
+            }
+
+            @media (min-width: $xxl) {
+                line-height: $lh72px
+            }
+        }
+    }
+
+    .statistics {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        padding: 0 4.56%;
+
+        @media (min-width: $lg) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        &-col {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 40px;   
+               
+            @media (min-width: $lg) {
+                margin-bottom: 0;
+            }
+  
+            .statistics-title {
+                font-family: $manrope;
+                font-weight: $fw400;
+                font-size: $fs48px; 
+                line-height: $lh56px;
+                color: $turquoise;
+                margin-bottom: 12px; 
+
+                @media (min-width: $xs) {
+                    font-size: $fs64px;
+                } 
+                
+                @media (min-width: $lg) {
+                    font-size: $fs96px;
+                    margin-bottom: 32px;
+                }
+            }
+
+            .statistics-text {
+                font-family: $openSans;
+                font-weight: $fw400;
+                font-size: $fs16px; 
+                line-height: $lh36px; 
+                color: $light-grey;
+                text-align: center;
+
+                @media (min-width: $lg) {
+                    font-size: $fs24px;
+                    text-align: left;
+                }
+            }
+        }
+    }  
+}
