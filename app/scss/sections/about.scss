@@ -1,0 +1,67 @@
+.about-us {
+    padding: 155px 0 5px;
+    background-color: $dark;
+    position: relative;
+
+    .header-box {
+        margin: 0 auto 70px auto;
+         
+        @media (min-width: $lg) {
+            padding: 0 10%;
+        }
+
+        @media (min-width: $xl) {
+            padding: 0 15%;
+        }
+
+        @media (min-width: $xxl) {
+            padding: 0 18%;
+        }
+
+        .subtitle  {
+            font-family: $openSans;
+            font-weight: $fw400;
+            font-size: $fs14px;
+            line-height: $lh32px; 
+            color: $light-grey;
+            text-align: center;
+            margin-bottom: 12px;
+
+            @media (min-width: $md) {
+                font-size: $fs16px;
+            }
+
+            @media (min-width: $xl) {
+                font-size: $fs20px;
+            }
+        }
+
+        .title  {
+            font-family: $manrope;
+            font-weight: $fw400;
+            font-size: $fs32px;  
+            line-height: $lh56px; 
+            color: $white;
+            text-align: center;
+            margin-bottom: 18px;
+
+            @media (min-width: $md) {
+                font-size: $fs48px;
+            }       
+            
+            @media (min-width: $xxl) {
+                font-size: $fs64px;
+                line-height: $lh84px;
+            }            
+
+            &-sub {
+                font-family: $openSans;
+                font-weight: $fw400;
+                font-size: $fs16px;
+                line-height: $lh28px;
+                color: $light-grey;
+                text-align: center;
+            }
+        }
+    }
+}

@@ -31,10 +31,14 @@
 
 	&-logo {
 		display: flex;
-
+		
 		img {
 			height: 42px;
 			width: auto;
+		}
+
+		a {
+			transition: $tr;
 		}
 
 		a:hover {
@@ -67,6 +71,64 @@
 			margin-right: 6px;
 		}
 	}
+
+	&.about {
+		
+		&.scrolled {
+			background-color: $dark;
+			padding: 15px 0;
+		}
+
+		.menu {
+			
+			&-item {
+				transition: $tr;
+			}
+
+			a {
+				color: $white;
+
+				&:hover {
+					color: $accent;
+				}
+			}
+		}
+
+		.header-button {
+			
+			.button {
+				padding: 10px 42px;
+				background-color: $white;
+				border: 0;
+
+				&:hover {
+					color: $dark;
+					background-color: $accent;
+				}
+			}
+		}
+
+		.burger-btn {
+			
+			span {
+	
+				&::before, &::after {
+					background: $white;
+				}
+			}
+		}
+	
+		.burger-btn.hide {
+				
+			span {
+				background: $white;
+	
+				&::before, &::after {
+					background: $white;
+				}
+			}
+		}
+	} 
 }
 
 .menu {
@@ -78,7 +140,7 @@
 	&-item {
 		display: flex;
 		flex-wrap: wrap;
-		margin: 0 20px;
+		margin: 0 21px;
 		
 	}
 			
@@ -105,7 +167,7 @@
 	top: 125px;
 	right: 30px;
 
-		&.active {
+		&.hide {
 			display: none;
 		}
 	
@@ -162,7 +224,7 @@
 		}
 	} 
 
-	&.active {
+	&.hide {
 		width: 30px;
 		height: 30px;
 		position: relative;
@@ -198,4 +260,3 @@
 		} 
 	}
 }
-

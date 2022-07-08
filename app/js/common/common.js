@@ -37,15 +37,15 @@ const menuButton = document.querySelector('.burger-btn')
 const menuBurger = document.querySelector('.burger-menu')
 
 menuButton.addEventListener('click', () => {
-	if (!menuBurger.classList.contains('active')) 
-		menuBurger.classList.add('active')
+	if (!menuBurger.classList.contains('hide')) 
+		menuBurger.classList.add('hide')
 	else 
-		menuBurger.classList.remove('active')
+		menuBurger.classList.remove('hide')
 	
-	if (!menuButton.classList.contains('active')) 
-		menuButton.classList.add('active')
+	if (!menuButton.classList.contains('hide')) 
+		menuButton.classList.add('hide')
 	else 
-		menuButton.classList.remove('active')
+		menuButton.classList.remove('hide')
 })
 
 /**
@@ -93,3 +93,5 @@ export const renderSVGs = ( wrapper, imgSelector = '' ) => {
 			} )
 	} )
 }
+
+	

@@ -375,6 +375,10 @@ ul {
     .header-logo img {
       height: 42px;
       width: auto; }
+    .header-logo a {
+      -webkit-transition: 0.35s;
+      -o-transition: 0.35s;
+      transition: 0.35s; }
     .header-logo a:hover {
       content: "";
       opacity: 0.75; }
@@ -398,6 +402,30 @@ ul {
       border-color: #65E4A3; }
     .header-button:last-child {
       margin-right: 6px; }
+  .header.about.scrolled {
+    background-color: #0A2640;
+    padding: 15px 0; }
+  .header.about .menu-item {
+    -webkit-transition: 0.35s;
+    -o-transition: 0.35s;
+    transition: 0.35s; }
+  .header.about .menu a {
+    color: #ffffff; }
+    .header.about .menu a:hover {
+      color: #65E4A3; }
+  .header.about .header-button .button {
+    padding: 10px 42px;
+    background-color: #ffffff;
+    border: 0; }
+    .header.about .header-button .button:hover {
+      color: #0A2640;
+      background-color: #65E4A3; }
+  .header.about .burger-btn span::before, .header.about .burger-btn span::after {
+    background: #ffffff; }
+  .header.about .burger-btn.hide span {
+    background: #ffffff; }
+    .header.about .burger-btn.hide span::before, .header.about .burger-btn.hide span::after {
+      background: #ffffff; }
 
 .menu {
   display: -webkit-box;
@@ -414,7 +442,7 @@ ul {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin: 0 20px; }
+    margin: 0 21px; }
   .menu a {
     color: #0A2640;
     font-family: "Open Sans";
@@ -435,7 +463,7 @@ ul {
   position: fixed;
   top: 125px;
   right: 30px; }
-  .burger-menu.active {
+  .burger-menu.hide {
     display: none; }
   @media (min-width: 767px) {
     .burger-menu {
@@ -480,31 +508,31 @@ ul {
     -webkit-transform: rotate(-45deg);
         -ms-transform: rotate(-45deg);
             transform: rotate(-45deg); }
-  .burger-btn.active {
+  .burger-btn.hide {
     width: 30px;
     height: 30px;
     position: relative; }
     @media (min-width: 767px) {
-      .burger-btn.active {
+      .burger-btn.hide {
         display: none; } }
-    .burger-btn.active span {
+    .burger-btn.hide span {
       background: #0A2640;
       width: 100%;
       height: 4px;
       position: absolute;
       top: 0; }
-      .burger-btn.active span::before, .burger-btn.active span::after {
+      .burger-btn.hide span::before, .burger-btn.hide span::after {
         content: "";
         width: 100%;
         background: #0A2640;
         height: 4px;
         position: absolute;
         top: 10px; }
-      .burger-btn.active span::before {
+      .burger-btn.hide span::before {
         -webkit-transform: rotate(0);
             -ms-transform: rotate(0);
                 transform: rotate(0); }
-      .burger-btn.active span::after {
+      .burger-btn.hide span::after {
         top: 20px;
         -webkit-transform: rotate(0);
             -ms-transform: rotate(0);
@@ -1890,5 +1918,178 @@ ul {
     @media (min-width: 992px) {
       .company-form-header .email {
         font-size: 20px; } }
+
+.about-us {
+  padding: 155px 0 5px;
+  background-color: #0A2640;
+  position: relative; }
+  .about-us .header-box {
+    margin: 0 auto 70px auto; }
+    @media (min-width: 992px) {
+      .about-us .header-box {
+        padding: 0 10%; } }
+    @media (min-width: 1240px) {
+      .about-us .header-box {
+        padding: 0 15%; } }
+    @media (min-width: 1366px) {
+      .about-us .header-box {
+        padding: 0 18%; } }
+    .about-us .header-box .subtitle {
+      font-family: "Open Sans";
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 32px;
+      color: #f1f1f1;
+      text-align: center;
+      margin-bottom: 12px; }
+      @media (min-width: 767px) {
+        .about-us .header-box .subtitle {
+          font-size: 16px; } }
+      @media (min-width: 1240px) {
+        .about-us .header-box .subtitle {
+          font-size: 20px; } }
+    .about-us .header-box .title {
+      font-family: "Manrope";
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 56px;
+      color: #ffffff;
+      text-align: center;
+      margin-bottom: 18px; }
+      @media (min-width: 767px) {
+        .about-us .header-box .title {
+          font-size: 48px; } }
+      @media (min-width: 1366px) {
+        .about-us .header-box .title {
+          font-size: 64px;
+          line-height: 84px; } }
+      .about-us .header-box .title-sub {
+        font-family: "Open Sans";
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        color: #f1f1f1;
+        text-align: center; }
+
+.story {
+  position: relative; }
+  .story::before {
+    content: "";
+    height: 100px;
+    width: 100%;
+    background-color: #0A2640;
+    position: absolute;
+    top: 0;
+    left: 0; }
+  .story-images {
+    padding: 2px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 20px; }
+    @media (min-width: 1240px) {
+      .story-images {
+        gap: 50px; } }
+    .story-images .wrapp-img {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 100%;
+      height: auto; }
+    .story-images .col-left, .story-images .col-right {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      .story-images .col-left img, .story-images .col-right img {
+        width: 100%;
+        margin-bottom: 40px; }
+    @media (min-width: 992px) {
+      .story-images .col-right {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        gap: 50px; } }
+    @media (min-width: 1240px) {
+      .story-images .col-right {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        gap: 0; } }
+    .story-images .col-middle {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin-bottom: 40px; }
+      @media (min-width: 992px) {
+        .story-images .col-middle {
+          margin-bottom: 0; } }
+      .story-images .col-middle img {
+        width: 100%;
+        height: 550px; }
+        @media (min-width: 767px) {
+          .story-images .col-middle img {
+            height: 632px; } }
+  .story-box {
+    margin-top: 10px; }
+    @media (min-width: 992px) {
+      .story-box {
+        padding: 2px 16.64%;
+        margin-top: 74px; } }
+    .story-box .story-subtitle {
+      font-family: "Open Sans";
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 32px;
+      text-align: left;
+      margin-bottom: 12px;
+      color: #777777;
+      text-align: center; }
+      @media (min-width: 767px) {
+        .story-box .story-subtitle {
+          font-size: 16px; } }
+      @media (min-width: 1240px) {
+        .story-box .story-subtitle {
+          font-size: 20px;
+          text-align: left; } }
+    .story-box .story-title {
+      font-family: "Manrope";
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 48px;
+      color: #000000;
+      margin-bottom: 31px;
+      text-align: center; }
+      @media (min-width: 992px) {
+        .story-box .story-title {
+          font-size: 48px; } }
+      @media (min-width: 1240px) {
+        .story-box .story-title {
+          line-height: 72px;
+          text-align: left; } }
+    .story-box .story-text {
+      font-family: "Open Sans";
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 32px;
+      color: #777777;
+      text-align: center; }
+      @media (min-width: 767px) {
+        .story-box .story-text {
+          font-size: 16px; } }
+      @media (min-width: 1240px) {
+        .story-box .story-text {
+          font-size: 20px;
+          text-align: left; } }
 
 /*# sourceMappingURL=main.min.css.map */
