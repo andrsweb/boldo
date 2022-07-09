@@ -11,7 +11,6 @@
 	}
 
 	&-heading {
-
 		&-subtitle {
 			font-family: $openSans;
 			font-weight: $fw400;
@@ -149,6 +148,7 @@
 				}
 			}
 		}
+		
 		& a:hover {
 			content: "";
 			color: $accent;

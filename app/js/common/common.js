@@ -1,3 +1,5 @@
+import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock'
+
 document.addEventListener( 'DOMContentLoaded', () => {
 	'use strict'
 
@@ -5,6 +7,14 @@ document.addEventListener( 'DOMContentLoaded', () => {
     renderSVGs( document.querySelector('.connect.reverse') )
 	renderSVGs( document.querySelector('.services') )
 } )
+
+let windowHeight = window.innerHeight
+
+window.addEventListener('resize', () => {
+	windowHeight = window.innerHeight
+} )
+
+export const getWindowHeight = () => windowHeight
 
 const onHeaderButtonClick = () => {
     const button = document.querySelector('.header-button .button')
@@ -33,19 +43,19 @@ window.addEventListener('scroll', () => {
 
 // menu burger
 
-const menuButton = document.querySelector('.burger-btn')
-const menuBurger = document.querySelector('.burger-menu')
+const menuBtn = document.querySelector('.burger-btn'), 
+	menuWrapp = document.querySelector('.header-nav-wrapp')
 
-menuButton.addEventListener('click', () => {
-	if (!menuBurger.classList.contains('hide')) 
-		menuBurger.classList.add('hide')
-	else 
-		menuBurger.classList.remove('hide')
-	
-	if (!menuButton.classList.contains('hide')) 
-		menuButton.classList.add('hide')
-	else 
-		menuButton.classList.remove('hide')
+menuBtn.addEventListener('click', () => {
+	let targetElement = document.querySelector('#burger-menu')
+		
+	if (! menuWrapp.classList.contains('opened')) {
+		menuWrapp.classList.add('opened')
+		disableBodyScroll(targetElement)
+	} else {
+		menuWrapp.classList.remove('opened')
+		enableBodyScroll(targetElement)
+	}
 })
 
 /**
@@ -94,7 +104,7 @@ export const renderSVGs = ( wrapper, imgSelector = '' ) => {
 	} )
 }
 
-	/**
+/**
  * Check if User scrolled to specific DOM element.
  *
  * @param {String}  elementSelector  Specific DOM element selector.
@@ -102,16 +112,24 @@ export const renderSVGs = ( wrapper, imgSelector = '' ) => {
  * @param {Number}  offset      Offset value (top and bottom).
  * @returns      True if element is in scope, false if not.
  */
-export const isInScope = ( elementSelector, st, offset = -1300 ) => {
-	const element = document.querySelector( elementSelector )
-  
-	if( ! element ) return
-  
-	if(
-	  st >= ( element.offsetTop - window.innerHeight + offset ) &&
-	  st <= ( element.offsetTop + element.clientHeight - offset )
-	) return true
-  
-	return false
-  }
 
+export const isInScope = ( elementSelector, st, offset = 0 ) => {
+	const element  = document.querySelector( elementSelector )
+	if ( ! element) return
+	let bodyRect  = document.body.getBoundingClientRect(),
+		elemRect  = element.getBoundingClientRect(),
+		elemTop    = elemRect.top - bodyRect.top
+
+	if( ! element ) return
+
+	if(
+		st >= ( elemTop - getWindowHeight() + offset ) &&
+		st <= ( elemTop + element.clientHeight - offset )
+	) return true
+
+    return false
+}
+
+export const numberWithDots = x => {
+	return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")
+}
