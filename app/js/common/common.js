@@ -94,4 +94,24 @@ export const renderSVGs = ( wrapper, imgSelector = '' ) => {
 	} )
 }
 
-	
+	/**
+ * Check if User scrolled to specific DOM element.
+ *
+ * @param {String}  elementSelector  Specific DOM element selector.
+ * @param {Number}  st        Window scroll top value.
+ * @param {Number}  offset      Offset value (top and bottom).
+ * @returns      True if element is in scope, false if not.
+ */
+export const isInScope = ( elementSelector, st, offset = -1300 ) => {
+	const element = document.querySelector( elementSelector )
+  
+	if( ! element ) return
+  
+	if(
+	  st >= ( element.offsetTop - window.innerHeight + offset ) &&
+	  st <= ( element.offsetTop + element.clientHeight - offset )
+	) return true
+  
+	return false
+  }
+

@@ -5,4 +5,5 @@ import './common/test'
 import './sections/enterprise'
 import './sections/blog'
 import './sections/connect'
+import './sections/numbers'
 
