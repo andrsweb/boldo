@@ -1884,7 +1884,7 @@ ul {
       -webkit-transition: 0.35s;
       -o-transition: 0.35s;
       transition: 0.35s;
-      padding: 8px 30px;
+      padding: 10px 30px;
       border-radius: 56px; }
       @media (min-width: 480px) {
         .company-form-header .header-form-button .button.lg {
@@ -2316,5 +2316,170 @@ ul {
         @media (min-width: 1240px) {
           .team-cards .team-card-job {
             text-align: left; } }
+
+.values {
+  padding: 50px 0 70px;
+  background: #0A2640;
+  position: relative; }
+  @media (min-width: 992px) {
+    .values {
+      padding: 100px 0 100px; } }
+  @media (min-width: 1240px) {
+    .values {
+      padding: 122px 0 200px; } }
+  @media (min-width: 1366px) {
+    .values {
+      padding: 122px 0 255px; } }
+  .values::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    width: 100%;
+    height: 25px; }
+    @media (min-width: 992px) {
+      .values::after {
+        height: 50px; } }
+    @media (min-width: 1240px) {
+      .values::after {
+        height: 100px; } }
+    @media (min-width: 1240px) {
+      .values::after {
+        height: 125px; } }
+  .values .values-header-box {
+    margin-bottom: 82px; }
+    @media (min-width: 1240px) {
+      .values .values-header-box {
+        padding: 0 11%; } }
+    @media (min-width: 1240px) {
+      .values .values-header-box {
+        padding: 0 13.6%; } }
+    .values .values-header-box .values-subtitle {
+      font-family: "Open Sans";
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 32px;
+      color: #ffffff;
+      margin-bottom: 12px;
+      text-align: center; }
+      @media (min-width: 1240px) {
+        .values .values-header-box .values-subtitle {
+          text-align: left; } }
+    .values .values-header-box .values-title {
+      font-family: "Manrope";
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 48px;
+      color: #ffffff;
+      margin-bottom: 22px;
+      text-align: center; }
+      @media (min-width: 992px) {
+        .values .values-header-box .values-title {
+          font-size: 48px; } }
+      @media (min-width: 1240px) {
+        .values .values-header-box .values-title {
+          font-size: 48px;
+          line-height: 72px;
+          text-align: left; } }
+    .values .values-header-box .values-text {
+      font-family: "Open Sans";
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 32px;
+      color: #f1f1f1;
+      text-align: center; }
+      @media (min-width: 1240px) {
+        .values .values-header-box .values-text {
+          text-align: left; } }
+  .values .values-items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .values .values-items .values-item {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      margin-bottom: 40px; }
+      @media (min-width: 1366px) {
+        .values .values-items .values-item {
+          margin-bottom: 72px; } }
+      .values .values-items .values-item:last-child {
+        margin-bottom: 0; }
+      .values .values-items .values-item .values-img-wrapp {
+        width: 100%; }
+        @media (min-width: 992px) {
+          .values .values-items .values-item .values-img-wrapp {
+            width: 40%; } }
+        @media (min-width: 1240px) {
+          .values .values-items .values-item .values-img-wrapp {
+            width: 32%;
+            padding-left: 9%; } }
+        .values .values-items .values-item .values-img-wrapp .values-img {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center; }
+          .values .values-items .values-item .values-img-wrapp .values-img img {
+            height: auto; }
+      .values .values-items .values-item .values-text-wrapp {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        width: 100%; }
+        @media (min-width: 992px) {
+          .values .values-items .values-item .values-text-wrapp {
+            width: 60%; } }
+        @media (min-width: 1240px) {
+          .values .values-items .values-item .values-text-wrapp {
+            width: 68%;
+            padding-right: 5%; } }
+        .values .values-items .values-item .values-text-wrapp .values-heading {
+          font-family: "Manrope";
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 48px;
+          color: #ffffff;
+          margin-bottom: 12px;
+          text-align: center; }
+          @media (min-width: 576px) {
+            .values .values-items .values-item .values-text-wrapp .values-heading {
+              font-size: 28px; } }
+          @media (min-width: 992px) {
+            .values .values-items .values-item .values-text-wrapp .values-heading {
+              text-align: left; } }
+        .values .values-items .values-item .values-text-wrapp .values-sub-text {
+          font-family: "Open Sans";
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 32px;
+          color: #f1f1f1;
+          text-align: center; }
+          @media (min-width: 576px) {
+            .values .values-items .values-item .values-text-wrapp .values-sub-text {
+              font-size: 16px; } }
+          @media (min-width: 767px) {
+            .values .values-items .values-item .values-text-wrapp .values-sub-text {
+              font-size: 20px; } }
+          @media (min-width: 992px) {
+            .values .values-items .values-item .values-text-wrapp .values-sub-text {
+              text-align: left; } }
 
 /*# sourceMappingURL=main.min.css.map */

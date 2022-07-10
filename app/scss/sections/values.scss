@@ -1,0 +1,195 @@
+.values {
+    padding: 50px 0 70px; // 122 0 255
+    background: $dark;
+    position: relative;
+
+    @media (min-width: $lg) {
+        padding: 100px 0 100px;
+    }
+
+    @media (min-width: $xl) {
+        padding: 122px 0 200px;
+    }
+
+    @media (min-width: $xxl) {
+        padding: 122px 0 255px;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: $white;
+        width: 100%;
+        height: 25px;
+
+        @media (min-width: $lg) {
+            height: 50px;
+        }
+
+        @media (min-width: $xl) {
+            height: 100px;
+        }
+
+        @media (min-width: $xl) {
+            height: 125px;
+        }
+    }
+
+    .values-header-box {
+        margin-bottom: 82px;
+
+        @media (min-width: $xl) {
+            padding: 0 11%;
+        }
+
+        @media (min-width: $xl) {
+            padding: 0 13.6%;
+        }
+
+        .values-subtitle {
+            font-family: $openSans;
+            font-weight: $fw400;
+            font-size: $fs20px;
+            line-height: $lh32px;
+            color: $white;      
+            margin-bottom: 12px;  
+            text-align: center;  
+
+            @media (min-width: $xl) {
+                text-align: left;
+            }
+        }
+
+        .values-title {
+            font-family: $manrope;
+            font-weight: $fw400;
+            font-size: $fs32px; 
+            line-height: $lh48px; 
+            color: $white;      
+            margin-bottom: 22px;
+            text-align: center;     
+            
+            @media (min-width: $lg) {
+                font-size: $fs48px;
+            }
+
+            @media (min-width: $xl) {
+                font-size: $fs48px;
+                line-height: $lh72px;
+                text-align: left;
+            }
+        }
+
+        .values-text {
+            font-family: $openSans;
+            font-weight: $fw400;
+            font-size: $fs20px;
+            line-height: $lh32px;     
+            color: $light-grey;
+            text-align: center;    
+            
+            @media (min-width: $xl) {
+                text-align: left;
+            }
+        }
+    }
+
+    .values-items {
+        display: flex;
+        flex-direction: column; 
+        flex-wrap: wrap;
+
+        .values-item {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 40px; 
+
+            @media (min-width: $xxl) {
+                margin-bottom: 72px;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            .values-img-wrapp {
+                width: 100%; 
+
+                 @media (min-width: $lg) {
+                    width: 40%;
+                }
+
+                @media (min-width: $xl) {
+                    width: 32%;
+                    padding-left: 9%;
+                }
+
+                .values-img {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                  
+                    img {
+                        height: auto;
+                    }
+                }
+            }
+           
+            .values-text-wrapp {
+                display: flex;
+                flex-direction: column;
+                width: 100%; 
+
+                 @media (min-width: $lg) {
+                    width: 60%;
+                }
+
+                @media (min-width: $xl) {
+                    width: 68%;
+                    padding-right: 5%;
+                }
+
+                .values-heading {
+                    font-family: $manrope;
+                    font-weight: $fw400;
+                    font-size: $fs20px; 
+                    line-height: $lh48px; 
+                    color: $white;    
+                    margin-bottom: 12px;  
+                    text-align: center;        
+                    
+                    @media (min-width: $sm) {
+                        font-size: $fs28px;
+                    }
+
+                    @media (min-width: $lg) {
+                        text-align: left;
+                    }
+                }
+    
+                .values-sub-text {
+                    font-family: $openSans;
+                    font-weight: $fw400;
+                    font-size: $fs14px; 
+                    line-height: $lh32px;
+                    color: $light-grey; 
+                    text-align: center; 
+
+                    @media (min-width: $sm) {
+                        font-size: $fs16px;
+                    }
+
+                    @media (min-width: $md) {
+                        font-size: $fs20px;
+                    }
+
+                    @media (min-width: $lg) {
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+}
