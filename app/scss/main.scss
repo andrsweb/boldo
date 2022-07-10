@@ -12,15 +12,20 @@
 @import 'common/footer';
 
 // Section styles
-@import 'sections/hero';
-@import 'sections/our-services';
-@import 'sections/connect';
-@import 'sections/enterpsrise';
-@import 'sections/blog';
-@import 'sections/management';
-@import 'sections/form';
-@import 'sections/about';
-@import 'sections/story';
-@import 'sections/numbers';
-@import 'sections/team';
-@import 'sections/values';
+
+// index
+@import 'sections/index/hero';
+@import 'sections/index/our-services';
+@import 'sections/index/connect';
+@import 'sections/index/enterpsrise';
+@import 'sections/index/blog';
+@import 'sections/index/management';
+@import 'sections/index/form';
+// about
+@import 'sections/about/about.scss';
+@import 'sections/about/story';
+@import 'sections/about/numbers';
+@import 'sections/about/team';
+@import 'sections/about/values';
+// blog
+
