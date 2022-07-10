@@ -433,11 +433,22 @@ ul {
     .header.about .header-button .button:hover {
       color: #0A2640;
       background-color: #65E4A3; }
-  .header.about .burger-btn span::before, .header.about .burger-btn span::after {
+  .header.about .header-nav-wrapp.opened .burger-btn span {
+    background-color: transparent; }
+    .header.about .header-nav-wrapp.opened .burger-btn span::after {
+      background: #ffffff;
+      -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+              transform: rotate(45deg);
+      top: 10px; }
+    .header.about .header-nav-wrapp.opened .burger-btn span::before {
+      background: #ffffff;
+      -webkit-transform: rotate(-45deg);
+          -ms-transform: rotate(-45deg);
+              transform: rotate(-45deg); }
+  .header.about .burger-btn span {
     background: #ffffff; }
-  .header.about .burger-btn.hide span {
-    background: #ffffff; }
-    .header.about .burger-btn.hide span::before, .header.about .burger-btn.hide span::after {
+    .header.about .burger-btn span::before, .header.about .burger-btn span::after {
       background: #ffffff; }
 
 .menu {

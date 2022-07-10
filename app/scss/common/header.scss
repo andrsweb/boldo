@@ -95,7 +95,6 @@
 	}
 
 	&.about {
-		
 		&.scrolled {
 			background-color: $dark;
 			padding: 15px 0;
@@ -130,18 +129,28 @@
 			}
 		}
 
-		.burger-btn {
-			
-			span {
-	
-				&::before, &::after {
-					background: $white;
+		.header-nav-wrapp {
+			&.opened {
+				.burger-btn {
+					span {
+						background-color: transparent;
+
+						&::after {
+							background: $white;
+							transform: rotate(45deg);
+							top: 10px;
+						}
+				
+						&::before {
+							background: $white;
+							transform: rotate(-45deg);
+						}
+					} 
 				}
 			}
 		}
-	
-		.burger-btn.hide {
-				
+		
+		.burger-btn {
 			span {
 				background: $white;
 	
