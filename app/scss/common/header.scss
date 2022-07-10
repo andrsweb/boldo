@@ -93,73 +93,6 @@
 			margin-right: 6px;
 		}
 	}
-
-	&.about {
-		&.scrolled {
-			background-color: $dark;
-			padding: 15px 0;
-		}
-
-		.menu {
-			
-			&-item {
-				transition: $tr;
-			}
-
-			a {
-				color: $white;
-
-				&:hover {
-					color: $accent;
-				}
-			}
-		}
-
-		.header-button {
-			
-			.button {
-				padding: 10px 42px;
-				background-color: $white;
-				border: 0;
-
-				&:hover {
-					color: $dark;
-					background-color: $accent;
-				}
-			}
-		}
-
-		.header-nav-wrapp {
-			&.opened {
-				.burger-btn {
-					span {
-						background-color: transparent;
-
-						&::after {
-							background: $white;
-							transform: rotate(45deg);
-							top: 10px;
-						}
-				
-						&::before {
-							background: $white;
-							transform: rotate(-45deg);
-						}
-					} 
-				}
-			}
-		}
-		
-		.burger-btn {
-			span {
-				background: $white;
-	
-				&::before, &::after {
-					background: $white;
-				}
-			}
-		}
-	} 
 }
 
 .menu {
@@ -218,39 +151,41 @@
 	}
 }
 
-.burger-btn {
-	width: 30px;
-	height: 30px;
-	position: relative;
-	cursor: pointer;
-	transition: $tr;
-
-	&:hover {
-		opacity: 0.7;	
-	}
-
-	@media (min-width: $md) {
-		display: none;
-	}
-
-	span {
-		background: $dark;
-		width: 100%;
-		height: 4px;
-		position: absolute;
-		top: 0;
-
-		&::before, &::after {
-			content: "";
-			width: 100%;
+.header-nav-wrapp {
+	.burger-btn {
+		width: 30px;
+		height: 30px;
+		position: relative;
+		cursor: pointer;
+		transition: $tr;
+	
+		&:hover {
+			opacity: 0.7;	
+		}
+	
+		@media (min-width: $md) {
+			display: none;
+		}
+	
+		span {
 			background: $dark;
+			width: 100%;
 			height: 4px;
 			position: absolute;
-			top: 10px;
-		}
-
-		&::after {
-			top: 20px;
-		}
-	} 
+			top: 0;
+	
+			&::before, &::after {
+				content: "";
+				width: 100%;
+				background: $dark;
+				height: 4px;
+				position: absolute;
+				top: 10px;
+			}
+	
+			&::after {
+				top: 20px;
+			}
+		} 
+	}
 }

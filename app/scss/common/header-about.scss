@@ -1,0 +1,65 @@
+.header.about {
+    &.scrolled {
+        background-color: $dark;
+        padding: 15px 0;
+    }
+
+    .menu {
+        
+        &-item {
+            transition: $tr;
+        }
+
+        a {
+            color: $white;
+
+            &:hover {
+                color: $accent;
+            }
+        }
+    }
+
+    .header-button {
+        .button {
+            padding: 10px 42px;
+            background-color: $white;
+            border: 0;
+
+            &:hover {
+                color: $dark;
+                background-color: $accent;
+            }
+        }
+    }
+
+    .header-nav-wrapp {
+        &.opened {
+            .burger-btn {
+                span {
+                    background-color: transparent;
+
+                    &::after {
+                        background: $white;
+                        transform: rotate(45deg);
+                        top: 10px;
+                    }
+            
+                    &::before {
+                        background: $white;
+                        transform: rotate(-45deg);
+                    }
+                } 
+            }
+        }
+    }
+    
+    .burger-btn {
+        span {
+            background: $white;
+
+            &::before, &::after {
+                background: $white;
+            }
+        }
+    }
+} 
