@@ -1,0 +1,155 @@
+.team {
+    padding: 50px 0 10px;
+
+    @media (min-width: $lg) {
+        padding: 98px 0 20px;
+    }
+
+    @media (min-width: $xxl) {
+        padding: 98px 0 120px;
+     }
+    
+    &-header-box {
+        margin-bottom: 65px;
+
+        @media (min-width: $xl) {
+            padding: 0 13%;
+         }
+
+        @media (min-width: $xxl) {
+            padding: 0 13.6%;
+         }
+
+        .team-subtitle {
+            font-family: $openSans;
+            font-weight: $fw400;
+            font-size: $fs16px; 
+            line-height: $lh32px;
+            color: $grey;
+            margin-bottom: 12px;
+            text-align: center; 
+
+            @media (min-width: $lg) {
+                font-size: $fs20px;
+            }
+
+            @media (min-width: $xl) {
+                text-align: left;
+             }
+        }
+
+        .team-title {
+            font-family: $manrope;
+            font-weight: $fw400;
+            font-size: $fs28px;  
+            line-height: $lh72px;
+            color:  $black;
+            margin-bottom: 23px;
+            text-align: center; 
+
+            @media (min-width: $lg) {
+                font-size: $fs48px;
+            }
+
+            @media (min-width: $xl) {
+                text-align: left;
+             }
+        }
+
+        .team-text {
+            font-family: $openSans;
+            font-weight: $fw400;
+            font-size: $fs20px;
+            line-height: $lh32px;
+            color: $grey;
+            text-align: center; 
+
+            @media (min-width: $xl) {
+                text-align: left;
+             }
+        }
+    }
+
+    &-cards {
+        width: 100%;
+        display: flex;
+        justify-content: center; 
+        flex-wrap: wrap;
+        margin: 0 -30px;
+        padding: 0 1.8%;
+
+        &.margin {
+            margin: 0 auto;
+        }
+        
+        .team-card {
+            width: calc(100% / 1); 
+            display: flex;
+            flex-direction: column;
+            padding: 0 30px;
+            margin-bottom: 40px; 
+
+            @media (min-width: $lg) {
+                width: calc(100% / 2);
+            }
+
+            @media (min-width: $xl) {
+                width: calc(100% / 3);
+                margin-bottom: 0;
+            }
+
+            &-image {
+                width: 100%;
+                margin-bottom: 5px;
+                
+                @media (min-width: $sm) {
+                    padding: 0 10%;
+                }
+
+                @media (min-width: $md) {
+                    padding: 0 15%;
+                }
+
+                @media (min-width: $lg) {
+                    padding: 0;
+                }
+
+                @media (min-width: $xl) {
+                   margin-bottom: 29px;
+                }
+
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+
+            &-name {
+                font-family: 'Manrope';
+                font-weight: $fw400;
+                font-size: $fs28px;
+                line-height: $lh48px;
+                color: $black;  
+                margin-bottom: 12px;    
+                text-align: center; 
+                
+                @media (min-width: $xl) {
+                   text-align: left;
+                }
+            }
+
+            &-job {
+                font-family: $openSans;
+                font-weight: $fw400;
+                font-size: $fs20px;
+                line-height: $lh32px;  
+                color: $grey;        
+                text-align: center;       
+                
+                @media (min-width: $xl) {
+                    text-align: left;
+                 }
+            }
+        }
+    }
+}
