@@ -1,0 +1,156 @@
+.word {
+	padding: 171px 0 50px;
+
+	&-heading {
+		margin-bottom: 68px;
+		text-align: center;
+
+		.word-subtitle {
+			font-family: $openSans;
+			font-weight: $fw400;
+			font-size: $fs20px;
+			line-height: $lh32px;	
+			color: $dark;	
+			margin-bottom: 12px;	
+		}
+
+		.word-title {
+			font-family: $manrope;
+			font-weight: $fw400;
+			font-size: $fs32px; 
+			line-height: $lh48px; 
+			color: $dark;
+			margin-bottom: 27px;
+
+			@media (min-width: $md) {
+				font-size: $fs48px;
+				line-height: $lh84px;
+			}
+
+			@media (min-width: $lg) {
+				font-size: $fs64px;
+				line-height: $lh84px;
+			}
+		}
+	}
+
+   .word-item {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+
+	&::after {
+		content: "";
+		position: absolute;
+		height: 1px;
+		width: 100%;
+		bottom: -60px;
+		left: 0;
+		background-color: $dark;
+	}
+
+	&-img {
+		width: 100%;
+
+		@media (min-width: $lg) {
+			width: 40%;
+		}
+
+		@media (min-width: $xl) {
+			width: 50%;
+		}
+
+		img {
+			width: 100%;
+			height: auto;
+
+			@media (min-width: $md) {
+				padding: 0 10%;
+			}
+
+			@media (min-width: $lg) {
+				padding: 0;
+			}
+
+			@media (min-width: $xl) {
+				width: 92%;
+			}
+		}
+	}
+   }
+
+	.word-box {
+		display: flex;
+		flex-direction: column;
+		width: 100%; 
+		text-align: center;
+
+		@media (min-width: $lg) {
+			width: 60%;
+			padding-left: 7%;
+			text-align: left;
+		}
+
+		@media (min-width: $xl) {
+			width: 50%;
+			padding-left: 4%;
+		}
+
+		@media (min-width: $xxl) {
+			padding: 5.8% 0 0 4%;
+		}
+
+		.box-date {
+			font-family: $openSans;
+			font-weight: $fw400;
+			font-size: $fs16px;
+			line-height: $lh28px;
+			color: $grey;
+			margin-bottom: 12px;
+
+			span {
+				font-family: $openSans;
+				font-weight: $fw700;
+				font-size: $fs16px;
+				line-height: $lh28px;
+				color: $dark;		
+				margin-right: 11px;		
+			}
+		}
+
+		.box-text {
+			font-family: $manrope;
+			font-weight: $fw400;
+			font-size: $fs32px; 
+			line-height: $lh48px; 
+			color: $black;	
+			margin-bottom: 20px;	
+			
+			@media (min-width: $xl) {
+				font-size: $fs48px;
+				line-height: $lh72px;
+			}
+		}
+
+		.box-name {
+			display: flex;
+			justify-content: center;
+
+			@media (min-width: $lg) {
+				justify-content: flex-start;
+			}
+
+			&-img {
+				margin-right: 12px;
+			}
+
+			.box-author {
+				font-family: $openSans;
+				font-weight: $fw400;
+				font-size: $fs16px;
+				line-height: $lh28px;
+				color: $black;
+			}
+		}
+   }
+}
