@@ -1119,7 +1119,7 @@ ul {
       line-height: 36px;
       color: #000000;
       margin-bottom: 24px;
-      background: url(../../img/dest/we-connect/li.png) no-repeat;
+      background: url(../img/dest/we-connect/li.png) no-repeat;
       padding-left: 60px; }
       @media (min-width: 576px) {
         .connect-list-item {
