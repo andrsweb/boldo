@@ -4,8 +4,8 @@
     -webkit-tap-highlight-color: transparent;
 }
 
-html,
-body {
+html,body,h1,h2,
+h3,h4,h5,h6,p,ul {
     margin: 0;
     padding: 0;
 }
@@ -14,11 +14,6 @@ body {
     min-width: 320px;
     background-color: #ffffff;
     font-size: 16px;
-}
-
-h1,h2,h3,h4,h5,h6 {
-    padding: 0;
-    margin: 0;
 }
 
 li {
@@ -69,11 +64,56 @@ a:hover {
         max-width: 1240px;
     }
 
+    &.xs {
+        max-width: 837px;
+
+        @media (min-width: $xs) {
+            max-width: 440px;
+        }
+
+        @media (min-width: $sm) {
+            max-width: 536px;
+        }
+
+        @media (min-width: $md) {
+            max-width: 737px;
+        }
+
+        @media (min-width: $lg) {
+            max-width: 952px;
+        }
+
+        @media (min-width: $xl) {
+            max-width: 837px;
+        }
+    }
+
+    &.xm {
+        max-width: 1040px;
+
+        @media (min-width: $xs) {
+            max-width: 440px;
+        }
+
+        @media (min-width: $sm) {
+            max-width: 512px;
+        }
+
+        @media (min-width: $md) {
+            max-width: 736px;
+        }
+
+        @media (min-width: $lg) {
+            max-width: 912px;
+        }
+
+        @media (min-width: $xl) {
+            max-width: 1040px;
+        }
+    }
+
     &.sm {
-        width: 100%;
         max-width: 1140px;
-        padding: 0 20px;
-        margin: 0 auto;
           
         @media (min-width: $xs) {
             max-width: 440px;
@@ -95,9 +135,4 @@ a:hover {
             max-width: 1140px;
         }
     }
-}
-
-ul {
-    margin: 0;
-    padding: 0;
 }

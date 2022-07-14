@@ -12,7 +12,7 @@
     }
 
     @media (min-width: $xxl) {
-        padding: 122px 0 255px;
+        padding: 123px 0 240px;
     }
 
     &::after {
@@ -39,14 +39,6 @@
 
     .values-header-box {
         margin-bottom: 82px;
-
-        @media (min-width: $xl) {
-            padding: 0 11%;
-        }
-
-        @media (min-width: $xl) {
-            padding: 0 13.6%;
-        }
 
         .values-subtitle {
             font-family: $openSans;

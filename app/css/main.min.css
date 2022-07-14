@@ -253,8 +253,8 @@
   outline: none;
   -webkit-tap-highlight-color: transparent; }
 
-html,
-body {
+html, body, h1, h2,
+h3, h4, h5, h6, p, ul {
   margin: 0;
   padding: 0; }
 
@@ -262,10 +262,6 @@ body {
   min-width: 320px;
   background-color: #ffffff;
   font-size: 16px; }
-
-h1, h2, h3, h4, h5, h6 {
-  padding: 0;
-  margin: 0; }
 
 li {
   list-style: none; }
@@ -311,11 +307,42 @@ a:hover {
   @media (min-width: 1366px) {
     .container {
       max-width: 1240px; } }
+  .container.xs {
+    max-width: 837px; }
+    @media (min-width: 480px) {
+      .container.xs {
+        max-width: 440px; } }
+    @media (min-width: 576px) {
+      .container.xs {
+        max-width: 536px; } }
+    @media (min-width: 767px) {
+      .container.xs {
+        max-width: 737px; } }
+    @media (min-width: 992px) {
+      .container.xs {
+        max-width: 952px; } }
+    @media (min-width: 1240px) {
+      .container.xs {
+        max-width: 837px; } }
+  .container.xm {
+    max-width: 1040px; }
+    @media (min-width: 480px) {
+      .container.xm {
+        max-width: 440px; } }
+    @media (min-width: 576px) {
+      .container.xm {
+        max-width: 512px; } }
+    @media (min-width: 767px) {
+      .container.xm {
+        max-width: 736px; } }
+    @media (min-width: 992px) {
+      .container.xm {
+        max-width: 912px; } }
+    @media (min-width: 1240px) {
+      .container.xm {
+        max-width: 1040px; } }
   .container.sm {
-    width: 100%;
-    max-width: 1140px;
-    padding: 0 20px;
-    margin: 0 auto; }
+    max-width: 1140px; }
     @media (min-width: 480px) {
       .container.sm {
         max-width: 440px; } }
@@ -331,10 +358,6 @@ a:hover {
     @media (min-width: 1240px) {
       .container.sm {
         max-width: 1140px; } }
-
-ul {
-  margin: 0;
-  padding: 0; }
 
 .container {
   position: relative; }
@@ -987,29 +1010,31 @@ ul {
       .card-text {
         text-align: left; } }
   .card-link {
-    font-size: 20px; }
-    .card-link a {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      font-family: "Open Sans";
-      font-weight: 700;
-      line-height: 36px;
-      color: #ffffff;
-      -webkit-transition: color ease 0.35s;
-      -o-transition: color ease 0.35s;
-      transition: color ease 0.35s; }
-      .card-link a svg {
-        margin-left: 15px; }
-        .card-link a svg path:hover {
-          stroke: #65E4A3; }
-    .card-link a:hover {
-      content: "";
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 167px;
+    padding-bottom: 10px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-family: "Open Sans";
+    font-weight: 700;
+    line-height: 36px;
+    color: #ffffff;
+    -webkit-transition: 0.35s;
+    -o-transition: 0.35s;
+    transition: 0.35s;
+    font-size: 20px;
+    border-bottom: 1px solid #ffffff; }
+    .card-link:hover {
       color: #65E4A3;
+      border-color: #65E4A3;
       cursor: pointer; }
+      .card-link:hover:hover svg path {
+        stroke: #65E4A3; }
+    .card-link svg {
+      margin-left: 15px; }
     .card-link.img {
       width: 100%;
       height: auto; }
@@ -1017,16 +1042,6 @@ ul {
       max-width: 100%;
       height: auto;
       margin-left: 15px; }
-    .card-link:after {
-      content: "";
-      display: block;
-      border-bottom: solid 1px;
-      color: #ffffff;
-      width: 100%;
-      margin-top: 10px; }
-      @media (min-width: 1240px) {
-        .card-link:after {
-          width: 55%; } }
 
 .connect {
   padding-top: 40px; }
@@ -1565,7 +1580,7 @@ ul {
           text-align: left;
           margin-right: 100px; } }
     .blog-heading-dropdown {
-      width: 66%;
+      width: 100%;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -1574,11 +1589,19 @@ ul {
           -ms-flex-direction: column;
               flex-direction: column;
       -ms-flex-wrap: nowrap;
-          flex-wrap: nowrap; }
+          flex-wrap: nowrap;
+      padding-right: 16%; }
       @media (min-width: 767px) {
         .blog-heading-dropdown {
-          width: 50%;
+          width: 75%;
+          padding-right: 0;
           padding-top: 5px; } }
+      @media (min-width: 767px) {
+        .blog-heading-dropdown {
+          width: 60%; } }
+      @media (min-width: 1240px) {
+        .blog-heading-dropdown {
+          width: 50%; } }
       .blog-heading-dropdown .dropdown-question {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -1608,18 +1631,15 @@ ul {
             height: 1px;
             background: #c4c4c4;
             position: absolute;
-            top: 100px;
+            top: 75px;
             right: 0; }
             @media (min-width: 480px) {
               .blog-heading-dropdown .dropdown-question-text::after {
-                top: 80px; } }
+                top: 50px; } }
             @media (min-width: 576px) {
               .blog-heading-dropdown .dropdown-question-text::after {
                 top: 40px; } }
             @media (min-width: 767px) {
-              .blog-heading-dropdown .dropdown-question-text::after {
-                top: 70px; } }
-            @media (min-width: 992px) {
               .blog-heading-dropdown .dropdown-question-text::after {
                 top: 50px; } }
           @media (min-width: 767px) {
@@ -1646,7 +1666,17 @@ ul {
           transition: 0.3s ease;
           -webkit-transform: rotate(180deg);
               -ms-transform: rotate(180deg);
-                  transform: rotate(180deg); }
+                  transform: rotate(180deg);
+          right: 50px; }
+          @media (min-width: 576px) {
+            .blog-heading-dropdown .dropdown-question-ico {
+              right: 95px; } }
+          @media (min-width: 767px) {
+            .blog-heading-dropdown .dropdown-question-ico {
+              right: 100px; } }
+          @media (min-width: 992px) {
+            .blog-heading-dropdown .dropdown-question-ico {
+              right: 200px; } }
           @media (min-width: 1240px) {
             .blog-heading-dropdown .dropdown-question-ico {
               right: 20px; } }
@@ -1976,7 +2006,7 @@ ul {
 
 .story {
   position: relative;
-  padding-bottom: 82px; }
+  padding-bottom: 102px; }
   .story::before {
     content: "";
     height: 100px;
@@ -2198,15 +2228,12 @@ ul {
       padding: 98px 0 20px; } }
   @media (min-width: 1366px) {
     .team {
-      padding: 98px 0 120px; } }
+      padding: 98px 0 112px; } }
   .team-header-box {
-    margin-bottom: 65px; }
-    @media (min-width: 1240px) {
-      .team-header-box {
-        padding: 0 13%; } }
+    margin-bottom: 45px; }
     @media (min-width: 1366px) {
       .team-header-box {
-        padding: 0 13.6%; } }
+        padding: 0 100px; } }
     .team-header-box .team-subtitle {
       font-family: "Open Sans";
       font-weight: 400;
@@ -2250,15 +2277,9 @@ ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin: 0 -30px;
-    padding: 0 1.8%; }
-    .team-cards.margin {
-      margin: 0 auto; }
+    margin: 0 -20px; }
     .team-cards .team-card {
       width: calc(100% / 1);
       display: -webkit-box;
@@ -2268,7 +2289,7 @@ ul {
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column;
-      padding: 0 30px;
+      padding: 0 20px;
       margin-bottom: 40px; }
       @media (min-width: 992px) {
         .team-cards .team-card {
@@ -2329,7 +2350,7 @@ ul {
       padding: 122px 0 200px; } }
   @media (min-width: 1366px) {
     .values {
-      padding: 122px 0 255px; } }
+      padding: 123px 0 240px; } }
   .values::after {
     content: "";
     position: absolute;
@@ -2349,12 +2370,6 @@ ul {
         height: 125px; } }
   .values .values-header-box {
     margin-bottom: 82px; }
-    @media (min-width: 1240px) {
-      .values .values-header-box {
-        padding: 0 11%; } }
-    @media (min-width: 1240px) {
-      .values .values-header-box {
-        padding: 0 13.6%; } }
     .values .values-header-box .values-subtitle {
       font-family: "Open Sans";
       font-weight: 400;

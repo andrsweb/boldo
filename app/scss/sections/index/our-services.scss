@@ -129,32 +129,33 @@
 	}
 
 	&-link {
+		display: flex;
+		width: 167px;
+		padding-bottom: 10px;
+		align-items: center;
+		font-family: $openSans;
+		font-weight: $fw700;
+		line-height: $lh36px;
+		color: $white;
+		transition: $tr;		
 		font-size: $fs20px;
+		border-bottom: 1px solid $white;
+		
+		
+		&:hover {
+			color: $accent;
+			border-color: $accent;
+			cursor: pointer;
 
-		& a {
-			display: flex;
-			align-items: center;
-			font-family: $openSans;
-			font-weight: $fw700;
-			line-height: $lh36px;
-			color: $white;
-			transition: color ease 0.35s;
-
-			& svg {
-				margin-left: 15px;
-
-				& path:hover {
-					stroke: $accent;
-				}
+			&:hover svg path {
+				stroke: $accent;
 			}
 		}
-		
-		& a:hover {
-			content: "";
-			color: $accent;
-			cursor: pointer;
-		}
 
+		svg {
+			margin-left: 15px;
+		}
+		
 		&.img {
 			width: 100%;
 			height: auto;
@@ -164,19 +165,6 @@
 			max-width: 100%;
 			height: auto;
 			margin-left: 15px;
-		}
-
-		&:after {
-			content: "";
-			display: block;
-			border-bottom: solid 1px;
-			color: $white;
-			width: 100%;
-			margin-top: 10px;
-
-			@media (min-width: $xl) {
-				width: 55%;
-			}
 		}
 	}
 }

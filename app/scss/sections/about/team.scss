@@ -6,18 +6,17 @@
     }
 
     @media (min-width: $xxl) {
-        padding: 98px 0 120px;
+        padding: 98px 0 112px;
      }
-    
+
     &-header-box {
-        margin-bottom: 65px;
+        margin-bottom: 45px;
 
         @media (min-width: $xl) {
-            padding: 0 13%;
          }
 
         @media (min-width: $xxl) {
-            padding: 0 13.6%;
+            padding: 0 100px;
          }
 
         .team-subtitle {
@@ -73,20 +72,14 @@
     &-cards {
         width: 100%;
         display: flex;
-        justify-content: center; 
         flex-wrap: wrap;
-        margin: 0 -30px;
-        padding: 0 1.8%;
-
-        &.margin {
-            margin: 0 auto;
-        }
-        
+        margin: 0 -20px;
+ 
         .team-card {
             width: calc(100% / 1); 
             display: flex;
             flex-direction: column;
-            padding: 0 30px;
+            padding: 0 20px;
             margin-bottom: 40px; 
 
             @media (min-width: $lg) {

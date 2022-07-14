@@ -61,14 +61,24 @@
 		}
 
 		&-dropdown {
-			width: 66%; 
+			width: 100%; 
 			display: flex;
 			flex-direction: column;
 			flex-wrap: nowrap;
+			padding-right: 16%;
 			
 			@media (min-width: $md) {
-				width: 50%;
+				width: 75%;
+				padding-right: 0;
 				padding-top: 5px;
+			}
+
+			@media (min-width: $md) {
+				width: 60%;
+			}
+
+			@media (min-width: $xl) {
+				width: 50%;
 			}
 
 			.dropdown-question {
@@ -101,11 +111,11 @@
 						height: 1px;
 						background: #c4c4c4;
 						position: absolute;
-						top: 100px;
+						top: 75px; 
 						right: 0;
 
 						@media (min-width: $xs) {
-							top: 80px;
+							top: 50px;
 						}
 
 						@media (min-width: $sm) {
@@ -113,10 +123,6 @@
 						}
 
 						@media (min-width: $md) {
-							top: 70px;
-						}
-
-						@media (min-width: $lg) {
 							top: 50px;
 						}
 					}
@@ -147,6 +153,19 @@
 					height: 28px;
 					transition: 0.3s ease;
 					transform: rotate(180deg);
+					right: 50px;
+
+					@media (min-width: $sm) {
+						right: 95px;
+					}
+
+					@media (min-width: $md) {
+						right: 100px;
+					}
+
+					@media (min-width: $lg) {
+						right: 200px;
+					}
 
 					@media (min-width: $xl) {
 						right: 20px;
