@@ -33,6 +33,16 @@
             display: flex;
             flex-direction: column;
 
+            @media (min-width: $sm) {
+                flex-direction: row; 
+                gap: 20px; 
+            }
+
+            @media (min-width: $lg) {
+                flex-direction: column; 
+                gap: 0; 
+            }
+
             img {
                 width: 100%;
                 margin-bottom: 40px;

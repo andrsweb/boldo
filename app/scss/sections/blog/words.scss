@@ -1,9 +1,13 @@
 .word {
-	padding: 171px 0 60px;
+	padding: 171px 0 30px;
 
 	&-heading {
-		margin-bottom: 68px;
+		margin-bottom: 30px;
 		text-align: center;
+
+		@media (min-width: $lg) {
+			margin-bottom: 68px;
+		}
 
 		.word-subtitle {
 			font-family: $openSans;
@@ -20,7 +24,6 @@
 			font-size: $fs32px; 
 			line-height: $lh48px; 
 			color: $dark;
-			margin-bottom: 27px;
 
 			@media (min-width: $md) {
 				font-size: $fs48px;
@@ -35,55 +38,53 @@
 	}
 
    .word-item {
-	position: relative;
 	display: flex;
+	justify-content: space-between;
 	flex-wrap: wrap;
+	border-bottom: 1px solid $dark;
+	padding-bottom: 20px; 
 
-	&::after {
-		content: "";
-		position: absolute;
-		height: 1px;
-		width: 100%;
-		bottom: -67px;
-		left: 0;
-		background-color: $dark;
+	@media (min-width: $lg) {
+		padding-bottom: 70px;
 	}
 
-	&-img {
-		width: 100%;
-
-		@media (min-width: $lg) {
-			width: 40%;
-		}
-
-		@media (min-width: $xl) {
-			width: 50%;
-		}
-
-		img {
+		&-img {
+			display: flex;
+			justify-content: center;
 			width: 100%;
-			height: auto;
-
-			@media (min-width: $md) {
-				padding: 0 10%;
-			}
+			margin-bottom: 25px; 
 
 			@media (min-width: $lg) {
-				padding: 0;
+				width: 40%;
+				margin-bottom: 0;
+				justify-content: flex-start;
 			}
 
 			@media (min-width: $xl) {
-				width: 92%;
+				width: 46%;
+			}
+
+			img {
+				width: 100%;
+				height: auto;
+
+				@media (min-width: $sm) {
+					width: 70%;
+				}
+
+				@media (min-width: $lg) {
+					width: 100%;
+				}
 			}
 		}
 	}
-   }
 
 	.word-box {
 		display: flex;
 		flex-direction: column;
 		width: 100%; 
 		text-align: center;
+		justify-content: center;
 
 		@media (min-width: $lg) {
 			width: 60%;
@@ -92,12 +93,11 @@
 		}
 
 		@media (min-width: $xl) {
-			width: 50%;
-			padding-left: 4%;
+			width: 54%;
 		}
 
 		@media (min-width: $xxl) {
-			padding: 5.8% 0 0 4%;
+			padding: 0% 0 0 8%;
 		}
 
 		.box-date {
@@ -121,11 +121,15 @@
 		.box-text {
 			font-family: $manrope;
 			font-weight: $fw400;
-			font-size: $fs32px; 
+			font-size: $fs24px; //32
 			line-height: $lh48px; 
 			color: $black;	
 			margin-bottom: 20px;	
 			
+			@media (min-width: $md) {
+				font-size: $fs32px;
+			}
+
 			@media (min-width: $xl) {
 				font-size: $fs48px;
 				line-height: $lh72px;

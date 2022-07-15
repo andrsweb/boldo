@@ -58,24 +58,46 @@
 			display: flex;
 
 			&.opened {
-				.burger-btn {
+				opacity: 0;
+				animation: anim 0.5s forwards;
 
+				@keyframes anim {
+					0% {opacity: 0;}
+					100% {opacity: 1;}
+				  }
+
+				.burger-btn {
 					span {
 						background-color: transparent;
 
 						&::after {
 							transform: rotate(45deg);
 							top: 10px;
+							background: $white;
 						}
 				
 						&::before {
+							background: $white;
 							transform: rotate(-45deg);
 						}
 					} 
 				}
 
 				.burger-menu {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					padding-top: 40px;
+					border-radius: 0;
+				}
+				.burger-item {
 					display: block;
+					animation: text 1s forwards;
+
+				@keyframes text {
+					0% {margin-bottom: 0;}
+					100% {margin-bottom: 20px;}
+				  }
 				}
 			}
 		}
@@ -105,11 +127,10 @@
 		display: flex;
 		flex-wrap: wrap;
 		margin: 0 21px;
-		
 	}
 			
 	a {
-		color: #0A2640;
+		color: $dark;
 		font-family: $openSans;
 		font-weight: 600;
 		font-size: 16px;
@@ -124,25 +145,23 @@
 
 .burger-menu {
 	display: none;
-	padding: 40px;
-	background: #dae6f1;
+	width: 100%;
+	height: 300px;
+	background: $black;
 	border-radius: 12px;
 	position: fixed;
-	top: 125px;
-	right: 30px;
-	
-	@media (min-width: $md) {
-		display: none;
-	}
-	
+	top: 0;
+	right: 0;
+		
 	.burger-item {
+		display: none;
 		margin-bottom: 20px;
 
 		&-link {
 			font-family: $openSans;
 			font-size: $fs16px;
-			color: $dark;
-			transition: color ease-in 0.35s;
+			color: $white;
+			transition: $tr;
 
 			&:hover {
 				color: $accent;

@@ -64,7 +64,7 @@ a:hover {
         max-width: 1240px;
     }
 
-    &.xs {
+    &.xxs {
         max-width: 837px;
 
         @media (min-width: $xs) {
@@ -88,7 +88,31 @@ a:hover {
         }
     }
 
-    &.xm {
+    &.xs {
+        max-width: 1040px;
+
+        @media (min-width: $xs) {
+            max-width: 440px;
+        }
+
+        @media (min-width: $sm) {
+            max-width: 536px;
+        }
+
+        @media (min-width: $md) {
+            max-width: 737px;
+        }
+
+        @media (min-width: $lg) {
+            max-width: 952px;
+        }
+
+        @media (min-width: $xl) {
+            max-width: 1040px;
+        }
+    }
+
+    &.xsm {
         max-width: 1040px;
 
         @media (min-width: $xs) {
