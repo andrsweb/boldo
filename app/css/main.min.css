@@ -435,8 +435,8 @@ a:hover {
       display: flex; }
       .header-nav-wrapp.opened {
         opacity: 0;
-        -webkit-animation: anim 0.5s forwards;
-                animation: anim 0.5s forwards; }
+        -webkit-animation: anim 1s both;
+                animation: anim 1s both; }
 
 @-webkit-keyframes anim {
   0% {

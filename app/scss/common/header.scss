@@ -59,7 +59,7 @@
 
 			&.opened {
 				opacity: 0;
-				animation: anim 0.5s forwards;
+				animation: anim 1s both;
 
 				@keyframes anim {
 					0% {opacity: 0;}
@@ -69,7 +69,7 @@
 				.burger-btn {
 					span {
 						background-color: transparent;
-
+						
 						&::after {
 							transform: rotate(45deg);
 							top: 10px;
