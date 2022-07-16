@@ -18,6 +18,11 @@
 		justify-content: center;
 		transition: $tr;
 
+		& .load {
+			color: $dark;
+			transition: $tr;
+		}
+
 		.button.lg {
 			padding: 12px 30px;
 			font-size: $fs16px;
@@ -28,8 +33,9 @@
 			}
 		}
 
-		.button.lg:hover {
+		.button.lg:hover, .button.lg:hover .load {
 			border-color: $accent;
+			color: $accent;
 		}
 
 		@media (min-width: $xl) {

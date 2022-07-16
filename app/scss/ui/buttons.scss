@@ -13,11 +13,6 @@
     all ease 0.35s,
     transform ease 0.35s;
 
-    &:hover {
-        content: "";
-        color: $accent;
-    }
-
     &.button  {
         margin-right: 20px;
     }
@@ -32,6 +27,7 @@
         line-height: 28px;
         border-radius: 56px;
         transition: $tr;
+
         &.button:last-child {
             margin-right: 0;
         }

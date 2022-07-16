@@ -122,6 +122,10 @@
 			display: flex;
 			justify-content: center; 
 
+			.btn-con {
+				color: $white;
+			}
+
 			@media (min-width: $xl) {
 				justify-content: flex-start;
 			}

@@ -65,10 +65,16 @@
 			display: flex;
 			flex-direction: column;
 			flex-wrap: nowrap;
-			padding-right: 16%;
+			// padding-right: 16%;
 			
+			@media (min-width: $sm) {
+				width: 85%;
+				padding-top: 5px;
+			}
+
+
 			@media (min-width: $md) {
-				width: 75%;
+				width: 100%;
 				padding-right: 0;
 				padding-top: 5px;
 			}
@@ -104,6 +110,12 @@
 					line-height: $lh32px;
 					color: $black;
 					margin-bottom: 53px;
+					padding-right: 11%;
+
+					@media (min-width: $xs) {
+						padding-right: 0;
+					}
+
 
 					&::after {
 						content: "";
@@ -148,15 +160,19 @@
 
 				&-ico {
 					position: absolute;
-					right: 40px;
+					right: 0;
 					width: 28px;
 					height: 28px;
 					transition: 0.3s ease;
 					transform: rotate(180deg);
-					right: 50px;
+					right: 10px;
+
+					@media (min-width: $xs) {
+						right: 20px;
+					}
 
 					@media (min-width: $sm) {
-						right: 95px;
+						right: 50px;
 					}
 
 					@media (min-width: $md) {

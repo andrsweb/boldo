@@ -77,6 +77,10 @@
 			font-size: $fs14px;
 			transition: $tr;
 
+			& .btn-dark {
+				color: $white;
+			}
+
 			&:hover {
 				opacity: 0.8;
 				border-color: $dark;
@@ -97,9 +101,15 @@
 			font-size: $fs14px;
 			transition: $tr;
 			padding: 4px 30px;
+			
+			& .bt-lg {
+				color: $dark;
+				transition: $tr;
+			}
 
-			&:hover {
+			&:hover, &:hover a {
 				border-color: $accent;
+				color: $accent;
 			}
 
 			@media (min-width: $md) {

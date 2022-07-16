@@ -70,13 +70,29 @@
                  margin-bottom: 0;
             }
 
-            img  {
+            .wrapp-img-women {
                 width: 100%;
-                height: 550px;
+                height: 400px;
+               
+                @media (min-width: $xs) {
+                    height: 450px;
+                }
 
-                @media (min-width: $md) {
+                @media (min-width: $lg) {
                     height: 632px;
                 }
+
+                img  {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+            }
+
+           
+
+                // @media (min-width: $md) {
+                //     height: 632px;
+                // }
             }
         }
     }

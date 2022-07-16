@@ -151,9 +151,15 @@
         justify-content: center;
         margin-top: 10px;
 
+        .news-btn {
+            color: $dark;
+            transition: $tr;
+        }
+
         .button.lg {
-            &:hover {
+            &:hover, &:hover .news-btn {
                 border-color: $accent;
+                color: $accent;
             }
         }
       

@@ -107,8 +107,13 @@
 		margin-left: 18px;
 		transition: $tr;
 		
+		a {
+			color: $dark;
+		}
+
 		& a:hover {
 			border-color: $accent;
+			color: $accent;
 		}
 
 		&:last-child {
